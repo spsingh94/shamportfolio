@@ -1,0 +1,40 @@
+.card {
+  background-color: peachpuff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.catch-phrase {
+  padding-right: 10px;
+  font-family: 'Josefin Slab', serif;
+}
+
+.fa {
+  padding-top: 23px;
+  padding-bottom: 15px;
+  font-size: 25px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.fa:hover {
+  color: white;
+}
+
+.foot-navcon {
+  color: black;
+  padding-top: 20px;
+  font-size: large;
+  font-family: 'Josefin Slab', serif;
+}
+
+.foot-navcon:hover {
+  color: white;
+}
+
+.logo-footer {
+  height: 70px;
+  width: 100px;
+}

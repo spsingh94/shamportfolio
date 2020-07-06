@@ -1,0 +1,39 @@
+.logo-nav {
+    height: 70px;
+    width: 100px;
+    position: absolute;
+    top:10px;
+}
+
+nav {
+    background-color: peachpuff;
+    height: 100px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 25px;
+    border: 2px solid black;
+}
+
+.locName {
+    color: black;
+    padding-top: 20px;
+    margin-left: 100px;
+}
+
+.locName:hover {
+    color: white;
+}
+
+.social-icons {
+    position: absolute;
+    right: 55px;
+}
+
+.collapse {
+    background-color: peachpuff;
+}
+
+.navbar-nav {
+    text-align: center;
+    width: 75%;
+}
+
