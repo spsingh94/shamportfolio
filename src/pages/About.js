@@ -23,6 +23,7 @@ function About() {
               src={Thumbnail}
               height="400px"
               style={{ float: "right", justifyContent: "center", paddingTop:"10px" }}
+              alt="thumbnail"
             />
             <p style={{ textAlign: "left", marginRight: "50px", fontFamily:"'Josefin Slab', serif", fontSize:"19px" }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus

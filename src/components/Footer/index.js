@@ -19,10 +19,10 @@ function Footer() {
           </Col>
 
           <Col size="md-2">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-facebook">hi</a>
+            <a href="#" class="fa fa-instagram">hi</a>
+            <a href="#" class="fa fa-linkedin">hi</a>
+            <a href="#" class="fa fa-google">hi</a>
           </Col>
 
           <Col size="md-8">
