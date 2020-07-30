@@ -10,16 +10,16 @@ import Contact from './pages/Contact'
 
 function App() {
   return (
+    <>
+    <Navbar />
     <Router>
-      <div>
-        <Navbar />
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/contact" component={Contact} />
-        <Footer/>
-      </div>
     </Router>
+        <Footer/>
+        </>
   );
 }
 
