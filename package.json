@@ -18,8 +18,8 @@
   "scripts": {
     "start": "react-scripts start",
     "seed": "node scripts/seedDB.js",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build",
+    "install": "npm install",
+    "build": "npm run build",
     "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
