@@ -1,5 +1,5 @@
 .hero {
-    height: 600px;
+    height: 700px;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -7,7 +7,7 @@
     background-size: cover;
 }
 
-.hero h1 {
+.hero .hero-intro {
     color: peachpuff;
     font-family: 'Yellowtail', cursive;
     font-size: 65px;
@@ -18,7 +18,7 @@
     -webkit-text-stroke-color: black;
 }
 
-.hero p {
+.hero .hero-desc {
     color: white;
     font-family: 'Josefin Slab', serif;
     font-size: 30px;

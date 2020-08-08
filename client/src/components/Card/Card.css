@@ -1,0 +1,12 @@
+.card-img-top {
+  height: 220px;
+  border-radius: 15px;
+}
+
+.card-img-top:hover {
+opacity: 50%;
+}
+
+.card {
+  border-radius: 15px;
+}

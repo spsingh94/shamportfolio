@@ -8,7 +8,7 @@ import logo from "../../images/portfoliologo.png";
 
 function Footer() {
   return (
-    <div className="card">
+    <div className="foot">
       <Container>
         <Row>
           <Col size="md-2">
@@ -19,10 +19,6 @@ function Footer() {
           </Col>
 
           <Col size="md-2">
-            <a href="#" class="fa fa-facebook">hi</a>
-            <a href="#" class="fa fa-instagram">hi</a>
-            <a href="#" class="fa fa-linkedin">hi</a>
-            <a href="#" class="fa fa-google">hi</a>
           </Col>
 
           <Col size="md-8">
@@ -59,12 +55,3 @@ function Footer() {
 }
 
 export default Footer;
-
-// <Link
-// to="/"
-// className={
-//   window.location.pathname === "/"
-//     ? "nav-link active"
-//     : "nav-link"
-// }
-// >

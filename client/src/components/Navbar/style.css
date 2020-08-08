@@ -5,12 +5,29 @@
     top:10px;
 }
 
+.rotate {
+    animation: rotation 2s infinite;
+    animation-direction: alternate-reverse;
+    /* animation-delay: 10s; */
+  }
+
+  @keyframes rotation {
+    from {
+      /* margin-left: 0px; */
+      transform: rotateY(0)
+    }
+    to {
+      /* margin-left: 5px; */
+      transform: rotateY(359deg)
+
+    }
+  }
+
 nav {
-    background-color: peachpuff;
-    height: 100px;
+    background-color: transparent;
+    height: 120px;
     font-family: 'Josefin Slab', serif;
     font-size: 25px;
-    border: 2px solid black;
 }
 
 .locName {
@@ -26,10 +43,6 @@ nav {
 .social-icons {
     position: absolute;
     right: 55px;
-}
-
-.collapse {
-    background-color: peachpuff;
 }
 
 .navbar-nav {

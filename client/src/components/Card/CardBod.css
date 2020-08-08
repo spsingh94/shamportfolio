@@ -1,0 +1,12 @@
+.card-body {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card-body h1 {
+    font-family: 'Yellowtail', cursive;
+}
+
+.card-body p {
+    font-family: 'Yellowtail', cursive;
+}

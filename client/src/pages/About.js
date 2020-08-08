@@ -5,12 +5,17 @@ import Thumbnail from "../images/pumpkin.jpg";
 import Clouds from "../images/red_clouds.jpg";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
 
 // style={{float:"right"}}
 
 function About() {
   return (
     <div>
+      <Hero>
+
+      <Navbar/>
       <Block height="110px" backgroundColor="white">
         <div className="connect-header">
           <h1>About</h1>
@@ -56,6 +61,7 @@ function About() {
         </Row>
       </Container>
       <Block height="110px" backgroundColor="white"></Block>
+      </Hero>
     </div>
   );
 }

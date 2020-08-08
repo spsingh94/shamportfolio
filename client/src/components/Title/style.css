@@ -1,0 +1,9 @@
+.connect-header {
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-family: 'Yellowtail', cursive;
+    font-size: 65px;
+}

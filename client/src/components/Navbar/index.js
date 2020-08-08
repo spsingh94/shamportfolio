@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <Link className="navbar-brand" to="/">
-        <img src={logo} className="logo-nav" alt="logo" />
+        <img src={logo} className="logo-nav rotate" alt="logo" />
       </Link>
 
       <button
