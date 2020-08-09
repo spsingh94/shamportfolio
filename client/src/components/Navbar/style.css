@@ -1,23 +1,35 @@
 .logo-nav {
     height: 70px;
-    width: 100px;
     position: absolute;
+    right: 10px;
     top:10px;
 }
 
-.rotate {
+.logo-nav {
     animation: rotation 2s infinite;
     animation-direction: alternate-reverse;
-    /* animation-delay: 10s; */
   }
 
   @keyframes rotation {
     from {
-      /* margin-left: 0px; */
       transform: rotateY(0)
     }
     to {
-      /* margin-left: 5px; */
+      transform: rotateY(359deg)
+
+    }
+  }
+
+.logo-nav:hover {
+    animation: rotation2 .30s infinite;
+    animation-direction: linear;
+  }
+
+  @keyframes rotation2 {
+    from {
+      transform: rotateY(180deg)
+    }
+    to {
       transform: rotateY(359deg)
 
     }
@@ -26,18 +38,17 @@
 nav {
     background-color: transparent;
     height: 120px;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Permanent Marker', cursive;
     font-size: 25px;
 }
 
 .locName {
     color: black;
     padding-top: 20px;
-    margin-left: 100px;
 }
 
 .locName:hover {
-    color: white;
+  text-decoration: line-through;
 }
 
 .social-icons {
@@ -45,8 +56,26 @@ nav {
     right: 55px;
 }
 
-.navbar-nav {
+@media (max-width: 991px){
+  .navbar-nav {
+    background-color: peachpuff;
+    width: 255px;
+    margin-left: 0px;
     text-align: center;
-    width: 75%;
+    border-radius: 10px;
+}
+  .nav-item {
+    /* border: solid black 1px; */
+    border-radius: 10px;
+  }
+  .nav-item:hover {
+  background-color: white;
+  }
+}
+
+@media (min-width: 991px){
+  .navbar-nav {
+    /* margin-right: 1000px; */
+  }
 }
 

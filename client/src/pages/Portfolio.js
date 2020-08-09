@@ -9,16 +9,13 @@ import SocialFit from '../images/app_thumbs/soc-fit.jpg';
 import WorkBooks from '../images/app_thumbs/workbooks-1.jpg';
 import MCLAReact from '../images/app_thumbs/Screen Shot 2020-08-07 at 1.18.41 AM.png';
 import { Title } from "../components/Title";
-import Clouds from "../images/red_clouds.jpg"
-
-const cloudsResize = {
-  backgroundSize: "1300px",
-  backgroundImage:`url(${Clouds})`
-};
+import Clouds from "../images/red_clouds.jpg";
+import Hero from "../components/Hero";
 
 function Portfolio() {
   return (
-    <div style={cloudsResize}>
+  <Hero backgroundImage={Clouds}>
+        <div>
       <Navbar/>
       <Title>Portfolio</Title>
     <Container style={{paddingBottom:"175px"}}>
@@ -40,9 +37,9 @@ function Portfolio() {
       </Card>
       </CardCont>
     </Container>
-    {/* <Block height="110px" backgroundColor="white"> */}
-      {/* </Block> */}
     </div>
+  </Hero>
+
   );
 }
 

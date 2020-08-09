@@ -1,14 +1,26 @@
-import React from "react";
+import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 import logo from "../../images/portfoliologo.png";
+// import ReactDOM from 'react-dom';
 
-function Navbar() {
-  return (
+class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      bgColor: ""
+    }
+  }
+
+
+  boxClick = (e) => {
+    this.setState({
+      bgColor: "white"
+    })
+  }
+render() {
+    return (
     <nav className="navbar navbar-expand-lg navbar-light">
-      <Link className="navbar-brand" to="/">
-        <img src={logo} className="logo-nav rotate" alt="logo" />
-      </Link>
 
       <button
         className="navbar-toggler"
@@ -18,12 +30,14 @@ function Navbar() {
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        onClick={this.boxClick}
       >
+
         <span className="navbar-toggler-icon"></span>
       </button>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto">
+        <ul className="navbar-nav mr-auto" id="sandwhich-pages">
           <li className="nav-item active">
           <Link
                 to="/"
@@ -74,8 +88,12 @@ function Navbar() {
           </li>
         </ul>
       </div>
+      <Link className="navbar-brand" to="/">
+        <img src={logo} className="logo-nav rotate" alt="logo" />
+      </Link>
     </nav>
-  );
+   )
+  }
 }
 
 export default Navbar;

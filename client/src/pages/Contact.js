@@ -3,13 +3,8 @@ import Container from "../components/Container";
 import Block from "../components/Block";
 import Navbar from "../components/Navbar";
 import { Title } from "../components/Title";
-import Wood from "../images/wood.jpg";
 import Hero from "../components/Hero";
-
-// const woodResize = {
-//   backgroundSize: "1300px",
-//   backgroundImage: `url(${Wood})`,
-// };
+import Wood from "../images/wood.jpg";
 
 function Contact() {
   return (
