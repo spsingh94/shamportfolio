@@ -1,18 +1,18 @@
 .foot {
-  background-color: peachpuff;
+  background-color: #f49482;
   text-align: center;
 }
 
 .catch-phrase {
   padding-right: 10px;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .fa {
   padding-top: 23px;
   padding-bottom: 15px;
   font-size: 25px;
-  width: 40px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   color: black;
@@ -26,11 +26,11 @@
   color: black;
   padding-top: 20px;
   font-size: large;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .foot-navcon:hover {
-  color: white;
+  text-decoration: line-through;
 }
 
 .logo-footer {

@@ -1,0 +1,10 @@
+.btn {
+    background-color: #f49482;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    width: 200px;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+}
