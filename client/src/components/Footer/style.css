@@ -1,6 +1,6 @@
 .foot {
-  background-color: #f49482;
   text-align: center;
+  border-top: solid 1px;
 }
 
 .catch-phrase {
@@ -31,6 +31,7 @@
 
 .foot-navcon:hover {
   text-decoration: line-through;
+  color: white;
 }
 
 .logo-footer {

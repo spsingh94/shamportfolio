@@ -8,13 +8,13 @@ import SocialFit from '../images/app_thumbs/soc-fit.jpg';
 import WorkBooks from '../images/app_thumbs/workbooks-1.jpg';
 import MCLAReact from '../images/app_thumbs/Screen Shot 2020-08-07 at 1.18.41 AM.png';
 import { Title } from "../components/Title";
-// import Clouds from "../images/red_clouds.jpg";
 import Hero from "../components/Hero";
-import PinkClouds from "../images/pinkclouds.jpg";
+import {Arrow} from "../components/Arrow";
+import BlueClouds from "../images/blueclouds2.jpg";
 
 function Portfolio() {
   return (
-  <Hero backgroundImage={PinkClouds}>
+  <Hero backgroundImage={BlueClouds}>
         <div>
       <Navbar/>
       <br/>
@@ -23,6 +23,9 @@ function Portfolio() {
     </div>
     <br/>
     <br/>
+    <br/>
+    <br/>
+    <Arrow/>
     <br/>
     <br/>
     <br/>

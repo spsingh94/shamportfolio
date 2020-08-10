@@ -1,0 +1,11 @@
+.bi {
+    position: absolute;
+    right: 30px;
+    bottom: 95px;
+    color: black;
+    opacity: 75%;
+}
+
+.bi:hover {
+    color: white;
+}

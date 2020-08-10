@@ -2,10 +2,7 @@ import React from "react";
 
 function Container(props) {
   return (
-    <div
-      className={`container${props.fluid ? "-fluid" : ""}`}
-      {...props}
-    />
+    <div className= {`container${props.fluid ? "-fluid" : ""}`} {...props}>{props.children}</div>
   );
 }
 

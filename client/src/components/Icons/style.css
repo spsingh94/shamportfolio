@@ -1,0 +1,19 @@
+.material-icons {
+    color: black;
+    justify-content: center;
+    font-size: 10rem;
+    margin-top: 40px;
+}
+
+.material-icons:hover {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+@media (max-width: 991px) {
+    .contact-card .material-icons {
+    font-size: 4rem;
+    }
+    }
+

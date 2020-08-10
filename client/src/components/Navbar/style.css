@@ -52,11 +52,12 @@ nav {
 
 .locName:hover {
   text-decoration: line-through;
+  color: white;
 }
 
 @media (max-width: 991px){
   .navbar-nav {
-    background-color: #f49482;
+    background-color: white;
     width: 255px;
     margin-left: 0px;
     text-align: center;

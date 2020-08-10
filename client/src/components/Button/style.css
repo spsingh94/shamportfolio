@@ -1,7 +1,7 @@
 .btn {
-    background-color: #f49482;
+    background-color: black;
     font-family: 'Permanent Marker', cursive;
-    color: black;
+    color: white;
     width: 200px;
 }
 .btn:hover {
