@@ -41,17 +41,22 @@ function Footer() {
 
           <Col size="md-8">
             <Row>
-              <Col size="md-4">
+              <Col size="md-3">
                 <Link className="navbar-brand" to="/">
                   <p className="foot-navcon">Home</p>
                 </Link>
               </Col>
-              <Col size="md-4">
-                <Link className="navbar-brand" to="/portfolio">
-                  <p className="foot-navcon">Portfolio</p>
+              <Col size="md-3">
+                <Link className="navbar-brand" to="/work">
+                  <p className="foot-navcon">Work</p>
                 </Link>
               </Col>
-              <Col size="md-4">
+              <Col size="md-3">
+                <Link className="navbar-brand" to="/photography">
+                  <p className="foot-navcon">Photography</p>
+                </Link>
+              </Col>
+              <Col size="md-3">
                 <Link className="navbar-brand" to="/contact">
                   <p className="foot-navcon">Contact</p>
                 </Link>

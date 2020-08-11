@@ -95,6 +95,12 @@ function Home() {
             </p>
           </div>
         </Center>
+        <Center>
+          <Button href="/work" style={{width:"40%"}}>
+            View Work
+          </Button>
+        </Center>
+        <br/>
       </Container>
     </div>
   );

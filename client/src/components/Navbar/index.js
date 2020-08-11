@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 import logo from "../../images/portfoliologo.png";
-// import ReactDOM from 'react-dom';
 
 class Navbar extends Component {
   constructor(props) {
@@ -49,14 +48,26 @@ class Navbar extends Component {
             </li>
             <li class="nav-item">
               <Link
-                to="/portfolio"
+                to="/work"
                 className={
-                  window.location.pathname === "/portfolio"
+                  window.location.pathname === "/work"
                     ? "nav-link active"
                     : "nav-link"
                 }
               >
-                <p className="locName">Portfolio</p>
+                <p className="locName">Work</p>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link
+                to="/photography"
+                className={
+                  window.location.pathname === "/photography"
+                    ? "nav-link active"
+                    : "nav-link"
+                }
+              >
+                <p className="locName">Photography</p>
               </Link>
             </li>
             <li class="nav-item">
