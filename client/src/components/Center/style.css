@@ -15,3 +15,48 @@
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 20px;
 }
+
+.justification .photo-banner {
+    height: 270px;
+    border: solid 1px white;
+}
+
+.justification .photo-banner:hover {
+ background-color: white;
+}
+
+@media (max-width: 1076px){
+    .justification .photo-banner {
+        height: 200px;
+    }
+}
+
+@media (max-width: 799px) {
+    .justification .photo-banner {
+        height: 175px;
+    }
+}
+
+@media (max-width: 700px) {
+    .justification .photo-banner {
+        height: 140px;
+    }
+}
+
+@media (max-width: 563px) {
+    .justification .photo-banner {
+        height: 100px;
+    }
+}
+
+@media (max-width: 408px) {
+    .justification .photo-banner {
+        height: 75px;
+    }
+}
+
+@media (max-width: 302px) {
+    .justification .photo-banner {
+        height: 50px;
+    }
+}

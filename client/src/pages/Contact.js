@@ -10,6 +10,7 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import { Center } from "../components/Center";
 import { Icons } from "../components/Icons";
+import Button from "../components/Button";
 
 function Contact() {
   return (
@@ -46,6 +47,10 @@ function Contact() {
               <textarea placeholder="hello" rows="9" cols="110" style={{marginLeft:"20px", width:"85%", marginTop:"10px", marginBottom:"20px"}}/>
             </Row>
           </div>
+          <Center>
+          <Button style={{width:"75%"}}>Submit</Button>
+          </Center>
+          <br/>
         </Container>
       </ContactCard>
     </>

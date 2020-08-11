@@ -11,10 +11,10 @@ import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import { Arrow } from "../components/Arrow";
 import BlueClouds from "../images/blueclouds2.jpg";
-import DarkSkies from "../images/darkskies.jpg";
+import PhotoBanner from "../images/photonavimage.png";
 import Row from "../components/Row";
 import Col from "../components/Col";
-import {Center} from "../components/Center";
+import { Center } from "../components/Center";
 
 function Work() {
   return (
@@ -28,22 +28,24 @@ function Work() {
       </div>
       {/* Upper portion of page */}
 
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Arrow />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Container>
+        <div>
+          <Title id="sub-title" style={{ textAlign: "center" }}>
+            Web Applications
+          </Title>
+        </div>
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <Arrow />
-        <br />
-        <br />
-        <br />
-        <br />
-        <Container>
-          <div>
-            <Title id="sub-title" style={{textAlign:"center"}}>Web Applications</Title>
-          </div>
-          <br />
-      <Center>
+        <Center>
           <CardCont>
             <Row>
               <Col size="lg-4">
@@ -75,23 +77,23 @@ function Work() {
               </Col>
             </Row>
           </CardCont>
-      </Center>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          {/* photography */}
-          <Title id="sub-title" style={{ textAlign: "center" }}>
-            Also Checkout Photography
-          </Title>
-          <CardCont>
-            <Card src={DarkSkies}></Card>
-            <Card src={DarkSkies}></Card>
-            <Card src={DarkSkies}></Card>
-          </CardCont>
-          <br />
-        </Container>
+        </Center>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        {/* photography */}
+        <Title id="sub-title" style={{ textAlign: "center" }}>
+          Also Checkout Photography
+        </Title>
+        <Center>
+        <a href="/photography">
+        <img src={PhotoBanner} class="photo-banner" alt="banner" />
+        </a>
+        </Center>
+        <br />
+      </Container>
     </Hero>
   );
 }
