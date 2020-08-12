@@ -21,23 +21,22 @@ function Contact() {
 
   const mapsSource = "https://www.google.com/maps/embed/v1/place?key=" + API_KEY + "&q=New+York,NewYork+NY";
 
+  
+  const scrollToMap = () => {
+    window.scrollTo({ top: 1730, behavior: "smooth" });
+  };
+  
   var fields = {};
 
   document.addEventListener("DOMContentLoaded", function () {
     fields.firstName = document.getElementById("firstName");
     fields.lastName = document.getElementById("lastName");
-    fields.email = document.getElementById("email");
     fields.message = document.getElementById("message");
   });
 
   function isNotEmpty(value) {
     if (value == null || typeof value == "undefined") return false;
     return value.length > 0;
-  }
-
-  function isEmail(email) {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
   }
 
   function fieldValidation(field, validationFunction) {
@@ -58,19 +57,14 @@ function Contact() {
 
     valid &= fieldValidation(fields.firstName, isNotEmpty);
     valid &= fieldValidation(fields.lastName, isNotEmpty);
-    valid &= fieldValidation(fields.email, isEmail);
     valid &= fieldValidation(fields.message, isNotEmpty);
 
     return valid;
   }
 
-  const scrollToMap = () => {
-    window.scrollTo({ top: 1600, behavior: "smooth" });
-  };
-
   return (
     <>
-      <Hero backgroundImage={Ocean} height="700px">
+      <Hero backgroundImage={Ocean} height="830px">
         <Navbar />
         <Title id="page-title">Contact</Title>
       </Hero>
@@ -144,15 +138,6 @@ function Contact() {
         </ContactCard>
         <Title id="my-location">Find Shaminder Singh Here -</Title>
         <Center>
-          {/* <iframe
-            title="google-maps"
-            width="95%"
-            height="650"
-            frameborder="0"
-            style={{ border: "0", marginBottom: "40px" }}
-            src={mapsSource}
-            allowfullscreen
-          /> */}
           <Maps src={mapsSource}/>
         </Center>
       </form>

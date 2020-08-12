@@ -17,7 +17,7 @@ import AvatarProgram from "../images/timeline/av3program.png";
 function Home() {
   return (
     <div>
-      <Hero backgroundImage={Background} height="700px">
+      <Hero backgroundImage={Background} height="830px">
         <Navbar />
         <h1 className="hero-intro">My Name is Shaminder Singh</h1>
         <p className="hero-desc">

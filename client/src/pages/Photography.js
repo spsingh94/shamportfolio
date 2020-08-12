@@ -3,13 +3,13 @@ import Navbar from "../components/Navbar";
 import { Title } from "../components/Title";
 import { Grid } from "../components/Grid";
 import Hero from "../components/Hero";
-import PhotoHero from "../images/photography.jpg";
+import PhotoHero from "../images/photography3.jpg";
 import { Center } from "../components/Center";
 
 function Photography() {
   return (
     <div>
-      <Hero backgroundImage={PhotoHero} height="700px">
+      <Hero backgroundImage={PhotoHero} height="830px">
       <Navbar />
         <Center>
         <Title id="page-title">Photography</Title>
