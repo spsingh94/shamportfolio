@@ -9,8 +9,8 @@ export function Arrow(props) {
 
     return(
         <svg
-        width="40px"
-        height="40px"
+        width="50px"
+        height="50px"
         viewBox="0 0 16 16"
         className="bi bi-arrow-down-circle-fill"
         fill="currentColor"

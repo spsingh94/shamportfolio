@@ -9,6 +9,7 @@ import Row from "../components/Row";
 import Button from "../components/Button";
 import { Center } from "../components/Center";
 import { Arrow } from "../components/Arrow";
+import { Slider } from "../components/Slider";
 import Sketching from "../images/about_gifs/sketching.gif";
 import Timeline from "../images/timeline/timeline1.png";
 import AvatarProgram from "../images/timeline/av3program.png";
@@ -56,7 +57,10 @@ function Home() {
             View Resume
           </Button>
         </Center>
-        <Center style={{ paddingTop: "10px", paddingBottom: "10px" }}>
+        <Center
+          style={{ paddingTop: "10px", paddingBottom: "10px" }}
+          id="home-center"
+        >
           <div style={{ textAlign: "center" }}>
             <p className="about-p">
               Shaminder has always enjoyed creating. Even at a young age he
@@ -65,7 +69,7 @@ function Home() {
               recognized for his ability to create interesting stories in his
               writing class and creating sketches of others in art class.
             </p>
-            <img src={Sketching} alt="sketching" height="213" width="340" />
+            <img src={Sketching} alt="sketching" height="170" width="240" />
             <p className="about-p">
               A few years ago, Shaminder found a new found love for photography
               and photo editing. He began to make himself familiar with
@@ -95,12 +99,20 @@ function Home() {
             </p>
           </div>
         </Center>
+
         <Center>
-          <Button href="/work" style={{width:"40%"}}>
+          <Slider />
+        </Center>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <Center>
+          <Button href="/work" style={{ width: "40%" }}>
             View Work
           </Button>
         </Center>
-        <br/>
+        <br />
       </Container>
     </div>
   );
