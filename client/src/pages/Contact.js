@@ -11,8 +11,11 @@ import Row from "../components/Row";
 import { Center } from "../components/Center";
 import { Icons } from "../components/Icons";
 import Button from "../components/Button";
+require("dotenv").config();
 
 function Contact() {
+  console.log(process.env);
+
   var fields = {};
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -56,11 +59,9 @@ function Contact() {
     return valid;
   }
 
-
   const scrollToMap = () => {
-    window.scrollTo({top: 1600, behavior:"smooth"})
-};
-
+    window.scrollTo({ top: 1600, behavior: "smooth" });
+  };
 
   return (
     <>
@@ -74,18 +75,21 @@ function Contact() {
       <form onSubmit="return false">
         <ContactCard>
           <Container>
-            <br/>
+            <br />
             <Center>
-            <Title id="sub-title">Lets Connect!</Title>
+              <Title id="sub-title">Lets Connect!</Title>
             </Center>
-            <p style={{textAlign:"center"}}>Provide me with some of your information and a short message and I will get back to you at my earliest convenience.</p>
+            <p style={{ textAlign: "center" }}>
+              Provide me with some of your information and a short message and I
+              will get back to you at my earliest convenience.
+            </p>
             <Center>
-            <a href="mailto:spsingh94.ss@gmail.com">
-              <Icons>email</Icons>
-            </a>
+              <a href="mailto:spsingh94.ss@gmail.com">
+                <Icons>email</Icons>
+              </a>
               <Icons onClick={scrollToMap}>add_location</Icons>
               <a href="tel:+4144002564">
-              <Icons>phone</Icons>
+                <Icons>phone</Icons>
               </a>
             </Center>
             <div>
@@ -136,16 +140,14 @@ function Contact() {
             <br />
           </Container>
         </ContactCard>
-          <Title id="my-location">
-            Find Shaminder Singh Here -
-          </Title>
+        <Title id="my-location">Find Shaminder Singh Here -</Title>
         <Center>
           <iframe
             title="google-maps"
             width="95%"
             height="650"
             frameborder="0"
-            style={{ border: "0", marginBottom:"40px" }}
+            style={{ border: "0", marginBottom: "40px" }}
             src="https://www.google.com/maps/embed/v1/place?key=
     &q=New+York,NewYork+NY"
             allowfullscreen
