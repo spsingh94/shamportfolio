@@ -146,7 +146,7 @@ function Contact() {
             height="650"
             frameborder="0"
             style={{ border: "0", marginBottom:"40px" }}
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCQWp02Hlr-1mIloSuvvTIlSNxkTWBy2NU
+            src="https://www.google.com/maps/embed/v1/place?key=
     &q=New+York,NewYork+NY"
             allowfullscreen
           />
