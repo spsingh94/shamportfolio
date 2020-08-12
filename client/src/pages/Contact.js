@@ -11,10 +11,14 @@ import Row from "../components/Row";
 import { Center } from "../components/Center";
 import { Icons } from "../components/Icons";
 import Button from "../components/Button";
-require("dotenv").config();
+
 
 function Contact() {
-  console.log(process.env);
+
+  const API_KEY = process.env.REACT_APP_GOOGLE_KEY
+  console.log(API_KEY);
+
+  const mapsSource = "https://www.google.com/maps/embed/v1/place?key=" + API_KEY + "&q=New+York,NewYork+NY";
 
   var fields = {};
 
@@ -65,12 +69,9 @@ function Contact() {
 
   return (
     <>
-      <Hero backgroundImage={Ocean} height="690px">
+      <Hero backgroundImage={Ocean} height="700px">
         <Navbar />
-        <br />
-        <br />
         <Title id="page-title">Contact</Title>
-        <Arrow />
       </Hero>
       <form onSubmit="return false">
         <ContactCard>
@@ -148,8 +149,7 @@ function Contact() {
             height="650"
             frameborder="0"
             style={{ border: "0", marginBottom: "40px" }}
-            src="https://www.google.com/maps/embed/v1/place?key=
-    &q=New+York,NewYork+NY"
+            src={mapsSource}
             allowfullscreen
           />
         </Center>

@@ -23,8 +23,6 @@ function Work() {
     <Hero backgroundImage={BlueClouds}>
       <div>
         <Navbar />
-        <br />
-        <br />
         <Title id="page-title">Web Applications</Title>
       </div>
       {/* Upper portion of page */}
