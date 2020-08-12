@@ -10,6 +10,7 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import { Center } from "../components/Center";
 import { Icons } from "../components/Icons";
+import { Maps } from "../components/Maps";
 import Button from "../components/Button";
 
 
@@ -143,7 +144,7 @@ function Contact() {
         </ContactCard>
         <Title id="my-location">Find Shaminder Singh Here -</Title>
         <Center>
-          <iframe
+          {/* <iframe
             title="google-maps"
             width="95%"
             height="650"
@@ -151,7 +152,8 @@ function Contact() {
             style={{ border: "0", marginBottom: "40px" }}
             src={mapsSource}
             allowfullscreen
-          />
+          /> */}
+          <Maps src={mapsSource}/>
         </Center>
       </form>
     </>
