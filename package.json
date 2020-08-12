@@ -20,7 +20,8 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "start": "cd client && npm start",
+    "start": "concurrently \"node server.js\" \"npm run client\"",
+    "client": "cd client && npm start",
     "seed": "node scripts/seedDB.js",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
