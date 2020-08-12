@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
-import Invaders from "../../images/work_images/Math_Poster (1).jpg"
-import MCLA from "../../images/work_images/MCLA.png"
-import Soc from "../../images/work_images/soc-fit.jpg"
-import SocHome from "../../images/work_images/Soc-home.png"
+import MCLA from "../../images/work_images/MCLA.png";
+import Soc from "../../images/work_images/soc-fit.jpg";
+import SocHome from "../../images/work_images/Soc-home.png";
+import Invaders from "../../images/photography_grid/mathposter.jpg";
 
 export function Slider() {
     return(
