@@ -19,6 +19,7 @@ import { Center } from "../components/Center";
 function Work() {
   return (
     // Upper portion of page
+    <>
     <Hero backgroundImage={BlueClouds}>
       <div>
         <Navbar />
@@ -38,6 +39,9 @@ function Work() {
       <br />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
       <Container>
         <div>
           <Title id="sub-title" style={{ textAlign: "center" }}>
@@ -45,14 +49,16 @@ function Work() {
           </Title>
         </div>
         <br />
-        <Center>
+        <div style={{display:"flex", flexWrap:"wrap"}}>
           <CardCont>
             <Row>
               <Col size="lg-4">
                 <a href="https://www.wwe.com">
                   <Card src={WorkBooks} alt="workbooks">
                     <CardBod>
-                      <h1>Work Books</h1>
+                      <p className="project-name">Work Books</p>
+                      <p className="project-descript">Maintain employee records and financial data all on one application.</p>
+                      <p className="project-role">Front &amp; Back-End</p>
                     </CardBod>
                   </Card>
                 </a>
@@ -61,7 +67,9 @@ function Work() {
                 <a href="https://www.wwe.com">
                   <Card src={SocialFit} alt="socialfit">
                     <CardBod>
-                      <h1>Social Fit</h1>
+                    <p className="project-name">Social Fit</p>
+                      <p className="project-descript">Maintain employee records and financial data all on one application.</p>
+                      <p className="project-role">Front-End | UX/UI Design</p>
                     </CardBod>
                   </Card>
                 </a>
@@ -70,31 +78,35 @@ function Work() {
                 <a href="https://www.wwe.com">
                   <Card src={MCLAReact} alt="mcla">
                     <CardBod>
-                      <h1>MCLA React</h1>
+                    <p className="project-name">Morse Code Learning Academy</p>
+                      <p className="project-descript">Maintain employee records and financial data all on one application.</p>
+                      <p className="project-role">UX Design | Usability Testing</p>
                     </CardBod>
                   </Card>
                 </a>
               </Col>
             </Row>
           </CardCont>
-        </Center>
+          </div>
         <br />
         <br />
         <br />
         <br />
         <br />
-        {/* photography */}
+      </Container>
+    </Hero>
         <Title id="sub-title" style={{ textAlign: "center" }}>
           Also Checkout Photography
         </Title>
         <Center>
+          <Row>
         <a href="/photography">
         <img src={PhotoBanner} class="photo-banner" alt="banner" />
         </a>
+          </Row>
         </Center>
         <br />
-      </Container>
-    </Hero>
+        </>
   );
 }
 
