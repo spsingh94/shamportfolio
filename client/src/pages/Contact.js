@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar";
 import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import Ocean from "../images/blueocean.jpg";
-import { Arrow } from "../components/Arrow";
+// import { Arrow } from "../components/Arrow";
 import { Input } from "../components/Input";
-import { ContactCard } from "../components/ContactCard";
+import { ContactCard } from "../components/ContactForm";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import { Center } from "../components/Center";
@@ -13,53 +13,17 @@ import { Icons } from "../components/Icons";
 import { Maps } from "../components/Maps";
 import Button from "../components/Button";
 
-
 function Contact() {
-
   const API_KEY = process.env.REACT_APP_GOOGLE_API;
 
-  const mapsSource = "https://www.google.com/maps/embed/v1/place?key=" + API_KEY + "&q=New+York,NewYork+NY";
+  const mapsSource =
+    "https://www.google.com/maps/embed/v1/place?key=" +
+    API_KEY +
+    "&q=New+York,NewYork+NY";
 
-  
   const scrollToMap = () => {
     window.scrollTo({ top: 1730, behavior: "smooth" });
   };
-  
-  var fields = {};
-
-  document.addEventListener("DOMContentLoaded", function () {
-    fields.firstName = document.getElementById("firstName");
-    fields.lastName = document.getElementById("lastName");
-    fields.message = document.getElementById("message");
-  });
-
-  function isNotEmpty(value) {
-    if (value == null || typeof value == "undefined") return false;
-    return value.length > 0;
-  }
-
-  function fieldValidation(field, validationFunction) {
-    if (field == null) return false;
-
-    let isFieldValid = validationFunction(field.value);
-    if (!isFieldValid) {
-      field.className = "placeholderRed";
-    } else {
-      field.className = "";
-    }
-
-    return isFieldValid;
-  }
-
-  function isValid() {
-    var valid = true;
-
-    valid &= fieldValidation(fields.firstName, isNotEmpty);
-    valid &= fieldValidation(fields.lastName, isNotEmpty);
-    valid &= fieldValidation(fields.message, isNotEmpty);
-
-    return valid;
-  }
 
   return (
     <>
@@ -67,7 +31,6 @@ function Contact() {
         <Navbar />
         <Title id="page-title">Contact</Title>
       </Hero>
-      <form onSubmit="return false">
         <ContactCard>
           <Container>
             <br />
@@ -89,34 +52,26 @@ function Contact() {
             </Center>
             <div>
               <Row>
-                <h5>First Name:</h5>
+                <h5>Name:</h5>
                 <Input
                   type="text"
-                  placeholder="Enter First Name"
-                  id="firstName"
-                ></Input>
-              </Row>
-              <Row>
-                <h5>Last Name:</h5>
-                <Input
-                  type="text"
-                  placeholder="Enter Last Name"
-                  id="lastName"
-                ></Input>
+                  placeholder="Enter Your Full Name"
+                  name="name"
+                />
               </Row>
               <Row>
                 <h5>Email:</h5>
                 <Input
                   type="email"
                   placeholder="Enter Email"
-                  id="email"
-                ></Input>
+                  name="name"
+                />
               </Row>
               <Row>
                 <h5>Message:</h5>
                 <textarea
+                  type="message"
                   placeholder="Enter Message"
-                  id="message"
                   rows="9"
                   cols="110"
                   style={{
@@ -125,21 +80,20 @@ function Contact() {
                     marginTop: "10px",
                     marginBottom: "20px",
                   }}
+                  name="message"
                 />
               </Row>
             </div>
             <Center>
               <Button style={{ width: "75%", color: "white" }}>Submit</Button>
-              {/* <Button style={{width:"75%"}} onClick={sendContact()}>Submit</Button> */}
             </Center>
             <br />
           </Container>
         </ContactCard>
         <Title id="my-location">Find Shaminder Singh Here -</Title>
         <Center>
-          <Maps src={mapsSource}/>
+          <Maps src={mapsSource} />
         </Center>
-      </form>
     </>
   );
 }

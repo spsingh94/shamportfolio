@@ -1,17 +1,10 @@
-.contact-card input{
+.contact-form input{
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 10px;
 }
 
-@media (max-width: 991px) {
-   .contact-card {
-
-} 
-}
-
-
-.contact-card h5 {
+.contact-form h5 {
     font-family: 'Yellowtail', cursive;
     text-align: center;
     padding-top: 10px;

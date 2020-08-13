@@ -3,8 +3,8 @@ import "./style.css";
 
 export function ContactCard(props) {
     return(
-        <div className="contact-card" {...props}>
+        <form className="contact-form" action="contact-handler.php" {...props}>
             {props.children}
-        </div>
+        </form>
     )
 }
