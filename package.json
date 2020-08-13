@@ -27,7 +27,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "concurrently \"php -S localhost:3002 index.php\" \"nodemon server.js\" \"npm run client\"",
+    "start": "concurrently \"nodemon mail.js\" \"nodemon server.js\" \"npm run client\"",
     "client": "cd client && npm start",
     "build": "cd client && npm run build",
     "seed": "node scripts/seedDB.js",
