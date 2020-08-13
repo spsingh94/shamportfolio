@@ -92,24 +92,26 @@ class ContactForm extends React.Component {
           <div>
             <Row>
               <h5>Name:</h5>
-              <Input
+              <input
                 id="full-name"
                 name="name"
                 type="text"
                 placeholder="Full Name"
                 value={this.state.name}
                 onChange={this.handleChange}
+                style={{width:"500px"}}
               />
             </Row>
             <Row>
               <h5>Email:</h5>
-              <Input
+              <input
                 id="email"
                 name="email"
                 type="email"
                 placeholder="Email Address"
                 value={this.state.email}
                 onChange={this.handleChange}
+                style={{width:"5000px"}}
               />
             </Row>
             <Row>
@@ -133,22 +135,22 @@ class ContactForm extends React.Component {
             </Row>
           </div>
           <Center>
-              <p className="d-inline-block"></p>
 
-            {this.state.emailSent === true && (
-              <p className="d-inline success-msg">Email Sent</p>
-            )}
-            {this.state.emailSent === false && (
-              <p className="d-inline err-msg">Email Not Sent</p>
-            )}
 
-            <Button
+            <button
               style={{ width: "75%", color: "white" }}
               type="submit"
               disabled={this.state.disabled}
-            >
+              className="d-inline-block"
+              >
               Submit
-            </Button>
+            </button>
+                            {this.state.emailSent === true && (
+                              <p className="d-inline success-msg">Email Sent</p>
+                            )}
+                            {this.state.emailSent === false && (
+                              <p className="d-inline err-msg">Email Not Sent</p>
+                            )}
           </Center>
           <br />
         </Container>
