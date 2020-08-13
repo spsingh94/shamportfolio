@@ -8,6 +8,10 @@ const app = express();
 
 const CONTACT_KEY = process.env.REACT_APP_CONTACT_KEY;
 
+console.log(CONTACT_KEY);
+
+console.log(CONTACT_KEY);
+
 app.use(bodyParser.json());
 
 app.use(cors());
@@ -29,7 +33,7 @@ app.post('/api/email', (req, res, next) => {
 
     console.log(req.body);
 
-    sendGrid.setApiKey({CONTACT_KEY});
+    sendGrid.setApiKey(CONTACT_KEY);
     const msg = {
         to: 'spsingh94.ss@gmail.com',
         from: req.body.email,
