@@ -16,8 +16,7 @@ import Button from "../components/Button";
 
 function Contact() {
 
-  const API_KEY = process.env.REACT_APP_GOOGLE_KEY
-  console.log(process.env.REACT_APP_GOOGLE_API);
+  const API_KEY = process.env.REACT_APP_GOOGLE_API;
 
   const mapsSource = "https://www.google.com/maps/embed/v1/place?key=" + API_KEY + "&q=New+York,NewYork+NY";
 
