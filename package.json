@@ -21,11 +21,10 @@
     "serve": "^11.3.2"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "env-cmd concurrently \"node server.js\" \"npm run client\"",
+    "start": "concurrently \"node server.js\" \"npm run client\"",
     "client": "cd client && npm start",
-    "seed": "node scripts/seedDB.js",
     "build": "cd client && npm run build",
+    "seed": "node scripts/seedDB.js",
     "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
