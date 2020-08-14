@@ -21,9 +21,9 @@ function Contact() {
     API_KEY +
     "&q=New+York,NewYork+NY";
 
-  const scrollToMap = () => {
-    window.scrollTo({ top: 1730, behavior: "smooth" });
-  };
+  // const scrollToMap = () => {
+  //   window.scrollTo({ top: 1730, behavior: "smooth" });
+  // };
 
   return (
     <>
