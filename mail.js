@@ -8,7 +8,7 @@ var transport = {
     host: 'smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider
     port: 587,
     auth: {
-    user: 'shaminders550@gmail.com',
+    user: process.env.REACT_APP_GMAILU,
     pass: process.env.REACT_APP_GMAILP
   }
 }
@@ -31,7 +31,7 @@ router.post('/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: 'shaminders550@gmail.com',  // Change to email address that you want to receive messages on
+    to: process.env.REACT_APP_GMAILU,  // Change to email address that you want to receive messages on
     subject: 'New Message from Contact Form',
     text: content
   }
