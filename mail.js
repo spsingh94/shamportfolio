@@ -1,5 +1,3 @@
-import React from "react";
-import Arrow from "./src/components/Arrow";
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
@@ -9,8 +7,8 @@ const transport = {
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-    user: process.env.REACT_APP_GMAIL_USER,
-    pass: process.env.REACT_APP_GMAIL_PASS
+    user: process.env.SHAMPORTFOLIO_GMAIL_USER,
+    pass: process.env.SHAMPORTFOLIO_GMAIL_PASS
   }
 }
 
@@ -32,7 +30,7 @@ router.post('/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: process.env.REACT_APP_GMAIL_USER,
+    to: process.env.SHAMPORTFOLIO_GMAIL_USER,
     subject: 'New Message from Contact Form',
     text: content
   }
@@ -55,9 +53,3 @@ app.use(cors())
 app.use(express.json())
 app.use('/', router)
 app.listen(3002)
-
-export function Mail () {
-  return(
-    <Arrow></Arrow>
-  )
-}

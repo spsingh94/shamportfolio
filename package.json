@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "concurrently \"npm run mailer\" \"nodemon server.js\" \"npm run client\"",
-    "mailer": "cd client && nodemon mail.js",
+    "mailer": "nodemon mail.js",
     "client": "cd client && npm start",
     "build": "cd client && npm run build",
     "seed": "node scripts/seedDB.js",
