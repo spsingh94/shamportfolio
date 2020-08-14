@@ -31,65 +31,6 @@ function Contact() {
         <Navbar />
         <Title id="page-title">Contact</Title>
       </Hero>
-      {/* <ContactForm>
-          <Container>
-            <br />
-            <Center>
-              <Title id="sub-title">Lets Connect!</Title>
-            </Center>
-            <p style={{ textAlign: "center" }}>
-              Provide me with some of your information and a short message and I
-              will get back to you at my earliest convenience.
-            </p>
-            <Center>
-              <a href="mailto:spsingh94.ss@gmail.com">
-                <Icons>email</Icons>
-              </a>
-              <Icons onClick={scrollToMap}>add_location</Icons>
-              <a href="tel:+4144002564">
-                <Icons>phone</Icons>
-              </a>
-            </Center>
-            <div>
-              <Row>
-                <h5>Name:</h5>
-                <input
-                  type="text"
-                  placeholder="Enter Your Full Name"
-                  name="name"
-                />
-              </Row>
-              <Row>
-                <h5>Email:</h5>
-                <input
-                  type="email"
-                  placeholder="Enter Email"
-                  name="name"
-                />
-              </Row>
-              <Row>
-                <h5>Message:</h5>
-                <textarea
-                  type="message"
-                  placeholder="Enter Message"
-                  rows="9"
-                  cols="110"
-                  style={{
-                    marginLeft: "20px",
-                    width: "85%",
-                    marginTop: "10px",
-                    marginBottom: "20px",
-                  }}
-                  name="message"
-                />
-              </Row>
-            </div>
-            <Center>
-              <Button style={{ width: "75%", color: "white" }}>Submit</Button>
-            </Center>
-            <br />
-          </Container>
-        </ContactForm> */}
       <Center>
         <Title id="sub-title">Lets Connect!</Title>
       </Center>
