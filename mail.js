@@ -9,8 +9,8 @@ const transport = {
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-    user: `${process.env.PORTFOLIO_GMAIL_USER}`,
-    pass: `${process.env.PORTFOLIO_GMAIL_PASS}`
+    user: process.env.REACT_APP_GMAIL_USER,
+    pass: process.env.REACT_APP_GMAIL_PASS
   }
 }
 
