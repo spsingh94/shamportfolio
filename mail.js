@@ -2,10 +2,6 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
-// require('dotenv').config();
-
-const GMAIL_USER = process.env.REACT_APP_GMAIL_U;
-const GMAIL_PASS = process.env.REACT_APP_GMAIL_PASS;
 
 console.log(GMAIL_USER);
 console.log(GMAIL_PASS);
