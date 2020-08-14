@@ -7,12 +7,17 @@ import Container from "../Container";
 import logo from "../../images/portfoliologo.png";
 
 function Footer() {
+
+  const scrollTop = () => {
+    window.scrollTo({top: 0, behavior:"smooth"})
+};
+
   return (
     <div className="foot">
       <Container>
         <Row>
           <Col size="md-2">
-            <Link className="navbar-brand" to="/">
+            <Link className="navbar-brand" to="/" onClick={scrollTop}>
               <img src={logo} className="logo-footer" alt="logo" />
             </Link>
             <h6 className="catch-phrase">I Create.</h6>
@@ -42,22 +47,22 @@ function Footer() {
           <Col size="md-8">
             <Row>
               <Col size="md-3">
-                <Link className="navbar-brand" to="/">
+                <Link className="navbar-brand" to="/" onClick={scrollTop}>
                   <p className="foot-navcon">Home</p>
                 </Link>
               </Col>
               <Col size="md-3">
-                <Link className="navbar-brand" to="/work">
+                <Link className="navbar-brand" to="/work" onClick={scrollTop}>
                   <p className="foot-navcon">Work</p>
                 </Link>
               </Col>
               <Col size="md-3">
-                <Link className="navbar-brand" to="/photography">
+                <Link className="navbar-brand" to="/photography" onClick={scrollTop}>
                   <p className="foot-navcon">Photography</p>
                 </Link>
               </Col>
               <Col size="md-3">
-                <Link className="navbar-brand" to="/contact">
+                <Link className="navbar-brand" to="/contact" onClick={scrollTop}>
                   <p className="foot-navcon">Contact</p>
                 </Link>
               </Col>

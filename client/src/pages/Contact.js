@@ -3,13 +3,9 @@ import Navbar from "../components/Navbar";
 import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import Ocean from "../images/blueocean.jpg";
-import { Input } from "../components/Input";
-import Container from "../components/Container";
-import Row from "../components/Row";
 import { Center } from "../components/Center";
 import { Icons } from "../components/Icons";
 import { Maps } from "../components/Maps";
-import Button from "../components/Button";
 import ContactForm from "../components/ContactForm";
 
 function Contact() {
