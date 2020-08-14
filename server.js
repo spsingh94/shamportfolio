@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
+const mongojs = require('mongojs');
 const app = express();
 
 // Define middleware here
@@ -11,12 +12,31 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
+const databaseUrl = "port_credentials";
+const collections = ["credentials"];
+
+const db = mongojs(databaseUrl, collections);
+
+db.on("error", error => {
+  console.log("Database Error:", error);
+});
+
 // Send every request to the React app
 // Define any API routes before this runs
-app.get("*", function(req, res) {
+app.get("*", function (req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-app.listen(PORT, function() {
+app.get("/all", (req, res) => {
+  db.credentials.find({}, (error, data) => {
+    if (error) {
+      res.send(error);
+    } else {
+      res.json(data);
+    }
+  });
+});
+
+app.listen(PORT, function () {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });

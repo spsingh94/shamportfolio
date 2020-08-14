@@ -3,12 +3,44 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
 
+var username;
+var password;
+
+console.log(username);
+console.log(password);
+
+
+function getResults() {
+    fetch("/all")
+        .then(function(response) {
+            if (response.status !== 200) {
+                console.log("Looks like there was a problem. Status Code: " + response.status);
+                return;
+            }
+            response.json().then(function(data) {
+                seperateData(data);
+            });
+        })
+        .catch(function(err) {
+            console.log("Fetch Error :-S", err);
+        });
+}
+
+function seperateData(res) {
+    for (var i = 0; i < res.length; i++) {
+        username = res[i][0];
+        password = res[i][1];
+    }
+}
+
+getResults();
+
 const transport = {
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-    user: (process.env.GMAIL_USER),
-    pass: (process.env.GMAIL_PASS)
+    user: username,
+    pass: password
   }
 }
 
@@ -30,7 +62,7 @@ router.post('/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: (process.env.GMAIL_USER),
+    to: username,
     subject: 'New Message from Contact Form',
     text: content
   }
