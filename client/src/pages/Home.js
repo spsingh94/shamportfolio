@@ -101,14 +101,13 @@ function Home() {
         </Center>
 
         <Center>
+        <a href="/work">
           <Slider />
+          </a>
         </Center>
         <br/>
-        <br/>
-        <br/>
-        <br/>
         <Center>
-          <Button href="/work" style={{ width: "40%" }}>
+          <Button href="/work" style={{ width: "70%" }}>
             View Work
           </Button>
         </Center>

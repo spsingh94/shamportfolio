@@ -4,6 +4,7 @@ import MCLA from "../../images/work_images/MCLA.png";
 import Soc from "../../images/work_images/soc-fit.jpg";
 import SocHome from "../../images/work_images/Soc-home.png";
 import Invaders from "../../images/photography_grid/mathposter.jpg";
+import {Title} from "../Title";
 
 export function Slider() {
     return(
@@ -15,31 +16,27 @@ export function Slider() {
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src={MCLA} className="d-block w-100" alt="..."/>
+      <img src={MCLA} className="d-block w-98" alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <Title id="sub-title">Morse Code Learning Academy</Title>
       </div>
     </div>
     <div class="carousel-item">
-      <img src={Invaders} className="d-block w-100" alt="..."/>
+      <img src={Invaders} className="d-block w-98" alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <Title id="sub-title">Morse Code Learning Academy</Title>
       </div>
     </div>
     <div class="carousel-item">
-      <img src={Soc} className="d-block w-100" alt="..."/>
+      <img src={Soc} className="d-block w-98" alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <Title id="sub-title">Social Fit</Title>
       </div>
     </div>
     <div class="carousel-item">
-      <img src={SocHome} className="d-block w-100" alt="..."/>
+      <img src={SocHome} className="d-block w-98" alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <Title id="sub-title">Social Fit</Title>
       </div>
     </div>
   </div>

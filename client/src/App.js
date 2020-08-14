@@ -6,6 +6,9 @@ import Work from './pages/Work';
 import Home from './pages/Home';
 import Contact from './pages/Contact'
 import Photography from "./pages/Photography";
+import MCLA from "./pages/MCLA";
+import WorkBooks from "./pages/WorkBooks";
+import SocFit from "./pages/SocFit";
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
         <Route exact path="/work" component={Work} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/photography" component={Photography} />
+        <Route exact path="/MCLA" component={MCLA} />
+        <Route exact path="/WorkBooks" component={WorkBooks} />
+        <Route exact path="/SocFit" component={SocFit} />
         <Footer/>
     </Router>
         </>

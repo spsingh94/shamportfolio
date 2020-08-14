@@ -2,9 +2,10 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
-require('dotenv').config()
 
-var transport = {
+const aws = require('aws-sdk');
+
+const transport = {
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
@@ -13,7 +14,7 @@ var transport = {
   }
 }
 
-var transporter = nodemailer.createTransport(transport)
+const transporter = nodemailer.createTransport(transport)
 
 transporter.verify((error, success) => {
   if (error) {
@@ -24,10 +25,10 @@ transporter.verify((error, success) => {
 });
 
 router.post('/send', (req, res, next) => {
-  var name = req.body.name
-  var email = req.body.email
-  var message = req.body.message
-  var content = `name: ${name} \n email: ${email} \n message: ${message} `
+  const name = req.body.name
+  const email = req.body.email
+  const message = req.body.message
+  const content = `name: ${name} \n email: ${email} \n message: ${message} `
 
   var mail = {
     from: name,
