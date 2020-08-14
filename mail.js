@@ -3,12 +3,19 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
 
+const USER = process.env.GMAIL_USERNAME
+const PASS = process.env.GMAIL_PASSWORD
+
+function importantResult() {
+  console.log(USER);
+}
+
 const transport = {
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-    user: process.env.REACT_APP_GMAILU,
-    pass: process.env.REACT_APP_GMAILP
+    user: {USER},
+    pass: {PASS}
   }
 }
 
@@ -30,7 +37,7 @@ router.post('/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: process.env.REACT_APP_GMAILU,  // Change to email address that you want to receive messages on
+    to: {USER},
     subject: 'New Message from Contact Form',
     text: content
   }
@@ -47,6 +54,8 @@ router.post('/send', (req, res, next) => {
     }
   })
 })
+
+importantResult();
 
 const app = express()
 app.use(cors())
