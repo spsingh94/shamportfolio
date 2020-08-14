@@ -4,14 +4,13 @@ import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import Ocean from "../images/blueocean.jpg";
 import { Input } from "../components/Input";
-import { ContactForm } from "../components/ContactForm";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import { Center } from "../components/Center";
 import { Icons } from "../components/Icons";
 import { Maps } from "../components/Maps";
 import Button from "../components/Button";
-import Alternate from "../components/AlternateForm";
+import ContactForm from "../components/ContactForm";
 
 function Contact() {
   const API_KEY = process.env.REACT_APP_GOOGLE_KEY;
@@ -42,7 +41,7 @@ function Contact() {
         </p>
       </Center>
       <Center>
-      <Alternate />
+      <ContactForm />
       </Center>
       <Title id="my-location">Find Shaminder Singh Here -</Title>
       <Center>
