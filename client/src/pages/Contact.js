@@ -14,7 +14,7 @@ import Button from "../components/Button";
 import Alternate from "../components/AlternateForm";
 
 function Contact() {
-  const API_KEY = process.env.REACT_APP_GOOGLE_API;
+  const API_KEY = process.env.REACT_APP_GOOGLE_KEY;
 
   const mapsSource =
     "https://www.google.com/maps/embed/v1/place?key=" +

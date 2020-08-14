@@ -3,9 +3,8 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
 
-console.log(GMAIL_USER);
-console.log(GMAIL_PASS);
-
+const GMAIL_USER = process.env.REACT_APP_GMAILU;
+const GMAIL_PASS = process.env.REACT_APP_GMAILP;
 
 var transport = {
     host: 'smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider
