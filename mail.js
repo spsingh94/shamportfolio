@@ -3,12 +3,14 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
 
+
+
 const transport = {
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-    user: process.env.PORTFOLIO_GMAIL_USER,
-    pass: process.env.PORTFOLIO_GMAIL_PASS
+    user: `${process.env.PORTFOLIO_GMAIL_USER}`,
+    pass: `${process.env.PORTFOLIO_GMAIL_PASS}`
   }
 }
 
