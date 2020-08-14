@@ -7,8 +7,8 @@ const transport = {
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_PASS
+    user: (process.env.GMAIL_USER),
+    pass: (process.env.GMAIL_PASS)
   }
 }
 
@@ -30,7 +30,7 @@ router.post('/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: process.env.GMAIL_USER,
+    to: (process.env.GMAIL_USER),
     subject: 'New Message from Contact Form',
     text: content
   }
