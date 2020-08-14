@@ -105,7 +105,7 @@ function Home() {
         </Center>
         <br/>
         <Center>
-          <Button href="/work" style={{ width: "70%" }}>
+          <Button to="/work" style={{ width: "70%" }}>
             View Work
           </Button>
         </Center>

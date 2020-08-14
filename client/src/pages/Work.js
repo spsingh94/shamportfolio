@@ -59,7 +59,7 @@ function Work() {
                       <p className="project-role">Front &amp; Back-End</p>
                     </CardBod>
                     <Center>
-                    <Button href="/workbooks" style={{color:"white"}}>View</Button>
+                    <Button to="/workbooks" style={{color:"white"}}>View</Button>
                     </Center>
                   </Card>
               </Col>
@@ -71,7 +71,7 @@ function Work() {
                       <p className="project-role">Front-End | UX/UI Design</p>
                     </CardBod>
                     <Center>
-                    <Button href="/socfit" style={{color:"white"}}>View</Button>
+                    <Button to="/socfit" style={{color:"white"}}>View</Button>
                     </Center>
                   </Card>
               </Col>
@@ -83,7 +83,7 @@ function Work() {
                       <p className="project-role">UX Design | Usability Testing</p>
                     </CardBod>
                     <Center>
-                    <Button href="/mcla" style={{color:"white"}}>View</Button>
+                    <Button to="/mcla" style={{color:"white"}}>View</Button>
                     </Center>
                   </Card>
               </Col>
