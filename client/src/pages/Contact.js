@@ -10,8 +10,8 @@ import ContactForm from "../components/ContactForm";
 
 function Contact() {
 
-  console.log(process.env.REACT_APP_GMAIL_USER);
-  console.log(process.env.REACT_APP_GMAIL_PASS);
+  console.log(process.env.SHAMPORTFOLIO_GMAIL_USER);
+  console.log(process.env.SHAMPORTFOLIO_GMAIL_PASS);
 
   const API_KEY = process.env.REACT_APP_GOOGLE_KEY;
 
