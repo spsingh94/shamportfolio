@@ -1,18 +1,16 @@
+import React from "react";
+import Arrow from "./src/components/Arrow";
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
 
-const USER = process.env.GMAILUSER;
-const PASS = process.env.GMAILPASS;
-
-
 const transport = {
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-    user: USER,
-    pass: PASS
+    user: process.env.REACT_APP_GMAIL_USER,
+    pass: process.env.REACT_APP_GMAIL_PASS
   }
 }
 
@@ -57,3 +55,9 @@ app.use(cors())
 app.use(express.json())
 app.use('/', router)
 app.listen(3002)
+
+export function Mail () {
+  return(
+    <Arrow></Arrow>
+  )
+}

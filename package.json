@@ -14,7 +14,9 @@
     "express": "^4.16.3",
     "express-validator": "^6.6.1",
     "mime": "^2.4.6",
+    "mongojs": "^3.1.0",
     "mongoose": "^5.10.0",
+    "morgan": "^1.10.0",
     "nodemailer": "^6.4.11",
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
@@ -25,7 +27,7 @@
   },
   "scripts": {
     "start": "concurrently \"npm run mailer\" \"nodemon server.js\" \"npm run client\"",
-    "mailer": "nodemon mail.js",
+    "mailer": "cd client && nodemon mail.js",
     "client": "cd client && npm start",
     "build": "cd client && npm run build",
     "seed": "node scripts/seedDB.js",
