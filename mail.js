@@ -5,7 +5,7 @@ var cors = require('cors');
 require('dotenv').config()
 
 var transport = {
-    host: 'smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider
+    host: 'smtp.gmail.com',
     port: 587,
     auth: {
     user: process.env.REACT_APP_GMAILU,
