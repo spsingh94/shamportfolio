@@ -15,6 +15,7 @@ import PhotoBanner from "../images/photonavimage.png";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import { Center } from "../components/Center";
+import Button from "../components/Button";
 
 function Work() {
   return (
@@ -51,37 +52,40 @@ function Work() {
           <CardCont>
             <Row>
               <Col size="lg-4">
-                <a href="/workbooks">
                   <Card src={WorkBooks} alt="workbooks">
                     <CardBod>
                       <p className="project-name">Work Books</p>
                       <p className="project-descript">Maintain employee records and financial data all on one application.</p>
                       <p className="project-role">Front &amp; Back-End</p>
                     </CardBod>
+                    <Center>
+                    <Button href="/workbooks" style={{color:"white"}}>View</Button>
+                    </Center>
                   </Card>
-                </a>
               </Col>
               <Col size="lg-4">
-                <a href="/socfit">
                   <Card src={SocialFit} alt="socialfit">
                     <CardBod>
                     <p className="project-name">Social Fit</p>
                       <p className="project-descript">Maintain employee records and financial data all on one application.</p>
                       <p className="project-role">Front-End | UX/UI Design</p>
                     </CardBod>
+                    <Center>
+                    <Button href="/socfit" style={{color:"white"}}>View</Button>
+                    </Center>
                   </Card>
-                </a>
               </Col>
               <Col size="lg-4">
-                <a href="/mcla">
                   <Card src={MCLAReact} alt="mcla">
                     <CardBod>
                     <p className="project-name">Morse Code Learning Academy</p>
                       <p className="project-descript">Maintain employee records and financial data all on one application.</p>
                       <p className="project-role">UX Design | Usability Testing</p>
                     </CardBod>
+                    <Center>
+                    <Button href="/mcla" style={{color:"white"}}>View</Button>
+                    </Center>
                   </Card>
-                </a>
               </Col>
             </Row>
           </CardCont>

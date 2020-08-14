@@ -101,9 +101,7 @@ function Home() {
         </Center>
 
         <Center>
-        <a href="/work">
           <Slider />
-          </a>
         </Center>
         <br/>
         <Center>
