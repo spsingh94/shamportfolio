@@ -3,8 +3,6 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
 
-const aws = require('aws-sdk');
-
 const transport = {
     host: 'smtp.gmail.com',
     port: 587,

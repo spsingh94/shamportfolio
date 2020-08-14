@@ -51,7 +51,7 @@ function Work() {
           <CardCont>
             <Row>
               <Col size="lg-4">
-                <a href="/WorkBooks">
+                <a href="/workbooks">
                   <Card src={WorkBooks} alt="workbooks">
                     <CardBod>
                       <p className="project-name">Work Books</p>
@@ -62,7 +62,7 @@ function Work() {
                 </a>
               </Col>
               <Col size="lg-4">
-                <a href="/SocFit">
+                <a href="/socfit">
                   <Card src={SocialFit} alt="socialfit">
                     <CardBod>
                     <p className="project-name">Social Fit</p>
@@ -73,7 +73,7 @@ function Work() {
                 </a>
               </Col>
               <Col size="lg-4">
-                <a href="/MCLA">
+                <a href="/mcla">
                   <Card src={MCLAReact} alt="mcla">
                     <CardBod>
                     <p className="project-name">Morse Code Learning Academy</p>
@@ -99,7 +99,7 @@ function Work() {
         <Center>
           <Row>
         <a href="/photography">
-        <img src={PhotoBanner} class="photo-banner" alt="banner" />
+        <img src={PhotoBanner} className="photo-banner" alt="banner" />
         </a>
           </Row>
         </Center>

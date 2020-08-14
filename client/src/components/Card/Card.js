@@ -3,8 +3,8 @@ import "./Card.css";
 
 function Card(props) {
   return (
-    <div class="card">
-      <img src={props.src} class="card-img-top" alt={props.alt}/>
+    <div className="card">
+      <img src={props.src} className="card-img-top" alt={props.alt}/>
       {props.children}
     </div>
   );

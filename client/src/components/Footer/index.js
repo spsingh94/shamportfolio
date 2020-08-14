@@ -21,19 +21,19 @@ function Footer() {
           <Col size="md-2">
           <a
                 href="https://www.facebook.com/shamindersingh512/"
-                class="fa fa-facebook footer-icons"
+                className="fa fa-facebook footer-icons"
               >
                 {null}
               </a>
               <a
                 href="https://www.linkedin.com/in/ssingh512/"
-                class="fa fa-linkedin footer-icons"
+                className="fa fa-linkedin footer-icons"
               >
                 {null}
               </a>
               <a
                 href="https://www.instagram.com/sherm512/"
-                class="fa fa-instagram footer-icons"
+                className="fa fa-instagram footer-icons"
               >
                 {null}
               </a>

@@ -3,7 +3,7 @@ import "./CardBod.css";
 
 export function CardBod(props) {
   return (
-    <div class="card-body">
+    <div className="card-body">
         {props.children}
     </div>
   );

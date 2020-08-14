@@ -46,7 +46,7 @@ class Navbar extends Component {
                 <p className="locName">Home</p>
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link
                 to="/work"
                 className={
@@ -58,7 +58,7 @@ class Navbar extends Component {
                 <p className="locName">Work</p>
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link
                 to="/photography"
                 className={
@@ -70,7 +70,7 @@ class Navbar extends Component {
                 <p className="locName">Photography</p>
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link
                 to="/contact"
                 className={

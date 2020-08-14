@@ -9,8 +9,8 @@ className="google-maps-frame"
 title="google-maps"
 width="95%"
 height="650"
-frameborder="0"
-allowfullscreen
+frameBorder="0"
+allowFullScreen
 {...props}
 />
     )

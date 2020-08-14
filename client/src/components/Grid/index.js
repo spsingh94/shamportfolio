@@ -41,8 +41,8 @@ import WaterFall from "../../images/photography_grid/waterfall.jpg";
 export function Grid(props) {
 
   return (
-    <div class="grid-row">
-      <div class="grid-column">
+    <div className="grid-row">
+      <div className="grid-column">
         <img src={Angels} alt="img1"/>
         <img src={Christmas} alt="img2"/>
         <img src={ChristmasLights} alt="img3"/>
@@ -54,7 +54,7 @@ export function Grid(props) {
         <img src={WaterFall} alt="img7"/>
         <img src={RR6} alt="img7"/>
       </div>
-      <div class="grid-column">
+      <div className="grid-column">
       <img src={TreePose} alt="img1"/>
         <img src={TreePose2} alt="img2"/>
         <img src={RR5} alt="img2"/>
@@ -65,7 +65,7 @@ export function Grid(props) {
         <img src={RR1} alt="img7"/>
         <img src={Cheers} alt="img7"/>
       </div>
-      <div class="grid-column">
+      <div className="grid-column">
       <img src={Cheers2} alt="img1"/>
         <img src={Flowers} alt="img2"/>
         <img src={Delux} alt="img3"/>
@@ -76,7 +76,7 @@ export function Grid(props) {
         <img src={Reflection} alt="img7"/>
         <img src={RR2} alt="img7"/>
       </div>
-      <div class="grid-column">
+      <div className="grid-column">
       <img src={PersonalLogo} alt="img1"/>
         <img src={StandTall} alt="img3"/>
         <img src={Fishing} alt="img2"/>

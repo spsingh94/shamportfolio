@@ -40,7 +40,7 @@ function Home() {
             paddingTop: "0",
           }}
         >
-          Shaminder Singh is a <bold>Junior Front-End Web Developer</bold> Based
+          Shaminder Singh is a Junior Front-End Web Developer Based
           in the Greater New York City area.
         </h5>
         <Center style={{ borderRadius: "50%" }}>
