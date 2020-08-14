@@ -3,19 +3,15 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
 
-const USER = process.env.GMAIL_USERNAME
-const PASS = process.env.GMAIL_PASSWORD
-
-function importantResult() {
-  console.log(USER);
-}
+let USER = process.env.REACT_APP_GMAIL_USER;
+let PASS = process.env.REACT_APP_GMAIL_PASS;
 
 const transport = {
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-    user: {USER},
-    pass: {PASS}
+    user: USER,
+    pass: PASS
   }
 }
 
@@ -37,7 +33,7 @@ router.post('/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: {USER},
+    to: USER,
     subject: 'New Message from Contact Form',
     text: content
   }
