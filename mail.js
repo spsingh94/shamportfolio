@@ -2,28 +2,30 @@ var express = require("express");
 var router = express.Router();
 var nodemailer = require("nodemailer");
 var cors = require("cors");
-// var fetch = require("node-fetch");
+var fetch = require("node-fetch");
+const app = express();
 
-// var credentials = [];
 
-let USER = process.env.GMAIL_USER;
-let PASS = process.env.GMAIL_PASS;
+var credentials = [];
+
+let USER;
+let PASS;
 
 console.log(USER);
 
-// fetch("/api/credential")
-//   .then((response) => response.json())
-//   .then((data) => {
-//     credentials = data;
-//     populateCredentials();
-//   });
+fetch("http://localhost:3002/api/credential")
+  .then(response => response.json())
+  .then((data) => {
+    credentials = data;
+    populateCredentials();
+  });
 
-// function populateCredentials() {
-//   credentials.forEach((credential) => {
-//     USER = credential.gmail;
-//     PASS = credential.password;
-//   });
-// }
+function populateCredentials() {
+  credentials.forEach((credential) => {
+    USER = credential.gmail;
+    PASS = credential.password;
+  });
+}
 
 const transport = {
   host: "smtp.gmail.com",
@@ -70,7 +72,6 @@ router.post("/send", (req, res, next) => {
   });
 });
 
-const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);

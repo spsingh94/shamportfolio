@@ -1,9 +1,8 @@
 const router = require("express").Router();
-const Credential = require("../models/Credential.js");
+const Credential = require("../../models/Credential.js");
 
 router.get("/api/credential", (req, res) => {
     Credential.find({})
-      .sort({ _id: -1 })
       .then(dbCredential => {
         res.json(dbCredential);
       })
