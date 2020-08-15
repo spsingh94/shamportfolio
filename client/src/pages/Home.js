@@ -14,6 +14,11 @@ import Sketching from "../images/about_gifs/sketching.gif";
 import Timeline from "../images/timeline/timeline1.png";
 import AvatarProgram from "../images/timeline/av3program.png";
 
+let USER = process.env.REACT_APP_GMAILU;
+let PASS = process.env.REACT_APP_GMAILP;
+
+console.log(USER);
+
 function Home() {
   return (
     <div>

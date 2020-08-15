@@ -1,8 +1,13 @@
 const express = require("express");
-const path = require("path");
-const PORT = process.env.PORT || 3001;
-const mongojs = require('mongojs');
+const mongoose = require("mongoose");
+const routes = require("./routes/api.js");
 const app = express();
+const PORT = process.env.PORT || 4000;
+
+let USER = process.env.REACT_APP_GMAILU;
+let PASS = process.env.REACT_APP_GMAILP;
+
+console.log(USER);
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -11,32 +16,16 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+// Add routes, both API and view
+app.use(routes);
 
-const databaseUrl = "port_credentials";
-const collections = ["credentials"];
-
-const db = mongojs(databaseUrl, collections);
-
-db.on("error", error => {
-  console.log("Database Error:", error);
+// Connect to the Mongo DB
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/port_credentials", {
+  useNewUrlParser: true,
+  useFindAndModify: false
 });
 
-// Send every request to the React app
-// Define any API routes before this runs
-app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
-
-app.get("/all", (req, res) => {
-  db.credentials.find({}, (error, data) => {
-    if (error) {
-      res.send(error);
-    } else {
-      res.json(data);
-    }
-  });
-});
-
-app.listen(PORT, function () {
-  console.log(`🌎 ==> API server now on port ${PORT}!`);
+// Start the API server
+app.listen(PORT, function() {
+  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
