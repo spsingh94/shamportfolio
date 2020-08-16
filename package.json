@@ -31,7 +31,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "concurrently \"nodemon mail.js\" \"nodemon server.js\" \"npm run client\"",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
     "mailer": "cd client && src && nodemon mail.js",
     "client": "cd client && npm start",
     "build": "cd client && npm run build",
