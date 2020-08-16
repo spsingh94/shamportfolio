@@ -1,31 +1,15 @@
-var express = require("express");
-var router = express.Router();
-var nodemailer = require("nodemailer");
-var cors = require("cors");
-var fetch = require("node-fetch");
+import React from "react";
+import express from "express";
+import nodemailer from "nodemailer";
+import cors from "cors";
+
 const app = express();
+var router = express.Router();
 
-
-var credentials = [];
-
-let USER;
-let PASS;
+let USER = process.env.REACT_APP_GMAILU;
+let PASS = process.env.REACT_APP_GMAILP;
 
 console.log(USER);
-
-fetch("http://localhost:3002/api/credential")
-  .then(response => response.json())
-  .then((data) => {
-    credentials = data;
-    populateCredentials();
-  });
-
-function populateCredentials() {
-  credentials.forEach((credential) => {
-    USER = credential.gmail;
-    PASS = credential.password;
-  });
-}
 
 const transport = {
   host: "smtp.gmail.com",
