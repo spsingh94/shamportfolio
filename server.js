@@ -5,73 +5,86 @@ const app = express();
 var router = express.Router();
 const fetch = require("node-fetch");
 const nodemailer = require("nodemailer");
+const PORT = process.env.NODE_ENV || 8080;
 
-const PORT = process.env.PORT || 8080;
+let credentials;
+var credentialArr = [];
 
-var credentials;
-console.log(credentials);
-var user = credentials[0].gmail;
-console.log(user);
-var pass = credentials[1].gmail;
-console.log(pass);
-
-async function getCreds() {
-  fetch("http://localhost:8080/api/credential")
-    .then((response) => response.json())
-    .then((res) => credentials = res)
-    // .then((data) => console.log(data[0].gmail))
-    // .then((data) => {return(user = data[0].gmail)})
-    // .then((result) => console.log(result))
-    .catch(function (error) {
-      console.log(error);
-    });
-  await getCreds();
+async function getCreds(url = "", data = {}) {
+  const response = await fetch(url, {
+    method: "GET",
+    mode: "cors",
+    cache: "no-cache",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    redirect: "follow",
+    referrerPolicy: "no-referrer",
+  });
+  return response.json();
 }
 
-const transport = {
-  host: "smtp.gmail.com",
-  port: 587,
-  auth: {
-    user: user,
-    pass: pass,
-  },
-};
-
-const transporter = nodemailer.createTransport(transport);
-
-transporter.verify((error, success) => {
-  if (error) {
-    console.log(error);
-  } else {
-    console.log("Server is ready to take messages");
+getCreds("http://localhost:8080/api/credential", { answer: 42 }).then(
+  (data) => {
+    credentials = data;
+    initSeperate();
   }
-});
+);
 
-router.post("/send", (req, res, next) => {
-  const name = req.body.name;
-  const email = req.body.email;
-  const message = req.body.message;
-  const content = `name: ${name} \n email: ${email} \n message: ${message} `;
 
-  var mail = {
-    from: name,
-    to: user,
-    subject: "New Message from Contact Form",
-    text: content,
+function initSeperate() {
+  credentials.forEach((credential) => {
+    credentialArr.push(credential.cred);
+  });
+  let user = credentialArr[0];
+  let pass = credentialArr[1];
+
+  const transport = {
+    host: "smtp.gmail.com",
+    port: 587,
+    auth: {
+      user: user,
+      pass: pass,
+    },
   };
 
-  transporter.sendMail(mail, (err, data) => {
-    if (err) {
-      res.json({
-        status: "fail",
-      });
+  const transporter = nodemailer.createTransport(transport);
+
+  transporter.verify((error, success) => {
+    if (error) {
+      console.log(error);
     } else {
-      res.json({
-        status: "success",
-      });
+      console.log("Server is ready to take messages");
     }
   });
-});
+
+  router.post("/send", (req, res, next) => {
+    const name = req.body.name;
+    const email = req.body.email;
+    const message = req.body.message;
+    const content = `name: ${name} \n email: ${email} \n message: ${message} `;
+
+    var mail = {
+      from: name,
+      to: user,
+      subject: "New Message from Contact Form",
+      text: content,
+    };
+
+    transporter.sendMail(mail, (err, data) => {
+      if (err) {
+        res.json({
+          status: "fail",
+        });
+      } else {
+        res.json({
+          status: "success",
+        });
+      }
+    });
+  });
+}
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -86,8 +99,7 @@ mongoose.connect(
     useUnifiedTopology: true,
   }
 );
-
-getCreds();
+// getCreds();
 
 // routes
 app.use(require("./routes/api"));
