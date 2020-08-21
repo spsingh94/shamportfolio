@@ -24,5 +24,6 @@
     "react-native": "^0.63.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3"
-  }
+  },
+  "proxy": "http://localhost:8080/"
 }
