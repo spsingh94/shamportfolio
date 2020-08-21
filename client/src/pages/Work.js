@@ -27,20 +27,6 @@ function Work() {
         <Title id="page-title">Web Applications</Title>
       </div>
       {/* Upper portion of page */}
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <Arrow />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <Container>
         <div>
           <Title id="sub-title" style={{ textAlign: "center" }}>

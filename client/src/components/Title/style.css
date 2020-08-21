@@ -8,9 +8,14 @@
 }
 
 #page-title {
-    font-size: 143px;
-    padding-bottom: 100px;
-    padding-top: 180px;
+    text-align: center;
+    font-size: 120px;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media (max-width: 600px) {

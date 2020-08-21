@@ -22,7 +22,7 @@ function Contact() {
 
   return (
     <>
-      <Hero backgroundImage={Ocean} height="830px">
+      <Hero backgroundImage={Ocean} height="660px">
         <Navbar />
         <Title id="page-title">Contact</Title>
       </Hero>
