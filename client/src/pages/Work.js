@@ -26,6 +26,7 @@ function Work() {
         <Navbar />
         <Title id="page-title">Web Applications</Title>
       </div>
+    </Hero>
       {/* Upper portion of page */}
       <Container>
         <div>
@@ -82,7 +83,6 @@ function Work() {
         <br />
         <br />
       </Container>
-    </Hero>
         <Title id="sub-title" style={{ textAlign: "center" }}>
           Also Checkout Photography
         </Title>

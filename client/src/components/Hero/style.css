@@ -1,28 +1,65 @@
 .hero {
+    height: 820px;
     width: 100%;
+    margin-bottom: 10px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.hero .hero-intro {
-    color: white;
-    font-family: 'Yellowtail', cursive;
-    font-size: 65px;
-    padding-top: 190px;
-    padding-left: 15px;
-    text-align: left;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+@media(max-width: 1000px) {
+    .hero {
+        height: 650px;
+    }
 }
 
-.hero .hero-desc {
+.hero .hero-intro {
     color: black;
-    font-family: 'Josefin Slab', serif;
-    font-size: 28px;
+    font-family: 'Yellowtail', cursive;
+    font-size: 110px;
+    padding-top: 90px;
     padding-left: 15px;
-    text-align: left;
-    -webkit-text-stroke-width: 1px;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
+}
+
+@media (max-width: 1500px){
+    .hero .hero-intro {
+    font-size: 60px;
+    }
+}
+
+@media (max-width: 525px){
+    .hero .hero-intro {
+    font-size: 50px;
+    }
+}
+    
+    .hero .hero-desc {
+    color: white;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    padding-left: 15px;
+    text-align: center;
+}
+
+@media (max-width: 1500px){
+    .hero .hero-desc {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 340px) {
+    .hero .hero-desc {
+        font-size: 20px;
+}
+}
+
+@media(max-width: 340px) {
+    .hero .hero-intro {
+        font-size: 45px;
+}
 }

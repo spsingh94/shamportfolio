@@ -1,10 +1,40 @@
 .carousel {
-    border-radius: 50px;   
+  border-radius: 50px;
 }
 
 .d-block {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    border-radius: 50px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+@media (max-width: 955px) {
+  .d-block {
+    height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .d-block {
+    height: 250px;
+  }
+}
+
+@media (max-width: 670px) {
+  .d-block {
+    height: 200px;
+  }
+}
+
+@media (max-width: 535px) {
+  .d-block {
+    height: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .d-block {
+    height: 100px;
+  }
 }

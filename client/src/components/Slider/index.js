@@ -22,12 +22,6 @@ export function Slider() {
       </div>
     </div>
     <div className="carousel-item">
-      <img src={Invaders} className="d-block w-98" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
-      <Title id="sub-title">Morse Code Learning Academy</Title>
-      </div>
-    </div>
-    <div className="carousel-item">
       <img src={Soc} className="d-block w-98" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
       <Title id="sub-title">Social Fit</Title>

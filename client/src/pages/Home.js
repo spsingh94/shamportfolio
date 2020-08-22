@@ -8,7 +8,7 @@ import { Title } from "../components/Title";
 import Row from "../components/Row";
 import Button from "../components/Button";
 import { Center } from "../components/Center";
-import { Arrow } from "../components/Arrow";
+// import { Arrow } from "../components/Arrow";
 import { Slider } from "../components/Slider";
 import Sketching from "../images/about_gifs/sketching.gif";
 import Timeline from "../images/timeline/timeline1.png";
@@ -17,7 +17,7 @@ import AvatarProgram from "../images/timeline/av3program.png";
 function Home() {
   return (
     <div>
-      <Hero backgroundImage={Background} height="830px">
+      <Hero backgroundImage={Background}>
         <Navbar />
         <h1 className="hero-intro">My Name is Shaminder Singh</h1>
         <p className="hero-desc">
@@ -26,18 +26,19 @@ function Home() {
         <Container>
           <Row>
             {/* Arrow Key */}
-            <Arrow />
+            {/* <Arrow /> */}
             {/* Arrow Key */}
           </Row>
         </Container>
       </Hero>
       <Container>
-        <Title>Get To Know Me</Title>
+        <Title id="about-title">Get To Know Me</Title>
         <h5
           style={{
             fontFamily: "'Permanent Marker', cursive",
             textAlign: "center",
             paddingTop: "0",
+            fontSize: "20px"
           }}
         >
           Shaminder Singh is a Junior Front-End Web Developer Based

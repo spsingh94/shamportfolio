@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { Title } from "../components/Title";
-import Hero from "../components/Hero";
 import Ocean from "../images/blueocean.jpg";
 import { Center } from "../components/Center";
 import { Icons } from "../components/Icons";
@@ -21,11 +20,8 @@ function Contact() {
   // };
 
   return (
-    <>
-      <Hero backgroundImage={Ocean} height="660px">
-        <Navbar />
-        <Title id="page-title">Contact</Title>
-      </Hero>
+    <div style={{backgroundColor:"#4997D0"}}>      
+      <Navbar />
       <Center>
         <Title id="sub-title">Lets Connect!</Title>
       </Center>
@@ -42,7 +38,7 @@ function Contact() {
       <Center>
         <Maps src={mapsSource} />
       </Center>
-    </>
+    </div>
   );
 }
 
