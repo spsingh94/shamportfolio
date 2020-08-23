@@ -10,7 +10,7 @@ import MCLAReact from "../images/app_thumbs/Screen Shot 2020-08-07 at 1.18.41 AM
 import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import { Arrow } from "../components/Arrow";
-import BlueClouds from "../images/blueclouds2.jpg";
+import WebApps from "../images/webapps2.jpg";
 import PhotoBanner from "../images/photonavimage.png";
 import Row from "../components/Row";
 import Col from "../components/Col";
@@ -20,13 +20,16 @@ import Button from "../components/Button";
 function Work() {
   return (
     // Upper portion of page
-    <>
-    <Hero backgroundImage={BlueClouds}>
-      <div>
-        <Navbar />
-        <Title id="page-title">Web Applications</Title>
-      </div>
-    </Hero>
+    <div>
+      <Hero backgroundImage={WebApps}>
+        <div>
+          <Navbar />
+          <Title id="page-title">Projects</Title>
+          <Center>
+            <p className="hero-desc">Web Applications | Key Roles | Purpose</p>
+          </Center>
+        </div>
+      </Hero>
       {/* Upper portion of page */}
       <Container>
         <div>
@@ -35,66 +38,85 @@ function Work() {
           </Title>
         </div>
         <br />
-        <div style={{display:"flex", flexWrap:"wrap"}}>
+        <div style={{ display: "flex", flexWrap: "wrap" }}>
           <CardCont>
             <Row>
               <Col size="lg-4">
-                  <Card src={WorkBooks} alt="workbooks">
-                    <CardBod>
-                      <p className="project-name">Work Books</p>
-                      <p className="project-descript">Maintain employee records and financial data all on one application.</p>
-                      <p className="project-role">Front &amp; Back-End</p>
-                    </CardBod>
-                    <Center>
-                    <Button to="/workbooks" style={{color:"white"}}>View</Button>
-                    </Center>
-                  </Card>
+                <Card src={WorkBooks} alt="workbooks">
+                  <CardBod>
+                    <p className="project-name">Work Books</p>
+                    <p className="project-descript">
+                      Maintain employee records and financial data. Web Books is
+                      an organizational tool for employers to better assess
+                      their employees and fininancial records all at once.
+                    </p>
+                    <p className="project-role">Front &amp; Back-End</p>
+                  </CardBod>
+                  <Center>
+                    <Button to="/workbooks" style={{ color: "white" }}>
+                      View
+                    </Button>
+                  </Center>
+                </Card>
               </Col>
               <Col size="lg-4">
-                  <Card src={SocialFit} alt="socialfit">
-                    <CardBod>
+                <Card src={SocialFit} alt="socialfit">
+                  <CardBod>
                     <p className="project-name">Social Fit</p>
-                      <p className="project-descript">Maintain employee records and financial data all on one application.</p>
-                      <p className="project-role">Front-End | UX/UI Design</p>
-                    </CardBod>
-                    <Center>
-                    <Button to="/socfit" style={{color:"white"}}>View</Button>
-                    </Center>
-                  </Card>
+                    <p className="project-descript">
+                      Motivate and encourage yourself to reach your fitness
+                      goal. Social Fit allows its users to exceed their
+                      expectations with the help of social media.
+                    </p>
+                    <p className="project-role">Front-End | UX/UI Design</p>
+                  </CardBod>
+                  <Center>
+                    <Button to="/socfit" style={{ color: "white" }}>
+                      View
+                    </Button>
+                  </Center>
+                </Card>
               </Col>
               <Col size="lg-4">
-                  <Card src={MCLAReact} alt="mcla">
-                    <CardBod>
+                <Card src={MCLAReact} alt="mcla">
+                  <CardBod>
                     <p className="project-name">Morse Code Learning Academy</p>
-                      <p className="project-descript">Maintain employee records and financial data all on one application.</p>
-                      <p className="project-role">UX Design | Usability Testing</p>
-                    </CardBod>
-                    <Center>
-                    <Button to="/mcla" style={{color:"white"}}>View</Button>
-                    </Center>
-                  </Card>
+                    <p className="project-descript">
+                      Dedicated to teaching students with learning disabilities.
+                      Morse Code Learning Academy finds a new way to help
+                      children in need.
+                    </p>
+                    <p className="project-role">
+                      UX Design | Usability Testing
+                    </p>
+                  </CardBod>
+                  <Center>
+                    <Button to="/mcla" style={{ color: "white" }}>
+                      View
+                    </Button>
+                  </Center>
+                </Card>
               </Col>
             </Row>
           </CardCont>
-          </div>
+        </div>
         <br />
         <br />
         <br />
         <br />
         <br />
       </Container>
-        <Title id="sub-title" style={{ textAlign: "center" }}>
-          Also Checkout Photography
-        </Title>
-        <Center>
-          <Row>
-        <a href="/photography">
+      <Title id="about-title" style={{ textAlign: "center" }}>
+        Also Checkout My Photo Work
+      </Title>
+      <Center>
         <img src={PhotoBanner} className="photo-banner" alt="banner" />
-        </a>
-          </Row>
-        </Center>
-        <br />
-        </>
+      </Center>
+      <Center>
+        <Button to="/photography">View Photos</Button>
+      </Center>
+      <br />
+    </div>
   );
 }
 

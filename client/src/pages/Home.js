@@ -1,11 +1,9 @@
 import React from "react";
 import Hero from "../components/Hero";
-import Container from "../components/Container";
-import Background from "../images/bluemountains2.jpg";
+import Background from "../images/mountain2.jpg";
 import Navbar from "../components/Navbar";
 import Thumbnail from "../images/pumpkin.jpg";
 import { Title } from "../components/Title";
-import Row from "../components/Row";
 import Button from "../components/Button";
 import { Center } from "../components/Center";
 // import { Arrow } from "../components/Arrow";
@@ -23,15 +21,7 @@ function Home() {
         <p className="hero-desc">
           Front-End Web Developer • Creator • Problem Solver
         </p>
-        <Container>
-          <Row>
-            {/* Arrow Key */}
-            {/* <Arrow /> */}
-            {/* Arrow Key */}
-          </Row>
-        </Container>
       </Hero>
-      <Container>
         <Title id="about-title">Get To Know Me</Title>
         <h5
           style={{
@@ -106,12 +96,16 @@ function Home() {
         </Center>
         <br/>
         <Center>
-          <Button to="/work" style={{ width: "70%" }}>
-            View Work
+          <Button to="/work">
+            View Projects
+          </Button>
+        </Center>
+        <Center>
+          <Button to="/contact">
+            Contact Me
           </Button>
         </Center>
         <br />
-      </Container>
     </div>
   );
 }

@@ -53,7 +53,7 @@ function Footer() {
               </Col>
               <Col size="md-3">
                 <Link className="navbar-brand" to="/work" onClick={scrollTop}>
-                  <p className="foot-navcon">Work</p>
+                  <p className="foot-navcon">Projects</p>
                 </Link>
               </Col>
               <Col size="md-3">

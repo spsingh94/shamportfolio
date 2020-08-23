@@ -1,13 +1,13 @@
 .connect-header {
     text-align: center;
     color: white;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
     font-family: 'Yellowtail', cursive;
     font-size: 65px;
 }
 
 #page-title {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
     text-align: center;
     font-size: 120px;
     padding-bottom: 150px;
@@ -50,7 +50,7 @@
     font-size: 35px;
     margin-left: 40px;
     text-align: left;
-    color: black;
+    color: white;
 }
 
 @media(max-width: 650px){
@@ -77,6 +77,9 @@
 
 #about-title {
     font-size: 65px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+
 }
 
 @media(max-width: 690px) {

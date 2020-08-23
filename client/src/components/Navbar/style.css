@@ -1,5 +1,5 @@
 .logo-nav {
-    height: 70px;
+    height: 75px;
     position: absolute;
     right: 35px;
     top:10px;
@@ -24,7 +24,7 @@
   }
 
 .logo-nav:hover {
-    animation: rotation2 .30s infinite;
+    animation: rotation2 .0s infinite;
     animation-direction: linear;
   }
 
@@ -42,22 +42,25 @@ nav {
     background-color: transparent;
     height: 120px;
     font-family: 'Permanent Marker', cursive;
-    font-size: 25px;
+    font-size: 30px;
+}
+
+.navbar-toggler {
+  background-color: white;
 }
 
 .locName {
-    color: black;
+    color: white;
     padding-top: 20px;
 }
 
 .locName:hover {
   text-decoration: line-through;
-  color: white;
 }
 
 @media (max-width: 991px){
   .navbar-nav {
-    background-color: white;
+    background-color: black;
     width: 255px;
     margin-left: 0px;
     text-align: center;
@@ -73,14 +76,22 @@ nav {
 }
 
 .fa {
-  margin-top: 10px;
+  padding: 15px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 1px;
+  border-radius: 50%;
+  background: black;
+  color: white;
 }
 
-@media (min-width: 991px) {
+.fa:hover {
+color: black;
+background-color: white;
+}
+
   .social-media {
-    position: absolute;
-    right: 42px;
-    top: 50px;
-    padding: 0px;
-  }
+    padding-top: 25px;
 }

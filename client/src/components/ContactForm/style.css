@@ -1,9 +1,13 @@
 .form-control {
-    width: 500px
+    width: 500px;
 }
 
 @media (max-width: 500px){
     .form-control {
-        width: 200px
+        width: 200px;
     }
+}
+
+.form-group label {
+    color: white;
 }

@@ -38,12 +38,14 @@
 }
     
     .hero .hero-desc {
-    color: white;
+    color: black;
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 60px;
     font-weight: bold;
     padding-left: 15px;
     text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 @media (max-width: 1500px){

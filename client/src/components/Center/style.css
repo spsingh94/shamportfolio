@@ -60,22 +60,13 @@
 }
 
 
-
-
-
-
-
-
-
-
 .justification .photo-banner {
     height: 270px;
-    border: solid 1px black;
 }
 
-.justification .photo-banner:hover {
+/* .justification .photo-banner:hover {
  background-color: black;
-}
+} */
 
 @media (max-width: 1076px){
     .justification .photo-banner {
