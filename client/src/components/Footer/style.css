@@ -1,11 +1,13 @@
 .foot {
   text-align: center;
   border-top: solid 1px;
+  background-color: black;
 }
 
 .catch-phrase {
   padding-right: 10px;
   font-family: 'Permanent Marker', cursive;
+  color: white;
 }
 
 .fa {
@@ -15,7 +17,7 @@
   width: 30px;
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .fa:hover {
@@ -23,7 +25,7 @@
 }
 
 .foot-navcon {
-  color: black;
+  color: white;
   padding-top: 20px;
   font-size: large;
   font-family: 'Permanent Marker', cursive;

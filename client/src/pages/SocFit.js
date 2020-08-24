@@ -1,11 +1,19 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Container from "../components/Container";
+import {Title} from "../components/Title";
+import Hero from "../components/Hero";
+import RunForever from "../images/bluerunning.jpg";
 
 function SocFit() {
   return (
     <>
+    <Hero backgroundImage={RunForever}>
       <Navbar />
+      <Title id="page-title">
+      Social Fit
+      </Title>
+    </Hero>
       <Container>
       <h1>Social Fit</h1>
 

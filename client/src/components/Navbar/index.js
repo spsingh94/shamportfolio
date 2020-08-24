@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import logo from "../../images/portfoliologowhite.png";
+import logo from "../../images/portfoliologo.png";
 
 class Navbar extends Component {
   constructor(props) {
@@ -48,14 +48,14 @@ class Navbar extends Component {
             </li>
             <li className="nav-item">
               <Link
-                to="/work"
+                to="/about"
                 className={
-                  window.location.pathname === "/work"
+                  window.location.pathname === "/about"
                     ? "nav-link active"
                     : "nav-link"
                 }
               >
-                <p className="locName">Projects</p>
+                <p className="locName">About Me</p>
               </Link>
             </li>
             <li className="nav-item">

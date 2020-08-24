@@ -1,11 +1,17 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Container from "../components/Container";
+import BooksBanner from "../images/bluebook.jpg";
+import Hero from "../components/Hero";
+import {Title} from "../components/Title";
 
 function WorkBooks() {
   return (
     <>
+    <Hero backgroundImage={BooksBanner}>
       <Navbar />
+      <Title id="page-title">Work Books</Title>
+    </Hero>
       <Container>
       <h1>MCLA React</h1>
 

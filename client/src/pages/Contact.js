@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { Title } from "../components/Title";
-import Crystals from "../images/bluecrystals.jpg";
 import { Center } from "../components/Center";
 import { Icons } from "../components/Icons";
 import { Maps } from "../components/Maps";
@@ -20,7 +19,7 @@ function Contact() {
   };
 
   return (
-    <div style={{backgroundColor:"black"}}>
+    <div>
       <Navbar />
       <Center>
         <a href="tel:+14144002564">
@@ -32,10 +31,10 @@ function Contact() {
       </a>
       </Center>
       <Center>
-        <Title id="sub-title">Lets Connect!</Title>
+        <Title id="about-title">Lets Connect!</Title>
       </Center>
       <Center>
-        <p style={{ textAlign: "center", color:"white" }}>
+        <p style={{ textAlign: "center"}}>
           Provide me with some of your information and a short message and I
           will get back to you at my earliest convenience.
         </p>

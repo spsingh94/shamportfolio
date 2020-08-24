@@ -45,12 +45,8 @@ nav {
     font-size: 30px;
 }
 
-.navbar-toggler {
-  background-color: white;
-}
-
 .locName {
-    color: white;
+    color: black;
     padding-top: 20px;
 }
 
@@ -60,7 +56,7 @@ nav {
 
 @media (max-width: 991px){
   .navbar-nav {
-    background-color: black;
+    background-color: white;
     width: 255px;
     margin-left: 0px;
     text-align: center;

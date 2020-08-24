@@ -1,15 +1,18 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Container from "../components/Container";
+import {Title} from "../components/Title";
+import Hero from "../components/Hero";
+import MCLAHero from "../images/bluelearning.jpg";
 
 function MCLA() {
   return (
-    <>
+      <div>
+      <Hero backgroundImage={MCLAHero}>
       <Navbar />
+      <Title id="page-title">Morse Code Learning Academy</Title>
+      </Hero>
       <Container>
-      <h1>Morse Code Learning Academy</h1>
-
-      {/* About */}
       <h3>About the Project</h3>
 
       <h5>My Role</h5>
@@ -79,7 +82,7 @@ function MCLA() {
       <h3>Wireframe</h3>
       {/* WIREFRAME */}
       </Container>
-    </>
+      </div>
   );
 }
 

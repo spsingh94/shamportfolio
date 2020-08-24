@@ -1,11 +1,12 @@
 .btn {
-    font-size: 25px;
-    background-color: black;
+    font-size: 24px;
+    background-color: #4682b4;
     font-family: 'Permanent Marker', cursive;
     color: white;
     width: 200px;
     border-radius: 55px;
     margin-bottom: 10px;
+    border: solid 3px black;
 }
 .btn:hover {
     background-color: white;
