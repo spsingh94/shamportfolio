@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Row from "../Row";
 import Col from "../Col";
 import Container from "../Container";
-import logo from "../../images/newlogo5.png";
+import logo from "../../images/newlogo7.png";
 
 
 function Footer() {

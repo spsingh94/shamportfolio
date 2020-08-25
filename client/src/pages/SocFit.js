@@ -4,6 +4,8 @@ import Container from "../components/Container";
 import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import RunForever from "../images/bluerunning.jpg";
+import {FitStack} from "../components/ImageStack/index";
+
 
 function SocFit() {
   return (
@@ -43,7 +45,7 @@ function SocFit() {
           they login and signup with their credentials. Unique profile would be
           fetched from mySQL with the help of Sequelize from the database.
         </p>
-
+        <FitStack/>
         <h5>Capabilities</h5>
         <ul>
           <li>Set goals with goal setter tool on profile home page.</li>

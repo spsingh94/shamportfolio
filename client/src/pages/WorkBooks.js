@@ -4,6 +4,7 @@ import Container from "../components/Container";
 import BooksBanner from "../images/bluebook.jpg";
 import Hero from "../components/Hero";
 import { Title } from "../components/Title";
+import { BooksStack } from "../components/ImageStack/index";
 
 function WorkBooks() {
   return (
@@ -35,13 +36,13 @@ function WorkBooks() {
           locate cryptocurrency prices as needed with the help of an external
           cryptocurrency API.
         </p>
-        <p>
-          Connecting created table to external API.
-        </p>
+        <p>Connecting created table to external API.</p>
         <p>
           Refatoring code from simple HTML, CSS, and Javascript files to React
           Components and Pages.
         </p>
+
+        <BooksStack />
 
         <h5>Capabilities</h5>
         <ul>
@@ -138,9 +139,9 @@ function WorkBooks() {
 
         <h5>Reflection</h5>
         <p>
-          This project was orginially two projects that I completed in the
-          past. I personally believe that combining these two projects
-          together can hold great value to investers and travelers.
+          This project was orginially two projects that I completed in the past.
+          I personally believe that combining these two projects together can
+          hold great value to investers and travelers.
         </p>
         <p>
           I would like to work more on the styling for this project and make it

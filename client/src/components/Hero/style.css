@@ -1,5 +1,5 @@
 .hero {
-    height: 730px;
+    height: 650px;
     width: 100%;
     margin-bottom: 10px;
     background-attachment: fixed;
@@ -39,12 +39,12 @@
     
     .hero .hero-desc {
     color: black;
-    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'Alata', sans-serif;
     font-size: 60px;
     font-weight: bold;
     padding-left: 15px;
     text-align: center;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: .05px;
     -webkit-text-stroke-color: white;
 }
 

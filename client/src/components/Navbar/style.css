@@ -41,17 +41,20 @@
 nav {
     background-color: transparent;
     height: 120px;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Alata', sans-serif;
     font-size: 30px;
 }
 
 .locName {
-    color: black;
+    color: white;
     padding-top: 20px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
 }
 
 .locName:hover {
   text-decoration: line-through;
+  color: white;
 }
 
 @media (max-width: 991px){
@@ -78,14 +81,16 @@ nav {
 
 .fa {
   padding: 5px;
-  font-size: 35px;
-  width: 40px;
+  font-size: 25px;
+  width: 35px;
   margin: 6px 1px;
-  color: black;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .fa:hover {
-color: white;
+color: black;
 }
 
   .social-media {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import logo from "../../images/newlogo5.png";
+import logo from "../../images/newlogo7.png";
 
 class Navbar extends Component {
   constructor(props) {
@@ -55,7 +55,7 @@ class Navbar extends Component {
                     : "nav-link"
                 }
               >
-                <p className="locName">About Me</p>
+                <p className="locName">About</p>
               </Link>
             </li>
             <li className="nav-item">

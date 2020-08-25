@@ -1,175 +1,180 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Container from "../components/Container";
-import {Title} from "../components/Title";
+import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import MCLAHero from "../images/bluelearning.jpg";
+import {MCLAStack} from "../components/ImageStack/index";
 
 function MCLA() {
   return (
-      <div>
+    <div>
       <Hero backgroundImage={MCLAHero}>
-      <Navbar />
-      <Title id="page-title">Morse Code Learning Academy</Title>
+        <Navbar />
+        <Title id="page-title">Morse Code Learning Academy</Title>
       </Hero>
       <Container>
-      <h3>About the Project</h3>
+        <h3>About the Project</h3>
         <h5>Introduction</h5>
         <p>
-          A social media app designed to allow users to reach their fitness
-          goals. A platform which encourages and motivates users with the help
-          of work out routines and meal recipes, as well as friends and family
-          members.
+          Web application dedicated to teaching students with learning
+          disabilities how to read, write, and do math with morse code. Morse
+          Code Learning Academy finds a new way to help children in need through
+          gamification.
         </p>
         <h5>My Role</h5>
         <p>
-          My role in this project was to create a shell for the web application
-          so that it would be easier on the rest of the team to incorporate
-          API's and data from databases.
+          My role in this project was to help create and design the Alien
+          Invaders math morse code game. Creating avatars, players, and enemies
+          with the use of Photoshop.
         </p>
         <p>
-          I focused heavily on the user interface and ensured that the pages
-          where organized and mobile device compatible.
+          Created the login page as well as the functionality. Connected
+          login/signup page to MongoDB with Mongoose to pass credentials to
+          database. Searched and located Google Authentication API to give users
+          alternative method to login and signup.
         </p>
         <p>
-          With the help of my experience using photoshop, I worked on creating
-          the logo, accolades, and other designs to give the application a
-          modern look.
+          Front-End + User Experience -- Styled and designed game page for all
+          games and game board for Alien Invaders math game.
         </p>
-        <p>
-          After designing the web application I assisted my team memebers with
-          integrating external API's as well as the mySQL database into the
-          code. I was responsible for generating a unique profile for users when
-          they login and signup with their credentials. Unique profile would be
-          fetched from mySQL with the help of Sequelize from the database.
-        </p>
-
+        <MCLAStack/>
         <h5>Capabilities</h5>
         <ul>
-          <li>Set goals with goal setter tool on profile home page.</li>
-          <li>Locate healthy recipes based off of your specific diet.</li>
-          <li>Locate work outs based off of your workout routines.</li>
-          <li>Save your favorite workouts and recipes for later.</li>
           <li>
-            Visit friends and family members Social Fit profile to get a better
-            look at their fitness goals and their diet and workout routines.
+            Create account with credentials or by logging in with your Gmail
+            account.
           </li>
           <li>
-            Get rewarded for your progress when reaching your goals through our
-            accolades system.
+            Play games that use morse code to teach basic reading, writing, and
+            math skills. Games such as Tic Tac Toe, Code Collector, and Alien
+            Invaders.
           </li>
+          <li>Track your progress and find out how far you have come.</li>
         </ul>
 
+
         <h5>Tools</h5>
+        <h6>Basics</h6>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>C#</li>
+        </ul>
         <h6>Layout</h6>
         <ul>
-          <li>Handlebars</li>
+          <li>MERN (MongoDB, ExpressJS, ReactJS, NodeJS)</li>
+          <li>Reactstrap</li>
         </ul>
         <h6>Styling/Designing</h6>
         <ul>
           <li>Bootstrap</li>
-          <li>Materialize CSS</li>
+          <li>Google Material</li>
           <li>Photoshop</li>
         </ul>
         <h6>Database</h6>
         <ul>
-          <li>mySQL</li>
-          <li>Sequelize</li>
+          <li>MongoDB</li>
+          <li>Mongoose</li>
         </ul>
         <h6>API's</h6>
         <ul>
-          <li>Nutrition</li>
-          <li>Workout Routines</li>
+          <li>Google Authentication</li>
+        </ul>
+        <h6>External Engines</h6>
+        <ul>
+          <li>Unity</li>
         </ul>
         <h5>Challenges</h5>
         <p>
-          Social Fit was the first project that I worked extensively on. This in
-          itself was a challenge and it exposed me to many new things.
-        </p>
-        <p>
           As a group we decided to implement Handlebars into our project. We
-          were unfamiliar with the use and were confused by the syntax and
-          functionality. When beginning the project, due to our unfamiliarity,
-          there was a learning curve. With very little knowledge on the of
-          Handlebars syntax and functionality, a lot of time was used on
-          understanding how to use it prior to implementing it.
+          This project was a continuation of a project that was created before
+          with just HTML, CSS, and Javascript so we had to refactor the code
+          into ReactJS. The code for the Tic Tac Toe and Code Collector game was
+          already created and it contained a large amount of code. This was very
+          difficult and very time consuming.
         </p>
         <p>
-          The signup page required a connection to the Back-End which would save
-          and fetch a users unique profile depending on the credentials entered
-          at the login/signup page. This was also a challenge because it
-          required a lot of code that I knew existed but did not understand the
-          flow of at the time.
+          Creating the Alien Invaders math game was also challenging because it
+          required a lot of attention and it was created from scratch with pure
+          javascript. We also spent a lot of time trying to use different
+          methods to build the game and because of that a lot of time was wasted
+          on simply getting the game operational.
         </p>
         <h3>Mindset</h3>
         <h5>Goals</h5>
         <p>
-          Our goal was to create a web appliction for users to not only just go
-          online and chat with their friends but also to take a step forward in
-          their lives. Primarily, we wanted to create something that had meaning
-          and would actually help someone.
-        </p>
-        <p>
-          To ensure that we reached our goal of helping others we realized that
-          it was important that once a user created an account, they would
-          frequently return to their account. To ensure that the user would
-          return, we created new goals which were to encourage and motivate the
-          user.
+          Goal of the project was to get a fully functioning web application
+          that children with disabilities can access at anytime and learn
+          through gamification. We also wanted to make sure that the children
+          can access their progress over time and see how far they have come.
+          According to statistics, children find it easier to learn through
+          gamification so our goal was to also make it an easy and fun
+          experience for them.
         </p>
 
         <h5>Methodology</h5>
         <ol>
+          <li>Refactoring the code into ReactJS.</li>
           <li>
-            Discussion on whether or not we should implement Handlebars. We were
-            worried about the learning curve but we were adamant on implementing
-            it and overcoming the learning curve.
+            Discussing what type of game should be created to teach children
+            with disabilities math and how to tie in morse code.
           </li>
-          <li>Created Handlebars pages to distinguish reusable code.</li>
           <li>
-            Coded nonreusable code for HTML pages and gave it the necessary
-            styling (CSS) and functionality (Javascript).
+            Decided to work on the game first and then back track on any loose
+            ends.
           </li>
-          <li>Helped team fetch information from API's</li>
-          <li>Created login/signup page for returning and new users.</li>
+          <li>
+            Focused on the game and attempted to find different ways to get it
+            running the way we wanted.
+          </li>
+          <li>
+            Created the game and then worked on the game page that folded the
+            game.
+          </li>
+          <li>
+            Created login page which would allow the user to connect to their
+            unique profile page by logging in to track their progress.
+          </li>
+          <li>
+            Located Google Authentication API giving the user an alternative
+            method to signing up and logging into their account. The user could
+            now login with their Gmail accounts.
+          </li>
+          <li>Finished styling and mobile accessibility styling.</li>
         </ol>
 
         <h5>Target Audience</h5>
         <p>
-          This type of social media web application caters to many and all
-          groups of people. The main group of people that we targetted were
-          those that lack encouragement and motivation in meeting their fitness
-          goals.
+          The target audience are students with disabilities and parents. We
+          wanted to give these students that struggle to learn basic reading,
+          writing, and mathematic skills a platform which they can continuously
+          go back to and keep on learning and studying as much as they need.
         </p>
         <p>
-          As we progressed deeper into the project and came up with new ideas to
-          help the user we decided to use an API that contains workout routines
-          and meal recipes. This decision created a larger spectrum of people
-          that can use Social Fit. For example, a user may not workout but may
-          want to eat healthy, or a user may care about both their workout
-          routine and their diet. Overall, it is clear that any man or woman can
-          use Social Fit.
+          For parents we wanted to give them an alternative to help their
+          children. It is true that school cannot help every child and that some
+          children need special guidance or they need to be taught a different
+          way. Morse Code Learning Academy is the different way.
         </p>
 
         <h5>Reflection</h5>
         <p>
-          Everyone that was involved with this project was receiving an
-          opportunity to work on a fully functional web application for the
-          first time. Based off of our experience level at the time, I was very
-          proud for all the work that we accomplished. Although, the project was
-          not the best, it was something that we all worked really hard on.
+          Morse Code Learning Academy is a very demanding and time consuming
+          project that has great potential to help children in need.
         </p>
         <p>
-          My favorite part of working with my team on this project was that we
-          all gave amazing ideas and we worked as a unit. The most extraordinary
-          aspect of the project was how it evolved. It first began as a simple
-          social media application, allowing the user to update their goals and
-          share them with others at any time. It soon became a fitness tracker,
-          a motivational piece, a cook book, and a workout guide. I admired my
-          team members passion on this project and would work with them again at
-          any time.
+          Over time we wish to implement more learning techniques and more
+          games. We would also like to implement more levels and leaderboards,
+          allowing children to feel a sense of accomplishment and competition.
+        </p>
+        <p>
+          I would like to work more on creating games with javascript to better
+          understand the flow of large amounts of code.
         </p>
       </Container>
-      </div>
+    </div>
   );
 }
 

@@ -14,11 +14,11 @@
   color: white;
   padding-top: 20px;
   font-size: large;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Alata', sans-serif;
 }
 
 .foot-navcon:hover {
-  text-decoration: line-through;
+  text-decoration: line-through black;
   color: white;
 }
 

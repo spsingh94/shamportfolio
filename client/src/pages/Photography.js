@@ -14,11 +14,6 @@ function Photography() {
         <Center>
         <Title id="page-title">Photography</Title>
         </Center>
-        <Center>
-        <p className="hero-desc">
-          Photos | Photoshop Creations | Edits
-        </p>
-        </Center>
       </Hero>
         <Grid/>
     </div>
