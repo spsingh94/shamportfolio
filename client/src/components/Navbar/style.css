@@ -1,7 +1,7 @@
 .logo-nav {
-    height: 75px;
+    height: 100px;
     position: absolute;
-    right: 35px;
+    right: 10px;
     top:10px;
     animation: rotation 5s infinite;
     animation-direction: alternate-reverse;
@@ -69,25 +69,27 @@ nav {
   .nav-item:hover {
   background-color: white;
   }
+
+  .social-media {
+    position: unset !important;
+    right: unset !important;
+}
 }
 
 .fa {
-  padding: 15px;
-  font-size: 20px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 4px 1px;
-  border-radius: 50%;
-  background: black;
-  color: white;
+  padding: 5px;
+  font-size: 35px;
+  width: 40px;
+  margin: 6px 1px;
+  color: black;
 }
 
 .fa:hover {
-color: black;
-background-color: white;
+color: white;
 }
 
   .social-media {
     padding-top: 25px;
+    position: absolute;
+    right: 115px;
 }

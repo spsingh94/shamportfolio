@@ -10,20 +10,6 @@
   color: white;
 }
 
-.fa {
-  padding-top: 23px;
-  padding-bottom: 15px;
-  font-size: 25px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-}
-
-.fa:hover {
-  color: white;
-}
-
 .foot-navcon {
   color: white;
   padding-top: 20px;
@@ -37,6 +23,6 @@
 }
 
 .logo-footer {
-  height: 70px;
-  width: 100px;
+  height: 100px;
+  /* width: 100px; */
 }

@@ -13,6 +13,7 @@ import Sketching from "../images/about_gifs/sketching.gif";
 import Timeline from "../images/timeline/timeline1.png";
 import AvatarProgram from "../images/timeline/av3program.png";
 import BlueHike from "../images/bluehike.jpg";
+import Container from "../components/Container";
 
 function About() {
   return (
@@ -49,6 +50,7 @@ function About() {
             View Resume
           </Button>
         </Center>
+        <Container>
         <Center
           style={{ paddingTop: "10px", paddingBottom: "10px" }}
           id="home-center"
@@ -91,6 +93,7 @@ function About() {
             </p>
           </div>
         </Center>
+        </Container>
 
         <Center>
           <Slider />

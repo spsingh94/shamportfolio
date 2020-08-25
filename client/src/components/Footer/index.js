@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import Row from "../Row";
 import Col from "../Col";
 import Container from "../Container";
-import logo from "../../images/portfoliologo.png";
+import logo from "../../images/newlogo5.png";
+
 
 function Footer() {
 
@@ -23,22 +24,25 @@ function Footer() {
             <h6 className="catch-phrase">I Create.</h6>
           </Col>
 
-          <Col size="md-2">
+          <Col size="md-2" style={{paddingTop:"15px"}}>
           <a
                 href="https://www.facebook.com/shamindersingh512/"
-                className="fa fa-facebook footer-icons"
+                className="fa fa-facebook"
+                style={{color:"white"}}
               >
                 {null}
               </a>
               <a
                 href="https://www.linkedin.com/in/ssingh512/"
-                className="fa fa-linkedin footer-icons"
+                className="fa fa-linkedin"
+                style={{color:"white"}}
               >
                 {null}
               </a>
               <a
                 href="https://www.instagram.com/sherm512/"
-                className="fa fa-instagram footer-icons"
+                className="fa fa-instagram"
+                style={{color:"white"}}
               >
                 {null}
               </a>
