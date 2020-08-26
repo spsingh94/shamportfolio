@@ -3,8 +3,6 @@ import "./style.css";
 import MCLA from "../../images/work_images/MCLA.png";
 import Soc from "../../images/work_images/soc-fit.jpg";
 import SocHome from "../../images/work_images/Soc-home.png";
-import Invaders from "../../images/photography_grid/mathposter.jpg";
-import { Title } from "../Title";
 
 export function Slider() {
   return (
@@ -24,7 +22,7 @@ export function Slider() {
           <img src={SocHome} class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item">
-          <img src={Invaders} class="d-block w-100" alt="..." />
+          <img src="https://drive.google.com/uc?export=view&id=1V0xnZZtIdeHbZU63tLoE0uTvfDN9M7ZX" class="d-block w-100" alt="..." />
         </div>
       </div>
       <a
