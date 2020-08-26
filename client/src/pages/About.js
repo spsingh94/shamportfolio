@@ -1,14 +1,10 @@
 import React from "react";
-
 import Navbar from "../components/Navbar";
-
 import { Title } from "../components/Title";
 import Hero from "../components/Hero";
-
 import { Center } from "../components/Center";
 import Button from "../components/Button";
 import Thumbnail from "../images/pumpkin.jpg";
-import { Slider } from "../components/Slider";
 import Sketching from "../images/about_gifs/sketching.gif";
 import Timeline from "../images/timeline/timeline1.png";
 import AvatarProgram from "../images/timeline/av3program.png";
@@ -16,6 +12,12 @@ import BlueHike from "../images/bluehike.jpg";
 import Container from "../components/Container";
 
 function About() {
+
+  // const avProgramResized = {
+  //   height:"500px",
+  //   backgroundImage:`${AvatarProgram}`
+  // }
+
   return (
      <div>
                <Hero backgroundImage={BlueHike}>
@@ -50,6 +52,9 @@ function About() {
             View Resume
           </Button>
         </Center>
+        <Center>
+          <Title id="about-title" style={{fontSize:"40px"}}>Shaminder Singh's Story</Title>
+        </Center>
         <Container>
         <Center
           style={{ paddingTop: "10px", paddingBottom: "10px" }}
@@ -83,6 +88,7 @@ function About() {
               src={AvatarProgram}
               className="avatar-program"
               alt="avatar-program"
+              style={{height:"150px"}}
             />
             <p className="about-p">
               Front-end web development allows Shaminder to create and design
@@ -94,10 +100,6 @@ function About() {
           </div>
         </Center>
         </Container>
-
-        <Center>
-          <Slider />
-        </Center>
         <br/>
         <Center>
           <Button to="/">
@@ -115,102 +117,3 @@ function About() {
 }
 
 export default About;
-
-    // // Upper portion of page
-    // <div>
-    //   <Hero backgroundImage={WebApps}>
-    //     <div>
-    //       <Navbar />
-    //       <Title id="page-title">Projects</Title>
-    //       <Center>
-    //         <p className="hero-desc">Web Applications | Key Roles | Purpose</p>
-    //       </Center>
-    //     </div>
-    //   </Hero>
-    //   {/* Upper portion of page */}
-    //   <Container>
-    //     <div>
-    //       <Title id="sub-title" style={{ textAlign: "center" }}>
-    //         Web Applications
-    //       </Title>
-    //     </div>
-    //     <br />
-    //     <div style={{ display: "flex", flexWrap: "wrap" }}>
-    //       <CardCont>
-    //         <Row>
-    //           <Col size="lg-4">
-    //             <Card src={WorkBooks} alt="workbooks">
-    //               <CardBod>
-    //                 <p className="project-name">Work Books</p>
-    //                 <p className="project-descript">
-    //                   Maintain employee records and financial data. Web Books is
-    //                   an organizational tool for employers to better assess
-    //                   their employees and fininancial records all at once.
-    //                 </p>
-    //                 <p className="project-role">Front &amp; Back-End</p>
-    //               </CardBod>
-    //               <Center>
-    //                 <Button to="/workbooks" style={{ color: "white" }}>
-    //                   View
-    //                 </Button>
-    //               </Center>
-    //             </Card>
-    //           </Col>
-    //           <Col size="lg-4">
-    //             <Card src={SocialFit} alt="socialfit">
-    //               <CardBod>
-    //                 <p className="project-name">Social Fit</p>
-    //                 <p className="project-descript">
-    //                   Motivate and encourage yourself to reach your fitness
-    //                   goal. Social Fit allows its users to exceed their
-    //                   expectations with the help of social media.
-    //                 </p>
-    //                 <p className="project-role">Front-End | UX/UI Design</p>
-    //               </CardBod>
-    //               <Center>
-    //                 <Button to="/socfit" style={{ color: "white" }}>
-    //                   View
-    //                 </Button>
-    //               </Center>
-    //             </Card>
-    //           </Col>
-    //           <Col size="lg-4">
-    //             <Card src={MCLAReact} alt="mcla">
-    //               <CardBod>
-    //                 <p className="project-name">Morse Code Learning Academy</p>
-    //                 <p className="project-descript">
-    //                   Dedicated to teaching students with learning disabilities.
-    //                   Morse Code Learning Academy finds a new way to help
-    //                   children in need.
-    //                 </p>
-    //                 <p className="project-role">
-    //                   UX Design | Usability Testing
-    //                 </p>
-    //               </CardBod>
-    //               <Center>
-    //                 <Button to="/mcla" style={{ color: "white" }}>
-    //                   View
-    //                 </Button>
-    //               </Center>
-    //             </Card>
-    //           </Col>
-    //         </Row>
-    //       </CardCont>
-    //     </div>
-    //     <br />
-    //     <br />
-    //     <br />
-    //     <br />
-    //     <br />
-    //   </Container>
-    //   <Title id="about-title" style={{ textAlign: "center" }}>
-    //     Also Checkout My Photo Work
-    //   </Title>
-    //   <Center>
-    //     <img src={PhotoBanner} className="photo-banner" alt="banner" />
-    //   </Center>
-    //   <Center>
-    //     <Button to="/photography">View Photos</Button>
-    //   </Center>
-    //   <br />
-    // </div>

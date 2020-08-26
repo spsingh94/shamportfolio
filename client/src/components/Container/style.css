@@ -1,3 +1,13 @@
-.project-page p {
-    font-family: 'Permanent Marker', cursive;
+.container h1 {
+    text-decoration: underline;
 }
+
+.container h3 {
+    font-family: 'Alata', sans-serif;
+}
+
+.container h4 {
+    text-decoration: underline;
+}
+
+

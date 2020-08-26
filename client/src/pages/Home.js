@@ -115,13 +115,10 @@ function Home() {
         <br />
       </Container>
       <Title id="about-title" style={{ textAlign: "center" }}>
-        Also Checkout My Photo Work
+        Learn More About Me
       </Title>
       <Center>
-        <img src={PhotoBanner} className="photo-banner" alt="banner" />
-      </Center>
-      <Center>
-        <Button to="/photography">View Photos</Button>
+        <Button to="/about">About Me</Button>
       </Center>
       <br />
     </div>

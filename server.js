@@ -54,9 +54,9 @@ function mailRunner(creds) {
           status: "fail",
         });
       } else {
-        res.json({
-          status: "success",
-        });
+          res.json({
+            status: "success",
+          });
       }
     });
   });

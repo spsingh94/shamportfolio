@@ -13,14 +13,14 @@ function WorkBooks() {
         <Navbar />
         <Title id="page-title">Work Books</Title>
       </Hero>
-      <Container>
-        <h3>About the Project</h3>
-        <h5>Introduction</h5>
+      <Container style={{fontSize:"25px", fontFamily:"'Pathway Gothic One', sans-serif"}}>
+      <Title id="about-title">About the Project</Title>
+        <h1>Introduction</h1>
         <p>
           Web Books is an organizational tool for entrepreneurs/business owners
           to better assess their finances and investments.
         </p>
-        <h5>My Role</h5>
+        <h3>My Role</h3>
         <p>
           Working on creating a platform in which the user can update, add, or
           delete important information from a table at anytime by connecting the
@@ -44,7 +44,7 @@ function WorkBooks() {
 
         <BooksStack />
 
-        <h5>Capabilities</h5>
+        <h3>Capabilities</h3>
         <ul>
           <li>Search and locate the names and share rates of stocks.</li>
           <li>
@@ -59,30 +59,36 @@ function WorkBooks() {
           <li>Save your favorite workouts and recipes for later.</li>
         </ul>
 
-        <h5>Tools</h5>
-        <h6>Layout</h6>
+        <h1>Tools</h1>
+        <h4>Basics</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+        </ul>
+        <h4>Layout</h4>
         <ul>
           <li>MERN (MongoDB, ExpressJS, ReactJS, NodeJS)</li>
           <li>Reactstrap</li>
         </ul>
-        <h6>Styling/Designing</h6>
+        <h4>Styling/Designing</h4>
         <ul>
           <li>Bootstrap</li>
           <li>Materialize CSS</li>
           <li>Photoshop</li>
         </ul>
-        <h6>Database</h6>
+        <h4>Database</h4>
         <ul>
           <li>MongoDB</li>
           <li>Mongoose</li>
         </ul>
-        <h6>API's</h6>
+        <h4>API's</h4>
         <ul>
           <li>Stock Market</li>
           <li>Currency Converter</li>
           <li>Cryptocurrency</li>
         </ul>
-        <h5>Challenges</h5>
+        <h1>Challenges</h1>
         <p>
           There were two things that were challenging in regards to this
           project. The first things that was challenging was the MVC
@@ -98,8 +104,8 @@ function WorkBooks() {
           created in simple HTML, CSS, and Javscript files, which meant that I
           would have to refactor them to work properly on React.
         </p>
-        <h3>Mindset</h3>
-        <h5>Goals</h5>
+        <h1>Mindset</h1>
+        <h3>Goals</h3>
         <p>
           The main goal of this project was to give business owners and
           entrepreneurs a tool which allows them to better organize information
@@ -113,7 +119,7 @@ function WorkBooks() {
           money.
         </p>
 
-        <h5>Methodology</h5>
+        <h3>Methodology</h3>
         <ol>
           <li>
             Coming up with ideas on how to create a new application using code
@@ -128,7 +134,7 @@ function WorkBooks() {
           </li>
         </ol>
 
-        <h5>Target Audience</h5>
+        <h1>Target Audience</h1>
         <p>
           The tragetted audience for this project is entrepreneurs and business
           owners that often travel or invest. We also wanted to target the
@@ -137,7 +143,7 @@ function WorkBooks() {
           possible future investments.
         </p>
 
-        <h5>Reflection</h5>
+        <h1>Reflection</h1>
         <p>
           This project was orginially two projects that I completed in the past.
           I personally believe that combining these two projects together can

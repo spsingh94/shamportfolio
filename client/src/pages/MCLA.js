@@ -13,16 +13,16 @@ function MCLA() {
         <Navbar />
         <Title id="page-title">Morse Code Learning Academy</Title>
       </Hero>
-      <Container className="project-page">
-        <h3>About the Project</h3>
-        <h5>Introduction</h5>
+      <Container style={{fontSize:"25px", fontFamily:"'Pathway Gothic One', sans-serif"}}>
+        <Title id="about-title">About the Project</Title>
+        <h1>Introduction</h1>
         <p>
           Web application dedicated to teaching students with learning
           disabilities how to read, write, and do math with morse code. Morse
           Code Learning Academy finds a new way to help children in need through
           gamification.
         </p>
-        <h5>My Role</h5>
+        <h3>My Role</h3>
         <p>
           My role in this project was to help create and design the Alien
           Invaders math morse code game. Creating avatars, players, and enemies
@@ -39,7 +39,7 @@ function MCLA() {
           games and game board for Alien Invaders math game.
         </p>
         <MCLAStack/>
-        <h5>Capabilities</h5>
+        <h3>Capabilities</h3>
         <ul>
           <li>
             Create account with credentials or by logging in with your Gmail
@@ -54,39 +54,39 @@ function MCLA() {
         </ul>
 
 
-        <h5>Tools</h5>
-        <h6>Basics</h6>
+        <h1>Tools</h1>
+        <h4>Basics</h4>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
           <li>Javascript</li>
           <li>C#</li>
         </ul>
-        <h6>Layout</h6>
+        <h4>Layout</h4>
         <ul>
           <li>MERN (MongoDB, ExpressJS, ReactJS, NodeJS)</li>
           <li>Reactstrap</li>
         </ul>
-        <h6>Styling/Designing</h6>
+        <h4>Styling/Designing</h4>
         <ul>
           <li>Bootstrap</li>
           <li>Google Material</li>
           <li>Photoshop</li>
         </ul>
-        <h6>Database</h6>
+        <h4>Database</h4>
         <ul>
           <li>MongoDB</li>
           <li>Mongoose</li>
         </ul>
-        <h6>API's</h6>
+        <h4>API's</h4>
         <ul>
           <li>Google Authentication</li>
         </ul>
-        <h6>External Engines</h6>
+        <h4>External Engines</h4>
         <ul>
           <li>Unity</li>
         </ul>
-        <h5>Challenges</h5>
+        <h1>Challenges</h1>
         <p>
           As a group we decided to implement Handlebars into our project. We
           This project was a continuation of a project that was created before
@@ -102,8 +102,8 @@ function MCLA() {
           methods to build the game and because of that a lot of time was wasted
           on simply getting the game operational.
         </p>
-        <h3>Mindset</h3>
-        <h5>Goals</h5>
+        <h1>Mindset</h1>
+        <h3>Goals</h3>
         <p>
           Goal of the project was to get a fully functioning web application
           that children with disabilities can access at anytime and learn
@@ -114,7 +114,7 @@ function MCLA() {
           experience for them.
         </p>
 
-        <h5>Methodology</h5>
+        <h3>Methodology</h3>
         <ol>
           <li>Refactoring the code into ReactJS.</li>
           <li>
@@ -145,7 +145,7 @@ function MCLA() {
           <li>Finished styling and mobile accessibility styling.</li>
         </ol>
 
-        <h5>Target Audience</h5>
+        <h1>Target Audience</h1>
         <p>
           The target audience are students with disabilities and parents. We
           wanted to give these students that struggle to learn basic reading,
@@ -159,7 +159,7 @@ function MCLA() {
           way. Morse Code Learning Academy is the different way.
         </p>
 
-        <h5>Reflection</h5>
+        <h1>Reflection</h1>
         <p>
           Morse Code Learning Academy is a very demanding and time consuming
           project that has great potential to help children in need.

@@ -63,6 +63,7 @@
 
 .justification .photo-banner {
     height: 270px;
+    width: 100%;
 }
 
 /* .justification .photo-banner:hover {

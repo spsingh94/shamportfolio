@@ -14,16 +14,16 @@ function SocFit() {
         <Navbar />
         <Title id="page-title">Social Fit</Title>
       </Hero>
-      <Container>
-        <h3>About the Project</h3>
-        <h5>Introduction</h5>
+      <Container style={{fontSize:"25px", fontFamily:"'Pathway Gothic One', sans-serif"}}>
+      <Title id="about-title">About the Project</Title>
+        <h1>Introduction</h1>
         <p>
           A social media app designed to allow users to reach their fitness
           goals. A platform which encourages and motivates users with the help
           of work out routines and meal recipes, as well as friends and family
           members.
         </p>
-        <h5>My Role</h5>
+        <h3>My Role</h3>
         <p>
           My role in this project was to create a shell for the web application
           so that it would be easier on the rest of the team to incorporate
@@ -46,7 +46,7 @@ function SocFit() {
           fetched from mySQL with the help of Sequelize from the database.
         </p>
         <FitStack/>
-        <h5>Capabilities</h5>
+        <h3>Capabilities</h3>
         <ul>
           <li>Set goals with goal setter tool on profile home page.</li>
           <li>Locate healthy recipes based off of your specific diet.</li>
@@ -62,28 +62,34 @@ function SocFit() {
           </li>
         </ul>
 
-        <h5>Tools</h5>
-        <h6>Layout</h6>
+        <h1>Tools</h1>
+        <h4>Basics</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+        </ul>
+        <h4>Layout</h4>
         <ul>
           <li>Handlebars</li>
         </ul>
-        <h6>Styling/Designing</h6>
+        <h4>Styling/Designing</h4>
         <ul>
           <li>Bootstrap</li>
           <li>Materialize CSS</li>
           <li>Photoshop</li>
         </ul>
-        <h6>Database</h6>
+        <h4>Database</h4>
         <ul>
           <li>mySQL</li>
           <li>Sequelize</li>
         </ul>
-        <h6>API's</h6>
+        <h4>API's</h4>
         <ul>
           <li>Nutrition</li>
           <li>Workout Routines</li>
         </ul>
-        <h5>Challenges</h5>
+        <h1>Challenges</h1>
         <p>
           Social Fit was the first project that I worked extensively on. This in
           itself was a challenge and it exposed me to many new things.
@@ -103,8 +109,8 @@ function SocFit() {
           required a lot of code that I knew existed but did not understand the
           flow of at the time.
         </p>
-        <h3>Mindset</h3>
-        <h5>Goals</h5>
+        <h1>Mindset</h1>
+        <h3>Goals</h3>
         <p>
           Our goal was to create a web appliction for users to not only just go
           online and chat with their friends but also to take a step forward in
@@ -119,7 +125,7 @@ function SocFit() {
           user.
         </p>
 
-        <h5>Methodology</h5>
+        <h3>Methodology</h3>
         <ol>
           <li>
             Discussion on whether or not we should implement Handlebars. We were
@@ -135,7 +141,7 @@ function SocFit() {
           <li>Created login/signup page for returning and new users.</li>
         </ol>
 
-        <h5>Target Audience</h5>
+        <h1>Target Audience</h1>
         <p>
           This type of social media web application caters to many and all
           groups of people. The main group of people that we targetted were
@@ -152,7 +158,7 @@ function SocFit() {
           use Social Fit.
         </p>
 
-        <h5>Reflection</h5>
+        <h1>Reflection</h1>
         <p>
           Everyone that was involved with this project was receiving an
           opportunity to work on a fully functional web application for the
