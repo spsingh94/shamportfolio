@@ -13,7 +13,7 @@ function MCLA() {
         <Navbar />
         <Title id="page-title">Morse Code Learning Academy</Title>
       </Hero>
-      <Container>
+      <Container className="project-page">
         <h3>About the Project</h3>
         <h5>Introduction</h5>
         <p>

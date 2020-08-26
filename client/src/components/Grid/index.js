@@ -1,92 +1,56 @@
 import React from "react";
 import "./style.css";
-import Angels from "../../images/photography_grid/angels.jpg";
-import Bench from "../../images/photography_grid/bench.jpg";
-import Birdy from "../../images/photography_grid/birdy.jpg";
-import Boardwalk from "../../images/photography_grid/boardwalk.jpg";
-import Champagne from "../../images/photography_grid/champagne.jpg";
-import Champagne2 from "../../images/photography_grid/champagne2.jpg";
-import Cheers from "../../images/photography_grid/cheers.jpg";
-import Cheers2 from "../../images/photography_grid/cheers2.jpg";
-import Christmas from "../../images/photography_grid/christmas.jpg";
-import ChristmasLights from "../../images/photography_grid/christmaslights.jpg";
-import Couple from "../../images/photography_grid/couple1.jpg";
-import Delux from "../../images/photography_grid/deluxblack.jpg";
-import Dog from "../../images/photography_grid/dog.jpg";
-import Fishing from "../../images/photography_grid/fishing.jpg";
-import Flowers from "../../images/photography_grid/flowers.jpg";
-import Goose from "../../images/photography_grid/goose.jpg";
-import Hands from "../../images/photography_grid/hands.jpg";
-import Hill from "../../images/photography_grid/hill.jpg";
-import Love from "../../images/photography_grid/love.jpg";
-import Flare from "../../images/photography_grid/newflare2.png";
-import Pink from "../../images/photography_grid/pink.jpg";
-import PersonalLogo from "../../images/photography_grid/portfoliologo.png";
-import Reflection from "../../images/photography_grid/reflection.jpg";
-import BrightLights from "../../images/photography_grid/rr_brightlights.jpg";
-import RR1 from "../../images/photography_grid/rrangle.jpg";
-import RR2 from "../../images/photography_grid/rrangle2.jpg";
-import RR3 from "../../images/photography_grid/rrbridge.jpg";
-import RR4 from "../../images/photography_grid/rrlogo.jpg";
-import RR5 from "../../images/photography_grid/rrphantom.jpg";
-import RR6 from "../../images/photography_grid/rrshine.jpg";
-import RR7 from "../../images/photography_grid/rrtire.jpg";
-import Spray from "../../images/photography_grid/spray2.jpg";
-import StandTall from "../../images/photography_grid/standtall.jpg";
-import TreePose from "../../images/photography_grid/treepose.jpg";
-import TreePose2 from "../../images/photography_grid/treepose2.jpg";
-import Trees from "../../images/photography_grid/trees.jpg";
-import WaterFall from "../../images/photography_grid/waterfall.jpg";
 
 export function Grid(props) {
 
   return (
     <div className="grid-row">
       <div className="grid-column">
-        <img src={Angels} alt="img1"/>
-        <img src={Christmas} alt="img2"/>
-        <img src={ChristmasLights} alt="img3"/>
-        <img src={RR7} alt="img3"/>
-        <img src={Bench} alt="img4"/>
-        <img src={RR4} alt="img4"/>
-        <img src={Birdy} alt="img5"/>
-        <img src={Boardwalk} alt="img6"/>
-        <img src={WaterFall} alt="img7"/>
-        <img src={RR6} alt="img7"/>
+        <img src="https://drive.google.com/uc?export=view&id=15MZVOV-DnMZ5oRpsOxTcor_rVUV-f5G9" alt="img1"/>
+        <img src="https://drive.google.com/uc?export=view&id=1W-Qn5m7uWXORFczZMhdO2H_6vAXxR4k9" alt="img2"/>
+        <img src="https://drive.google.com/uc?export=view&id=1UKD-79fMgMcxz83Vvg4jaWSLOeL5z0PQ" alt="img3"/>
+        <img src="https://drive.google.com/uc?export=view&id=150Ju1spRPBejnxyhNtU8q48uT3PFU-So" alt="img3"/>
+        <img src="https://drive.google.com/uc?export=view&id=18nArgJbaNeSSFHEUSK7TkDaLp_01N4f5" alt="img4"/>
+        <img src="https://drive.google.com/uc?export=view&id=1E5fIHFWozAVcVi_8YbKqCUL5YHp68L_2" alt="img4"/>
+        <img src="https://drive.google.com/uc?export=view&id=1awSHdY4jVEsEC7PsQBMTeDa-fsEbUqvI" alt="img5"/>
+        <img src="https://drive.google.com/uc?export=view&id=14qEaWO4NmxB7IK2AkQvywjDxfTFqGy_w" alt="img6"/>
+        <img src="https://drive.google.com/uc?export=view&id=1cGy8ABdTTD5a0itR8ZOjZ_XkScwbxPVk" alt="img7"/>
       </div>
       <div className="grid-column">
-      <img src={TreePose} alt="img1"/>
-        <img src={TreePose2} alt="img2"/>
-        <img src={RR5} alt="img2"/>
-        <img src={Trees} alt="img3"/>
-        <img src={Champagne} alt="img4"/>
-        <img src={Champagne2} alt="img5"/>
-        <img src={Couple} alt="img6"/>
-        <img src={RR1} alt="img7"/>
-        <img src={Cheers} alt="img7"/>
+      <img src="https://drive.google.com/uc?export=view&id=1wSOZTXkFNmaN57uPMGo3sFlBcALjaG1A" alt="img1"/>
+        <img src="https://drive.google.com/uc?export=view&id=1hNC3d1yJdan-SZOuXuzs4CCzt-JnPAdk" alt="img2"/>
+        <img src="https://drive.google.com/uc?export=view&id=1ds7SpVhoOY7ekwqNAf7N4Ppr088ooG0r" alt="img2"/>
+        <img src="https://drive.google.com/uc?export=view&id=1_z2_4Z_ey0mAb5fFlOnD5iyQQodEs2cG" alt="img3"/>
+        <img src="https://drive.google.com/uc?export=view&id=1PCAkNCcuYe36e_0DLkk5wCoIM4VdlGRp" alt="img4"/>
+        <img src="https://drive.google.com/uc?export=view&id=1dnyGboe8tNruC4Hqee2qcYA4fJIj-cPF" alt="img5"/>
+        <img src="https://drive.google.com/uc?export=view&id=1ccxpGYV5XtfrTZEBYRTA_bHE0MY4Sa9J" alt="img6"/>
+        <img src="https://drive.google.com/uc?export=view&id=1dah9WJi63Wj7VEq9Qpu-6fO3TBbWkSMt" alt="img7"/>
+        <img src="https://drive.google.com/uc?export=view&id=1u83bsRgu9A99h43KyvVkHIPEW7SUMlHS" alt="img7"/>
       </div>
       <div className="grid-column">
-      <img src={Cheers2} alt="img1"/>
-        <img src={Flowers} alt="img2"/>
-        <img src={Delux} alt="img3"/>
-        <img src={Pink} alt="img4"/>
-        <img src={Goose} alt="img5"/>
-        <img src={Dog} alt="img6"/>
-        <img src={Spray} alt="img7"/>
-        <img src={Reflection} alt="img7"/>
-        <img src={RR2} alt="img7"/>
+      <img src="https://drive.google.com/uc?export=view&id=1W8xm3ZtRFVV8VPfB-k0d_G_6zJTaLegd" alt="img1"/>
+        <img src="https://drive.google.com/uc?export=view&id=1xen_I1EA6HwVm3NTUPRJUUWz78xa81cw" alt="img2"/>
+        <img src="https://drive.google.com/uc?export=view&id=1R5zILyT7uvM0JhjKYMgE2HmVvbq5_Zqj" alt="img3"/>
+        <img src="https://drive.google.com/uc?export=view&id=1PtLHuV9HxVWTYGVprQDOEISAV8FUAT7L" alt="img4"/>
+        <img src="https://drive.google.com/uc?export=view&id=1_gyh3gMj1_O7L055y3UTy55o6KZfDnsE" alt="img5"/>
+        <img src="https://drive.google.com/uc?export=view&id=15TsHVwQUYYF7iE0ShXEUykRk4MOrEVwH" alt="img6"/>
+        <img src="https://drive.google.com/uc?export=view&id=1hn-n3IOvSQ0GWX9wmCLd9sQAYvuMWCBM" alt="img7"/>
+        <img src="https://drive.google.com/uc?export=view&id=1ASq2hQFMpofwGTWuGhR_6Zas12310BIG" alt="img7"/>
+        <img src="https://drive.google.com/uc?export=view&id=1_l6G6DTOVE-z3xIVsKzQ4DTxzp6nVKbE" alt="img7"/>
       </div>
       <div className="grid-column">
-      <img src={PersonalLogo} alt="img1"/>
-        <img src={StandTall} alt="img3"/>
-        <img src={Fishing} alt="img2"/>
-        <img src={BrightLights} alt="img2"/>
-        <img src={Hands} alt="img4"/>
-        <img src={Hill} alt="img5"/>
-        <img src={RR3} alt="img6"/>
-        <img src={Love} alt="img6"/>
-        <img src={Flare} alt="img7"/>
+      <img src="https://drive.google.com/uc?export=view&id=1sHG_-q_Vl6PUOq3emQJQ90tEpJ_jIJxL" alt="img1"/>
+        <img src="https://drive.google.com/uc?export=view&id=1kslzXnQ3mx4m2krYfN9cyvnkfeVEpL2S" alt="img3"/>
+        <img src="https://drive.google.com/uc?export=view&id=1MW3KLHaotsWmsZDKzTIfw-reyVZr36yv" alt="img2"/>
+        <img src="https://drive.google.com/uc?export=view&id=1jhrU-pJcS7MCMSpsqiIFec43xqTG_kAX" alt="img2"/>
+        <img src="https://drive.google.com/uc?export=view&id=10PiCJ2kb_hpC-JH1cfodTgjL3aJ3hOdi" alt="img4"/>
+        <img src="https://drive.google.com/uc?export=view&id=14f4dbu1XvhxYJPq82L1FddvqnHyGy9Zg" alt="img5"/>
+        <img src="https://drive.google.com/uc?export=view&id=17uk23XjTdQ1Lanx0HUVyRGRtjKwcUQZH" alt="img6"/>
+        <img src="https://drive.google.com/uc?export=view&id=1X2AWn0BRbkTS4E_jeo7g487SdjIlmlqQ" alt="img6"/>
+        <img src="https://drive.google.com/uc?export=view&id=1baE0P0x2h1PXFxUxS2Zz8Vsh9ThW6vrZ" alt="img7"/>
+        <img src="https://drive.google.com/uc?export=view&id=1khg_gbfUeJfG3txAAKySY1q8h6h4kiD1" alt="img7"/>
       </div>
     </div>
   );
 }
+
