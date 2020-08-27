@@ -12,8 +12,7 @@ class ContactForm extends React.Component {
     };
   }
 
-// localHost = process.env.REACT_APP_LOCAL;
-
+  // button = document.getElementById("sub-but").addEventListener('touchend', submit);
 
   handleSubmit(e) {
     e.preventDefault();
@@ -35,7 +34,7 @@ class ContactForm extends React.Component {
     e.preventDefault();
     axios({
       method: "POST",
-      url: "http://192.168.1.199:8080/send",
+      url: "http://10.0.2.2:8080/send",
       data: this.state,
     }).then((response) => {
       if (response.data.status === "success") {
