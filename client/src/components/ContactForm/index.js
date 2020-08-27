@@ -20,8 +20,8 @@ class ContactForm extends React.Component {
       data: this.state,
     }).then((response) => {
       if (response.data.status === "success") {
+        document.getElementById("success-p").innerHTML = "Message Sent!";
         this.resetForm();
-        document.getElementById("success-p").innerHTML = "Message Sent";
       } else if (response.data.status === "fail") {
         document.getElementById("success-p").innerHTML = "Message Failed";
       }
@@ -38,8 +38,9 @@ class ContactForm extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      // <div className="App">
         <form
+        className="App"
           id="contact-form"
           onSubmit={this.handleSubmit.bind(this)}
           method="POST"
@@ -78,12 +79,12 @@ class ContactForm extends React.Component {
               onChange={this.onMessageChange.bind(this)}
             />
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" name="submit" className="btn btn-primary">
             Submit
           </button>
           <p id="success-p"></p>
         </form>
-      </div>
+      // </div>
     );
   }
 
