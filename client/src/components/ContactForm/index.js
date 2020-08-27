@@ -44,7 +44,7 @@ class ContactForm extends React.Component {
         <form
         className="App"
           id="contact-form"
-          onSubmit={this.handleSubmit.bind(this)}
+          // onSubmit={this.handleSubmit.bind(this)}
           method="POST"
         >
           <div className="form-group">
