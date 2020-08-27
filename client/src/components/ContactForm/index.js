@@ -45,7 +45,6 @@ class ContactForm extends React.Component {
         className="App"
           id="contact-form"
           onSubmit={this.handleSubmit.bind(this)}
-          onTouchEnd={this.handleSubmit.bind(this)}
           method="POST"
         >
           <div className="form-group">
@@ -82,7 +81,7 @@ class ContactForm extends React.Component {
               onChange={this.onMessageChange.bind(this)}
             />
           </div>
-          <input type="submit" name="submit" value="Submit" id="sub-but" className="btn btn-primary"/>
+          <input type="submit" name="submit" value="Submit" id="sub-but" className="btn btn-primary" onTouchEnd={this.handleSubmit.bind(this)}/>
           <p id="success-p"></p>
         </form>
       // </div>
