@@ -82,7 +82,7 @@ class ContactForm extends React.Component {
             />
           </div>
           {/* <button type="submit" name="submit" className="btn btn-primary"> Submit </button> */}
-          <input type="submit" name="submit" value="submit" className="btn btn-primary" id="sub-but"/>
+          <input type="submit" name="submit" value="submit" className="btn btn-primary" id="sub-but" onTouchEndCapture={this.handleSubmit}/>
           <p id="success-p"></p>
         </form>
       // </div>
