@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Container from "../components/Container";
 import { Title } from "../components/Title";
 import Hero from "../components/Hero";
-import MCLAHero from "../images/annie.jpg";
+import MCLAHero from "../images/annie2.jpg";
 import {MCLAStack} from "../components/ImageStack/index";
 import Button from "../components/Button";
 import {Center} from "../components/Center";
@@ -178,7 +178,6 @@ function MCLA() {
         <Center>
           <Title id="sub-title">View More</Title>
         </Center>
-        <br />
         <Center>
           <Button to="/workbooks">Work Books</Button>
           <Button to="/socfit">Social Fit</Button>

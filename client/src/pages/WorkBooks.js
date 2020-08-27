@@ -162,7 +162,6 @@ function WorkBooks() {
         <Center>
         <Title id="sub-title">View More</Title>
         </Center>
-        <br/>
         <Center>
           <Button to="/socfit">
             Social Fit

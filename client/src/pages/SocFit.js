@@ -186,7 +186,6 @@ function SocFit() {
         <Center>
           <Title id="sub-title">View More</Title>
         </Center>
-        <br />
         <Center>
           <Button to="/mcla">MCLA</Button>
           <Button to="/workbooks">Work Books</Button>

@@ -8,18 +8,6 @@
   background-size: cover;
 }
 
-@media (max-width:1100px) and (min-width:902px){
-    #photography-hero{
-        background-position-y: -500px;
-    }
-}
-
-@media (max-width:500px){
-    #photography-hero{
-        background-position-x: -600px;
-    }
-}
-
 @media (max-width: 900px) {
   .hero {
     background-size: 1100px;
@@ -94,5 +82,17 @@
 @media (max-width: 340px) {
   .hero .hero-intro {
     font-size: 45px;
+  }
+}
+
+@media (max-width:1100px) and (min-width:902px){
+  #photography-hero{
+      background-position-y: -500px;
+  }
+}
+
+@media (max-width:500px){
+  #photography-hero{
+      background-position-x: -600px;
   }
 }
