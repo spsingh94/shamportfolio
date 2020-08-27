@@ -79,9 +79,7 @@ class ContactForm extends React.Component {
               onChange={this.onMessageChange.bind(this)}
             />
           </div>
-          <button type="submit" name="submit" className="btn btn-primary">
-            Submit
-          </button>
+          <input type="submit" name="submit" value="Submit" className="btn btn-primary"/>
           <p id="success-p"></p>
         </form>
       // </div>

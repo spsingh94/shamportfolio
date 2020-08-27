@@ -17,11 +17,12 @@ getCreds().then((results) => mailRunner(results));
 
 function mailRunner(creds) {
   var transport = {
-    host: "smtp.gmail.com", // Don’t forget to replace with the SMTP host of your provider
+    service: "Outlook365",
+    host: "smtp.office365.com", // Don’t forget to replace with the SMTP host of your provider
     port: 587,
     auth: {
       user: creds[0].cred,
-      pass: creds[1].cred,
+      pass: creds[3].cred,
     },
   };
 
