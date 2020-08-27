@@ -12,8 +12,6 @@ class ContactForm extends React.Component {
     };
   }
 
-  // button = document.getElementById("sub-but").addEventListener('touchend', submit);
-
   handleSubmit(e) {
     e.preventDefault();
     axios({
@@ -30,22 +28,6 @@ class ContactForm extends React.Component {
     });
   }
 
-  // handleTouchEvent(e) {
-  //   e.preventDefault();
-  //   axios({
-  //     method: "POST",
-  //     url: "http://10.0.2.2:8080/send",
-  //     data: this.state,
-  //   }).then((response) => {
-  //     if (response.data.status === "success") {
-  //       document.getElementById("success-p").innerHTML = "Message Sent!";
-  //       this.resetForm();
-  //     } else if (response.data.status === "fail") {
-  //       document.getElementById("success-p").innerHTML = "Message Failed";
-  //     }
-  //   });
-  // }
-
   resetForm() {
     this.setState({
       name: "",
@@ -56,7 +38,6 @@ class ContactForm extends React.Component {
 
   render() {
     return (
-      // <div className="App">
       <form
         className="App"
         id="contact-form"
@@ -97,18 +78,11 @@ class ContactForm extends React.Component {
             onChange={this.onMessageChange.bind(this)}
           />
         </div>
-        {/* <button type="submit" name="submit" className="btn btn-primary"> Submit </button> */}
-        <input
-          type="submit"
-          name="submit"
-          value="submit"
-          className="btn btn-primary"
-          id="sub-but"
-          // onTouchEnd={this.handleTouchEvent.bind(this)}
-        />
+        <button type="submit" name="submit" className="btn btn-primary">
+          submit
+        </button>
         <p id="success-p"></p>
       </form>
-      // </div>
     );
   }
 
