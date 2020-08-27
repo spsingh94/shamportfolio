@@ -5,6 +5,8 @@ import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import MCLAHero from "../images/annie.jpg";
 import {MCLAStack} from "../components/ImageStack/index";
+import Button from "../components/Button";
+import {Center} from "../components/Center";
 
 function MCLA() {
   return (
@@ -13,7 +15,7 @@ function MCLA() {
         <Navbar />
         <Title id="page-title">Morse Code Learning Academy</Title>
       </Hero>
-      <Container style={{fontSize:"25px", fontFamily:"'Pathway Gothic One', sans-serif"}}>
+      <Container style={{fontSize:"23px", fontFamily:"'Pathway Gothic One', sans-serif"}}>
         <Title id="about-title">About the Project</Title>
         <h1>Introduction</h1>
         <p>
@@ -173,6 +175,14 @@ function MCLA() {
           I would like to work more on creating games with javascript to better
           understand the flow of large amounts of code.
         </p>
+        <Center>
+          <Title id="sub-title">View More</Title>
+        </Center>
+        <br />
+        <Center>
+          <Button to="/workbooks">Work Books</Button>
+          <Button to="/socfit">Social Fit</Button>
+        </Center>
       </Container>
     </div>
   );

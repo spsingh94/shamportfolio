@@ -37,6 +37,8 @@
 #sub-title {
     font-size: 50px;
     text-align: left;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 @media (max-width: 600px) {

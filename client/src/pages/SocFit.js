@@ -4,8 +4,9 @@ import Container from "../components/Container";
 import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import RunForever from "../images/bluerunning.jpg";
-import {FitStack} from "../components/ImageStack/index";
-
+import { FitStack } from "../components/ImageStack/index";
+import Button from "../components/Button";
+import { Center } from "../components/Center";
 
 function SocFit() {
   return (
@@ -14,8 +15,13 @@ function SocFit() {
         <Navbar />
         <Title id="page-title">Social Fit</Title>
       </Hero>
-      <Container style={{fontSize:"25px", fontFamily:"'Pathway Gothic One', sans-serif"}}>
-      <Title id="about-title">About the Project</Title>
+      <Container
+        style={{
+          fontSize: "23px",
+          fontFamily: "'Pathway Gothic One', sans-serif",
+        }}
+      >
+        <Title id="about-title">About the Project</Title>
         <h1>Introduction</h1>
         <p>
           A social media app designed to allow users to reach their fitness
@@ -45,7 +51,7 @@ function SocFit() {
           they login and signup with their credentials. Unique profile would be
           fetched from mySQL with the help of Sequelize from the database.
         </p>
-        <FitStack/>
+        <FitStack />
         <h3>Capabilities</h3>
         <ul>
           <li>Set goals with goal setter tool on profile home page.</li>
@@ -176,6 +182,15 @@ function SocFit() {
           team members passion on this project and would work with them again at
           any time.
         </p>
+        <br />
+        <Center>
+          <Title id="sub-title">View More</Title>
+        </Center>
+        <br />
+        <Center>
+          <Button to="/mcla">MCLA</Button>
+          <Button to="/workbooks">Work Books</Button>
+        </Center>
       </Container>
     </>
   );
