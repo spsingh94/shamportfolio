@@ -31,7 +31,6 @@ class ContactForm extends React.Component {
   }
 
   handleTouchEvent(e) {
-    e.preventDefault();
     axios({
       method: "POST",
       url: "http://localhost:8080/send",
