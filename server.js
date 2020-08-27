@@ -5,10 +5,10 @@ const app = express();
 var router = express.Router();
 const fetch = require("node-fetch");
 const nodemailer = require("nodemailer");
-const PORT = process.env.NODE_ENV || 8000;
+const PORT = process.env.NODE_ENV || 8080;
 
 let getCreds = async function () {
-  let response = await fetch("http://localhost:8000/api/credential");
+  let response = await fetch("http://localhost:8080/api/credential");
   let data = await response.json();
   return data;
 };

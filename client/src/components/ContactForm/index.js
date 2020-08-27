@@ -16,12 +16,12 @@ class ContactForm extends React.Component {
     e.preventDefault();
     axios({
       method: "POST",
-      url: "http://localhost:8000/send",
+      url: "http://localhost:8080/send",
       data: this.state,
     }).then((response) => {
       if (response.data.status === "success") {
-        document.getElementById("success-p").innerHTML = "Message Sent";
         this.resetForm();
+        document.getElementById("success-p").innerHTML = "Message Sent";
       } else if (response.data.status === "fail") {
         document.getElementById("success-p").innerHTML = "Message Failed";
       }
@@ -53,7 +53,6 @@ class ContactForm extends React.Component {
               id="name"
               value={this.state.name}
               onChange={this.onNameChange.bind(this)}
-              required
             />
           </div>
           <div className="form-group">
@@ -66,7 +65,6 @@ class ContactForm extends React.Component {
               aria-describedby="emailHelp"
               value={this.state.email}
               onChange={this.onEmailChange.bind(this)}
-              required
             />
           </div>
           <div className="form-group">
@@ -78,7 +76,6 @@ class ContactForm extends React.Component {
               id="message"
               value={this.state.message}
               onChange={this.onMessageChange.bind(this)}
-              required
             />
           </div>
           <button type="submit" className="btn btn-primary">
