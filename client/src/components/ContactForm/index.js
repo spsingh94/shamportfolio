@@ -30,21 +30,21 @@ class ContactForm extends React.Component {
     });
   }
 
-  handleTouchEvent(e) {
-    e.preventDefault();
-    axios({
-      method: "POST",
-      url: "http://10.0.2.2:8080/send",
-      data: this.state,
-    }).then((response) => {
-      if (response.data.status === "success") {
-        document.getElementById("success-p").innerHTML = "Message Sent!";
-        this.resetForm();
-      } else if (response.data.status === "fail") {
-        document.getElementById("success-p").innerHTML = "Message Failed";
-      }
-    });
-  }
+  // handleTouchEvent(e) {
+  //   e.preventDefault();
+  //   axios({
+  //     method: "POST",
+  //     url: "http://10.0.2.2:8080/send",
+  //     data: this.state,
+  //   }).then((response) => {
+  //     if (response.data.status === "success") {
+  //       document.getElementById("success-p").innerHTML = "Message Sent!";
+  //       this.resetForm();
+  //     } else if (response.data.status === "fail") {
+  //       document.getElementById("success-p").innerHTML = "Message Failed";
+  //     }
+  //   });
+  // }
 
   resetForm() {
     this.setState({
@@ -104,7 +104,7 @@ class ContactForm extends React.Component {
           value="submit"
           className="btn btn-primary"
           id="sub-but"
-          onTouchEnd={this.handleTouchEvent.bind(this)}
+          // onTouchEnd={this.handleTouchEvent.bind(this)}
         />
         <p id="success-p"></p>
       </form>
