@@ -7,8 +7,7 @@ import { Center } from "../components/Center";
 import logo from "../images/newlogo7.png";
 // import { Arrow } from "../components/Arrow";
 
-import Background from "../images/darkblueclouds.jpg";
-import PhotoBanner from "../images/photonavimage.png";
+import Background from "../images/fav2.jpg";
 import Row from "../components/Row";
 import Col from "../components/Col";
 
@@ -31,9 +30,9 @@ function Home() {
         <p className="hero-desc">
           Front-End Web Developer • Creator • Problem Solver
         </p>
-        {/* <Center>
-          <img src={logo} alt="center-logo" style={{height:"190px"}}/>
-        </Center> */}
+        <Center>
+          <img src={logo} alt="center-logo" id="logo-id"/>
+        </Center>
       </Hero>
       {/* Upper portion of page */}
       <Container>
@@ -115,10 +114,10 @@ function Home() {
         <br />
       </Container>
       <Title id="about-title" style={{ textAlign: "center" }}>
-        Learn More About Me
+        Learn More
       </Title>
       <Center>
-        <Button to="/about">About Me</Button>
+        <Button to="/about">About</Button>
       </Center>
       <br />
     </div>

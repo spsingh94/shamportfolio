@@ -117,3 +117,21 @@
         height: 50px;
     }
 }
+
+#logo-id {
+    height: 250px;
+    filter: drop-shadow(0 0 2rem);
+}
+@media(max-width: 970px) {
+    #logo-id {
+        height: 200px;
+        filter: drop-shadow(0 0 1.5rem);
+    }
+}
+
+@media(max-width: 636px) {
+    #logo-id {
+        height: 150px;
+        filter: drop-shadow(0 0 1.5rem);
+    }
+}

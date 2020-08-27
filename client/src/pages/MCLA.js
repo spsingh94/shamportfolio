@@ -3,13 +3,13 @@ import Navbar from "../components/Navbar";
 import Container from "../components/Container";
 import { Title } from "../components/Title";
 import Hero from "../components/Hero";
-import MCLAHero from "../images/bluelearning.jpg";
+import MCLAHero from "../images/annie.jpg";
 import {MCLAStack} from "../components/ImageStack/index";
 
 function MCLA() {
   return (
     <div>
-      <Hero backgroundImage={MCLAHero}>
+      <Hero backgroundImage={MCLAHero} id="mcla-hero">
         <Navbar />
         <Title id="page-title">Morse Code Learning Academy</Title>
       </Hero>
