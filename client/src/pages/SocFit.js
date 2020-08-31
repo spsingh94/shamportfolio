@@ -5,7 +5,7 @@ import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import RunForever from "../images/bluerunning.jpg";
 import { FitStack } from "../components/ImageStack/index";
-import Button from "../components/Button";
+import {Button} from "../components/Button";
 import { Center } from "../components/Center";
 
 function SocFit() {

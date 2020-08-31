@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 
-function Button (props) {
+export function Button (props) {
 
     const scrollTop = () => {
         window.scrollTo({top: 0, behavior:"smooth"})
@@ -13,4 +13,6 @@ return(
     )
 }
 
-export default Button;
+export function OtherButton (props) {
+return <a className="btn btn-primary" {...props}>{props.children}</a>
+}

@@ -3,7 +3,8 @@ import Navbar from "../components/Navbar";
 import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import { Center } from "../components/Center";
-import Button from "../components/Button";
+import { Button } from "../components/Button";
+import { OtherButton } from "../components/Button";
 import Thumbnail from "../images/pumpkin.jpg";
 import Sketching from "../images/about_gifs/sketching.gif";
 import Timeline from "../images/timeline/timeline1.png";
@@ -12,50 +13,51 @@ import BlueHike from "../images/bluehike.jpg";
 import Container from "../components/Container";
 
 function About() {
-
   // const avProgramResized = {
   //   height:"500px",
   //   backgroundImage:`${AvatarProgram}`
   // }
 
   return (
-     <div>
-               <Hero backgroundImage={BlueHike}>
-          <div>
-            <Navbar />
-            <Title id="page-title">About</Title>
-          </div>
-        </Hero>
-        <Title id="about-title">Welcome To Shaminder Singh's Portfolio</Title>
-        <h5
-          style={{
-            fontFamily: "'Permanent Marker', cursive",
-            textAlign: "center",
-            paddingTop: "0",
-            fontSize: "20px"
-          }}
-        >
-          Shaminder Singh is a Junior Front-End Web Developer Based
-          in the Greater New York City area.
-        </h5>
-        <Center style={{ borderRadius: "50%" }}>
-          <img
-            src={Thumbnail}
-            height="250px"
-            alt="thumbnail"
-            style={{ borderRadius: "30%" }}
-          />
-        </Center>
-        <br />
-        <Center id="lefty">
-          <Button href="https://drive.google.com/file/d/1InZBAxp6Y7TBqMZRgLD-miXIdR8fwYEo/view?usp=sharing">
-            View Resume
-          </Button>
-        </Center>
-        <Center>
-          <Title id="about-title" style={{fontSize:"40px"}}>Shaminder Singh's Story</Title>
-        </Center>
-        <Container>
+    <div>
+      <Hero backgroundImage={BlueHike}>
+        <div>
+          <Navbar />
+          <Title id="page-title">About</Title>
+        </div>
+      </Hero>
+      <Title id="about-title">Welcome To Shaminder Singh's Portfolio</Title>
+      <h5
+        style={{
+          fontFamily: "'Permanent Marker', cursive",
+          textAlign: "center",
+          paddingTop: "0",
+          fontSize: "20px",
+        }}
+      >
+        Shaminder Singh is a Junior Front-End Web Developer Based in the Greater
+        New York City area.
+      </h5>
+      <Center style={{ borderRadius: "50%" }}>
+        <img
+          src={Thumbnail}
+          height="250px"
+          alt="thumbnail"
+          style={{ borderRadius: "30%" }}
+        />
+      </Center>
+      <br />
+      <Center id="lefty">
+        <OtherButton href="https://drive.google.com/file/d/1M61WFM6_8_0oT95OEDi53d0q7sHWj4UV/view?usp=sharing">
+          View Resume
+        </OtherButton>
+      </Center>
+      <Center>
+        <Title id="about-title" style={{ fontSize: "40px" }}>
+          Shaminder Singh's Story
+        </Title>
+      </Center>
+      <Container>
         <Center
           style={{ paddingTop: "10px", paddingBottom: "10px" }}
           id="home-center"
@@ -88,7 +90,7 @@ function About() {
               src={AvatarProgram}
               className="avatar-program"
               alt="avatar-program"
-              style={{height:"150px"}}
+              style={{ height: "150px" }}
             />
             <p className="about-p">
               Front-end web development allows Shaminder to create and design
@@ -99,19 +101,15 @@ function About() {
             </p>
           </div>
         </Center>
-        </Container>
-        <br/>
-        <Center>
-          <Button to="/">
-            View Projects
-          </Button>
-        </Center>
-        <Center>
-          <Button to="/contact">
-            Contact Me
-          </Button>
-        </Center>
-        <br />
+      </Container>
+      <br />
+      <Center>
+        <Button to="/">View Projects</Button>
+      </Center>
+      <Center>
+        <Button to="/contact">Contact Me</Button>
+      </Center>
+      <br />
     </div>
   );
 }

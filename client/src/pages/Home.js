@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import { Title } from "../components/Title";
-import Button from "../components/Button";
+import {Button} from "../components/Button";
 import { Center } from "../components/Center";
 import logo from "../images/newlogo7.png";
 // import { Arrow } from "../components/Arrow";

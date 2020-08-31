@@ -5,7 +5,7 @@ import BooksBanner from "../images/bluebook.jpg";
 import Hero from "../components/Hero";
 import { Title } from "../components/Title";
 import { BooksStack } from "../components/ImageStack/index";
-import Button from "../components/Button";
+import {Button} from "../components/Button";
 import {Center} from "../components/Center";
 
 function WorkBooks() {
