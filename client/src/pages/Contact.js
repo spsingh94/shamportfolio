@@ -4,7 +4,6 @@ import { Title } from "../components/Title";
 import { Center } from "../components/Center";
 import { Icons } from "../components/Icons";
 import { Maps } from "../components/Maps";
-import ContactForm from "../components/ContactForm";
 
 function Contact() {
   const API_KEY = process.env.REACT_APP_GOOGLE_KEY;
@@ -22,6 +21,9 @@ function Contact() {
     <div>
       <Navbar />
       <Center>
+        <Title id="about-title">Lets Connect!</Title>
+      </Center>
+      <Center>
         <a href="tel:+14144002564">
       <Icons>local_phone</Icons>
         </a>
@@ -31,16 +33,10 @@ function Contact() {
       </a>
       </Center>
       <Center>
-        <Title id="about-title">Lets Connect!</Title>
-      </Center>
-      <Center>
-        <p style={{ textAlign: "center"}}>
-          Provide me with some of your information and a short message and I
+        <p style={{ textAlign: "center", paddingTop:"45px"}}>
+          For emails please provide me with some of your information and a short message and I
           will get back to you at my earliest convenience.
         </p>
-      </Center>
-      <Center>
-        <ContactForm />
       </Center>
       <Title id="my-location">Find Shaminder Singh Here -</Title>
       <Center>

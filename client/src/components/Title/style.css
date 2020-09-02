@@ -48,32 +48,37 @@
 }
 
 #my-location {
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 35px;
+    font-family: 'Alata', sans-serif;
+    font-size: 25px;
     margin-left: 40px;
     text-align: left;
-    color: white;
+    color: black;
+    padding-top: 20px;
+}
+
+@media(max-width: 900px){
+    #my-location {
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 750px){
+    #my-location {
+        font-size: 22px;
+    }
 }
 
 @media(max-width: 650px){
     #my-location {
-    font-size: 25px;
+    font-size: 18px;
     margin-left: 20px;
     }
 }
 
 @media(max-width: 450px){
     #my-location {
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 13px;
-    }
-}
-
-@media(max-width: 350px){
-    #my-location {
-    font-size: 18px;
-    margin-left: 10px;
-
     }
 }
 
