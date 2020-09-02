@@ -14,7 +14,7 @@ function Contact() {
     "&q=New+York,NewYork+NY";
 
   const scrollToMap = () => {
-    window.scrollTo({ top: 540, behavior: "smooth" });
+    window.scrollTo({ top: 505, behavior: "smooth" });
   };
 
   return (
