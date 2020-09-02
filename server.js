@@ -17,12 +17,12 @@ getCreds().then((results) => mailRunner(results));
 
 function mailRunner(creds) {
   var transport = {
-    service: "Outlook365",
-    host: "smtp.office365.com", // Don’t forget to replace with the SMTP host of your provider
+    service: "Gmail",
+    host: "smtp.gmail.com", // Don’t forget to replace with the SMTP host of your provider
     port: 587,
     auth: {
-      user: creds[0].cred,
-      pass: creds[3].cred,
+      user: creds[2].cred,
+      pass: creds[1].cred,
     },
   };
 
@@ -44,7 +44,7 @@ function mailRunner(creds) {
 
     var mail = {
       from: name,
-      to: creds[0].cred, // Change to email address that you want to receive messages on
+      to: creds[2].cred, // Change to email address that you want to receive messages on
       subject: "New Message from Contact Form",
       text: content,
     };
