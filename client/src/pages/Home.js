@@ -4,17 +4,12 @@ import Navbar from "../components/Navbar";
 import { Title } from "../components/Title";
 import {Button} from "../components/Button";
 import { Center } from "../components/Center";
-import logo from "../images/newlogo7.png";
-// import { Arrow } from "../components/Arrow";
-
-import Background from "../images/fav2.jpg";
 import Row from "../components/Row";
 import Col from "../components/Col";
-
+import logo from "../images/newlogo7.png";
 import SocialFit from "../images/app_thumbs/soc-fit.jpg";
 import WorkBooks from "../images/app_thumbs/workbooks-1.jpg";
 import MCLAReact from "../images/app_thumbs/Screen Shot 2020-08-07 at 1.18.41 AM.png";
-
 import Container from "../components/Container";
 import Card from "../components/Card/Card";
 import { CardCont } from "../components/Card/CardCont";
@@ -24,7 +19,7 @@ function Home() {
   return (
     // Upper portion of page
     <div>
-      <Hero backgroundImage={Background}>
+      <Hero>
         <Navbar />
         <h1 className="hero-intro">My Name is Shaminder Singh</h1>
         <p className="hero-desc">

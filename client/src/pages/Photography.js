@@ -9,7 +9,7 @@ import { Center } from "../components/Center";
 function Photography() {
   return (
     <div>
-      <Hero backgroundImage={PhotoHero} id="photography-hero">
+      <Hero>
       <Navbar />
         <Center>
         <Title id="page-title">Photography</Title>

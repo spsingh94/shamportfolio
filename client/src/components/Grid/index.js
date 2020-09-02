@@ -1,7 +1,14 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./style.css";
 
 export function Grid(props) {
+  const [getPictures, setGetPictures] = useState([]);
+
+  useEffect(() => {
+    fetch("https://drive.google.com/uc?export=view&id=1BtyBaDynFn4Ss46AkxgA2vOWa9XhE43X")
+    .then(res => res.json())
+    .then(result => console.log(result))
+  })
 
   return (
     <div className="grid-row">

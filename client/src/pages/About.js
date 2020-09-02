@@ -20,7 +20,7 @@ function About() {
 
   return (
     <div>
-      <Hero backgroundImage={BlueHike}>
+      <Hero>
         <div>
           <Navbar />
           <Title id="page-title">About</Title>
