@@ -5,11 +5,10 @@ import Hero from "../components/Hero";
 import { Center } from "../components/Center";
 import { Button } from "../components/Button";
 import { OtherButton } from "../components/Button";
-import Thumbnail from "../images/pumpkin.jpg";
+import Thumbnail from "../images/IMG_0257.JPG";
 import Sketching from "../images/about_gifs/sketching.gif";
 import Timeline from "../images/timeline/timeline1.png";
 import AvatarProgram from "../images/timeline/av3program.png";
-import BlueHike from "../images/bluehike.jpg";
 import Container from "../components/Container";
 
 function About() {
