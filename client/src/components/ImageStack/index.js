@@ -1,5 +1,11 @@
 import React from "react";
 import "./style.css";
+import Soc1 from "../../images/imagestack/sshome.png";
+import Soc2 from "../../images/imagestack/sfacc2.png";
+import MCLA1 from "../../images/imagestack/mcla1.png";
+import MCLA2 from "../../images/imagestack/ttt.png";
+import work1 from "../../images/imagestack/workbook.png";
+import work2 from "../../images/imagestack/stocks.png";
 
 export function MCLAStack() {
   return (
@@ -7,17 +13,17 @@ export function MCLAStack() {
       <div class="image-stack__item image-stack__item--top">
         <img
           className="stack-image"
-          src="https://drive.google.com/uc?export=view&id=1pAdO_rLxBdq3etw5N_G1BrG7xnxzLPOH"
+          src={MCLA1}
           // style={{ height: "450px" }}
-          alt="A portrait of a girl under hanging flowers."
+          alt="tictactoe"
         />
       </div>
       <div class="image-stack__item image-stack__item--bottom">
         <img
           className="stack-image"
           // style={{ height: "450px", width: "300px" }}
-          src="https://drive.google.com/uc?export=view&id=1QpLWkhVUzz0co64LZ1QOTvta5FTX0Lgo"
-          alt="pic2"
+          src={MCLA2}
+          alt="gamespage"
         />
       </div>
     </div>
@@ -30,15 +36,15 @@ export function FitStack() {
       <div class="image-stack__item image-stack__item--top">
         <img
           className="stack-image"
-          src="https://drive.google.com/uc?export=view&id=1aS0uqwRiQvnKwRSeSAKu9XAGtbQnaEqh"
-          alt="A portrait of a girl under hanging flowers."
+          src={Soc2}
+          alt="accolades"
         />
       </div>
       <div class="image-stack__item image-stack__item--bottom">
         <img
           className="stack-image"
-          src="https://drive.google.com/uc?export=view&id=19DqlzSkk2mmmkIM91EH4DKr88NkJBDZD"
-          alt=""
+          src={Soc1}
+          alt="fithomepage"
         />
       </div>
     </div>
@@ -50,16 +56,16 @@ export function BooksStack() {
     <div class="image-stack">
       <div class="image-stack__item image-stack__item--top">
         <img
-          src="https://drive.google.com/uc?export=view&id=1I2F-cFb6RgDx2EaxC2oq5NVCyWbE4P_d"
+          src={work2}
           className="stack-image"
-          alt="A portrait of a girl under hanging flowers."
+          alt="toolspage"
           />
       </div>
       <div class="image-stack__item image-stack__item--bottom">
         <img
           className="stack-image"
-          src="https://drive.google.com/uc?export=view&id=1_tB_fEr7MrfTx99d_zsO655HmT3QosDF"
-          alt=""
+          src={work1}
+          alt="savedinfopage"
         />
       </div>
     </div>
