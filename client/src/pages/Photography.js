@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import { Title } from "../components/Title";
 import { Grid } from "../components/Grid";
 import Hero from "../components/Hero";
-import PhotoHero from "../images/birdyblue.jpg";
 import { Center } from "../components/Center";
 
 function Photography() {

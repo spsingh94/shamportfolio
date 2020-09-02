@@ -14,7 +14,7 @@ function Contact() {
     "&q=New+York,NewYork+NY";
 
   const scrollToMap = () => {
-    window.scrollTo({ top: 840, behavior: "smooth" });
+    window.scrollTo({ top: 540, behavior: "smooth" });
   };
 
   return (
@@ -28,7 +28,7 @@ function Contact() {
       <Icons>local_phone</Icons>
         </a>
       <Icons onClick={scrollToMap}>add_location</Icons>
-      <a href="mailto:shaminders550@gmail.com">
+      <a href="mailto:spsinghm05@gmail.com">
       <Icons>email</Icons>
       </a>
       </Center>
