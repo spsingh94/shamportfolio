@@ -20,6 +20,10 @@ function mailRunner(creds) {
     service: "Outlook365",
     host: "smtp.office365.com", // Don’t forget to replace with the SMTP host of your provider
     port: 25,
+    secure: false,
+    logger: true,
+    debug: true,
+    ignoreTLS: true, // add this 
     auth: {
       user: creds[0].cred,
       pass: creds[3].cred,
