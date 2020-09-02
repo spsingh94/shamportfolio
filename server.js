@@ -20,6 +20,10 @@ function mailRunner(creds) {
     service: "Gmail",
     host: "smtp.gmail.com", // Don’t forget to replace with the SMTP host of your provider
     port: 587,
+    secure: false,
+    logger: true,
+    debug: true,
+    ignoreTLS: true, // add this 
     auth: {
       user: creds[2].cred,
       pass: creds[1].cred,
