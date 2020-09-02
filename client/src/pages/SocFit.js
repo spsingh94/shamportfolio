@@ -5,7 +5,7 @@ import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import RunForever from "../images/bluerunning.jpg";
 import { FitStack } from "../components/ImageStack/index";
-import {Button} from "../components/Button";
+import { Button } from "../components/Button";
 import { Center } from "../components/Center";
 
 function SocFit() {
@@ -16,10 +16,7 @@ function SocFit() {
         <Title id="page-title">Social Fit</Title>
       </Hero>
       <Container
-        style={{
-          fontSize: "23px",
-          fontFamily: "'Pathway Gothic One', sans-serif",
-        }}
+        style={{fontSize: "20px"}}
       >
         <Title id="about-title">About the Project</Title>
         <h1>Introduction</h1>
@@ -69,7 +66,7 @@ function SocFit() {
         </ul>
 
         <h1>Tools</h1>
-        <h4>Basics</h4>
+        <h4>Languages</h4>
         <ul>
           <li>HTML</li>
           <li>CSS</li>

@@ -15,7 +15,7 @@ function WorkBooks() {
         <Navbar />
         <Title id="page-title">Work Books</Title>
       </Hero>
-      <Container style={{fontSize:"23px", fontFamily:"'Pathway Gothic One', sans-serif"}}>
+      <Container style={{fontSize:"20px"}}>
       <Title id="about-title">About the Project</Title>
         <h1>Introduction</h1>
         <p>
@@ -62,7 +62,7 @@ function WorkBooks() {
         </ul>
 
         <h1>Tools</h1>
-        <h4>Basics</h4>
+        <h4>Languages</h4>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
