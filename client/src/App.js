@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from './pages/About';
 import Home from './pages/Home';
 import Contact from './pages/Contact'
-import Photography from "./pages/Photography";
+// import Photography from "./pages/Photography";
 import MCLA from "./pages/MCLA";
 import WorkBooks from "./pages/WorkBooks";
 import SocFit from "./pages/SocFit";

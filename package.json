@@ -2,6 +2,10 @@
   "name": "shamportfolio",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://shamportfolio.herokuapp.com/",
+  "engines": {
+    "node": "v12.18.x"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -22,7 +26,7 @@
   "scripts": {
     "start": "concurrently \"nodemon server.js\" \"npm run client\"",
     "client": "cd client && npm start",
-    "build": "react-scripts build",
+    "build": "cd client && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
