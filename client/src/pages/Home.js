@@ -6,10 +6,9 @@ import {Button} from "../components/Button";
 import { Center } from "../components/Center";
 import Row from "../components/Row";
 import Col from "../components/Col";
-import logo from "../images/newlogo7.png";
-import SocialFit from "../images/app_thumbs/soc-fit.jpg";
-import WorkBooks from "../images/app_thumbs/workbooks-1.jpg";
-import MCLAReact from "../images/app_thumbs/Screen Shot 2020-08-07 at 1.18.41 AM.png";
+import SocialFit from "../images/smallimages/soc-fit-min.jpg";
+import WorkBooks from "../images/smallimages/workbooks-1-min.jpg";
+import MCLAReact from "../images/smallimages/spiderman.png";
 import Container from "../components/Container";
 import Card from "../components/Card/Card";
 import { CardCont } from "../components/Card/CardCont";
@@ -25,9 +24,9 @@ function Home() {
         <p className="hero-desc">
           Front-End Web Developer • Creator • Problem Solver
         </p>
-        <Center>
+        {/* <Center>
           <img src={logo} alt="center-logo" id="logo-id"/>
-        </Center>
+        </Center> */}
       </Hero>
       {/* Upper portion of page */}
       <Container>
