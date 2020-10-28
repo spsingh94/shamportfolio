@@ -8,12 +8,12 @@ import { FitStack } from "../components/ImageStack/index";
 import { Button } from "../components/Button";
 import { Center } from "../components/Center";
 
-function SocFit() {
+function Backpack() {
   return (
     <>
       <Hero backgroundImage={RunForever}>
         <Navbar />
-        <Title id="page-title">Social Fit</Title>
+        <Title id="page-title">Backpack</Title>
       </Hero>
       <Container
         style={{fontSize: "20px"}}
@@ -192,4 +192,4 @@ function SocFit() {
   );
 }
 
-export default SocFit;
+export default Backpack;

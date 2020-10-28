@@ -7,14 +7,14 @@
   }
 
   .image-stack__item--top {
-    grid-column: 3 / span 12;
+    grid-column: 5 / span 12;
     grid-row: 1;
     padding-top: 8%;
     z-index: 1;
   }
 
   .image-stack__item--bottom {
-    grid-column: 4 / -1;
+    grid-column: 6 / -1;
     grid-row: 1;
     size: 1rem;
     padding-left: 5%;

@@ -2,13 +2,13 @@ import React from "react";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import { Title } from "../components/Title";
-import {Button} from "../components/Button";
+import { Button } from "../components/Button";
 import { Center } from "../components/Center";
 import Row from "../components/Row";
 import Col from "../components/Col";
-import SocialFit from "../images/smallimages/soc-fit-min.jpg";
-import WorkBooks from "../images/smallimages/workbooks-1-min.jpg";
+import BizDash from "../images/bizdash.png";
 import MCLAReact from "../images/smallimages/spiderman.png";
+import Backpack from "../images/backpacklogo.png";
 import Container from "../components/Container";
 import Card from "../components/Card/Card";
 import { CardCont } from "../components/Card/CardCont";
@@ -40,39 +40,61 @@ function Home() {
           <CardCont>
             <Row>
               <Col size="lg-4">
-                <Card src={WorkBooks} alt="workbooks">
+                <Card src={BizDash} alt="workbooks">
                   <CardBod>
-                    <p className="project-name">Work Books</p>
+                    <p className="project-name">Biz-Dashboard</p>
                     <p className="project-descript">
-                      Maintain important financial data in regards to stocks,
-                      cryptocurrency, or currency conversion rates. Web Books is
-                      an organizational tool for entrepreneurs and business
-                      owners to better assess their investments and prospects.
+                      Biz-Dashboard is the businessman and entreprenuers
+                      application. View top business related news, check the
+                      weather, and catch up on stock prices, crypto currency
+                      prices, and check currency conversion rates.
                     </p>
                     <p className="project-role">Front &amp; Back-End</p>
                   </CardBod>
+                  {/* <Center>
+                    <Button to="/biz" style={{ color: "white" }}>
+                      Read More
+                    </Button>
+                  </Center> */}
                   <Center>
-                    <Button to="/workbooks" style={{ color: "white" }}>
-                      View
+                    <Button
+                      onClick={() => {
+                        window.open("https://biz-dashboard.herokuapp.com/");
+                      }}
+                      style={{ color: "white" }}
+                    >
+                      View App
                     </Button>
                   </Center>
                 </Card>
               </Col>
               <Col size="lg-4">
-                <Card src={SocialFit} alt="socialfit">
+                <Card src={Backpack} alt="backpack">
                   <CardBod>
-                    <p className="project-name">Social Fit</p>
+                    <p className="project-name">Backpack Travel</p>
                     <p className="project-descript">
-                      Motivate and encourage yourself to reach your fitness
-                      goal. Social Fit allows its users to exceed their
-                      expectations with the help of social media.
+                      Want to travel but unsure where to go? This application is
+                      designed to help the user discover their next backpack
+                      trip with a few clicks.
                     </p>
-                    <br/>
+                    <br />
                     <p className="project-role">Front-End | UX/UI Design</p>
                   </CardBod>
-                  <Center>
-                    <Button to="/socfit" style={{ color: "white" }}>
+                  {/* <Center>
+                    <Button to="/backpack" style={{ color: "white" }}>
                       View
+                    </Button>
+                  </Center> */}
+                  <Center>
+                    <Button
+                      onClick={() => {
+                        window.open(
+                          "https://backpack-travelplan.herokuapp.com/"
+                        );
+                      }}
+                      style={{ color: "white" }}
+                    >
+                      View App
                     </Button>
                   </Center>
                 </Card>
@@ -86,14 +108,24 @@ function Home() {
                       Morse Code Learning Academy finds a new way to help
                       children in need.
                     </p>
-                    <br/>
+                    <br />
                     <p className="project-role">
                       UX Design | Usability Testing
                     </p>
                   </CardBod>
-                  <Center>
+                  {/* <Center>
                     <Button to="/mcla" style={{ color: "white" }}>
                       View
+                    </Button>
+                  </Center> */}
+                  <Center>
+                    <Button
+                      onClick={() => {
+                        window.open("https://mclareact.herokuapp.com/");
+                      }}
+                      style={{ color: "white" }}
+                    >
+                      View App
                     </Button>
                   </Center>
                 </Card>

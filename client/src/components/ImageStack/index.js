@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
-import Soc1 from "../../images/imagestack/sshome.png";
-import Soc2 from "../../images/imagestack/sfacc2.png";
-import MCLA1 from "../../images/imagestack/mcla1.png";
-import MCLA2 from "../../images/imagestack/ttt.png";
-import work1 from "../../images/imagestack/workbook.png";
-import work2 from "../../images/imagestack/stocks.png";
+import Pack1 from "../../images/imagestack/backpack2.jpg";
+import Pack2 from "../../images/imagestack/backpack1.jpg";
+import MCLA1 from "../../images/imagestack/cla1.jpg";
+import MCLA2 from "../../images/imagestack/cla2.jpg";
+import Biz1 from "../../images/imagestack/biz2.jpg";
+import Biz2 from "../../images/imagestack/biz1.jpg";
 
 export function MCLAStack() {
   return (
@@ -36,14 +36,14 @@ export function FitStack() {
       <div class="image-stack__item image-stack__item--top">
         <img
           className="stack-image"
-          src={Soc2}
+          src={Pack1}
           alt="accolades"
         />
       </div>
       <div class="image-stack__item image-stack__item--bottom">
         <img
           className="stack-image"
-          src={Soc1}
+          src={Pack2}
           alt="fithomepage"
         />
       </div>
@@ -56,7 +56,7 @@ export function BooksStack() {
     <div class="image-stack">
       <div class="image-stack__item image-stack__item--top">
         <img
-          src={work2}
+          src={Biz1}
           className="stack-image"
           alt="toolspage"
           />
@@ -64,7 +64,7 @@ export function BooksStack() {
       <div class="image-stack__item image-stack__item--bottom">
         <img
           className="stack-image"
-          src={work1}
+          src={Biz2}
           alt="savedinfopage"
         />
       </div>

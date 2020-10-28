@@ -8,7 +8,7 @@ import { BooksStack } from "../components/ImageStack/index";
 import {Button} from "../components/Button";
 import {Center} from "../components/Center";
 
-function WorkBooks() {
+function BizDashboard() {
   return (
     <>
       <Hero backgroundImage={BooksBanner}>
@@ -175,4 +175,4 @@ function WorkBooks() {
   );
 }
 
-export default WorkBooks;
+export default BizDashboard;
