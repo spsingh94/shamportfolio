@@ -6,6 +6,7 @@ import { Center } from "../components/Center";
 import { Button } from "../components/Button";
 import { OtherButton } from "../components/Button";
 import Thumbnail from "../images/IMG_0257.JPG";
+import ColorRest from "../images/colorrest.jpg";
 import Sketching from "../images/about_gifs/sketching.gif";
 import Timeline from "../images/timeline/timeline1.png";
 import AvatarProgram from "../images/timeline/av3program.png";
@@ -19,7 +20,7 @@ function About() {
 
   return (
     <div>
-      <Hero>
+      <Hero backgroundImage={ColorRest} height="660px">
         <div>
           <Navbar />
           <Title id="page-title">About</Title>

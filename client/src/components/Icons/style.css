@@ -1,13 +1,12 @@
 .material-icons {
-    color: #4682b4;
+    color: white;
     justify-content: center;
     font-size: 10rem;
     margin-top: 40px;
 }
 
 .material-icons:hover {
-    color: white;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: black;
 }
 

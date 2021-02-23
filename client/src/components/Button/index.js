@@ -14,5 +14,5 @@ return(
 }
 
 export function OtherButton (props) {
-return <a className="btn btn-primary" {...props}>{props.children}</a>
+return <Link className="btn btn-primary" {...props}>{props.children}</Link>
 }

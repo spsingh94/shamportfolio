@@ -1,82 +1,78 @@
 .logo-nav {
-    height: 100px;
-    position: absolute;
-    right: 10px;
-    top:10px;
-    animation: rotation 5s infinite;
-    animation-direction: alternate-reverse;
+  height: 100px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  animation: rotation 5s infinite;
+  animation-direction: alternate-reverse;
 }
 
-  @keyframes rotation {
-    from {
-      transform: rotateY(0)
-    }
-    to {
-      transform: rotateY(359deg)
-
-    }
+@keyframes rotation {
+  from {
+    transform: rotateY(0);
   }
-
-  @media (max-width: 991px){
-    .logo-nav {
-      right: 10px;
-    }
+  to {
+    transform: rotateY(359deg);
   }
+}
+
+@media (max-width: 991px) {
+  .logo-nav {
+    right: 10px;
+  }
+}
 
 .logo-nav:hover {
-    animation: rotation2 .0s infinite;
-    animation-direction: linear;
-  }
+  animation: rotation2 0s infinite;
+  animation-direction: linear;
+}
 
-  @keyframes rotation2 {
-    from {
-      transform: rotateY(180deg)
-    }
-    to {
-      transform: rotateY(359deg)
-
-    }
+@keyframes rotation2 {
+  from {
+    transform: rotateY(180deg);
   }
+  to {
+    transform: rotateY(359deg);
+  }
+}
 
 nav {
-    background-color: transparent;
-    height: 120px;
-    font-family: 'Alata', sans-serif;
-    font-size: 30px;
+  background-color: transparent;
+  height: 120px;
+  font-family: "Alata", sans-serif;
+  font-size: 30px;
 }
 
 .locName {
-    color: white;
-    padding-top: 20px;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: black;
+  color: white;
+  padding-top: 20px;
 }
 
 .locName:hover {
-  text-decoration: line-through;
-  color: white;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .navbar-nav {
     background-color: white;
     width: 255px;
     margin-left: 0px;
     text-align: center;
     border-radius: 10px;
-}
+  }
   .nav-item {
     /* border: solid black 1px; */
     border-radius: 10px;
   }
   .nav-item:hover {
-  background-color: white;
+    background-color: white;
   }
 
   .social-media {
     position: unset !important;
     right: unset !important;
-}
+  }
 }
 
 .fa {
@@ -90,11 +86,11 @@ nav {
 }
 
 .fa:hover {
-color: black;
+  color: black;
 }
 
-  .social-media {
-    padding-top: 25px;
-    position: absolute;
-    right: 115px;
+.social-media {
+  padding-top: 25px;
+  position: absolute;
+  right: 115px;
 }

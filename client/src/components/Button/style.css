@@ -1,14 +1,15 @@
 .btn {
-    font-size: 24px;
-    background-color: #4682b4;
-    font-family: 'Permanent Marker', cursive;
-    color: white;
-    width: 200px;
+    font-size: 13px;
+    background-color: white;
+    /* font-family: "Sans-serif", Arial; */
+    color: black;
+    width: 150px;
     border-radius: 55px;
     margin-bottom: 10px;
-    border: solid 3px black;
+    border: solid 1.5px black;
 }
 .btn:hover {
-    background-color: white;
-    color: black;
+    background: linear-gradient(to bottom, purple 0%, red  100%); 
+    color: white;
+    /* border: solid 1.5px gray; */
 }

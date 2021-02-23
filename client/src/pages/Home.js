@@ -7,6 +7,7 @@ import { Center } from "../components/Center";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import BizDash from "../images/bizdash.png";
+import HeroBack from "../images/colormain.jpg";
 import MCLAReact from "../images/smallimages/spiderman.png";
 import Backpack from "../images/backpacklogo.png";
 import Container from "../components/Container";
@@ -18,7 +19,7 @@ function Home() {
   return (
     // Upper portion of page
     <div>
-      <Hero>
+      <Hero height="660px" backgroundImage={HeroBack}>
         <Navbar />
         <h1 className="hero-intro">My Name is Shaminder Singh</h1>
         <p className="hero-desc">
@@ -61,7 +62,6 @@ function Home() {
                       onClick={() => {
                         window.open("https://biz-dashboard.herokuapp.com/");
                       }}
-                      style={{ color: "white" }}
                     >
                       View App
                     </Button>
@@ -92,7 +92,6 @@ function Home() {
                           "https://backpack-travelplan.herokuapp.com/"
                         );
                       }}
-                      style={{ color: "white" }}
                     >
                       View App
                     </Button>
@@ -123,7 +122,6 @@ function Home() {
                       onClick={() => {
                         window.open("https://mclareact.herokuapp.com/");
                       }}
-                      style={{ color: "white" }}
                     >
                       View App
                     </Button>
