@@ -133,11 +133,8 @@ function Home() {
         </div>
         <br />
         <br />
-        <br />
-        <br />
-        <br />
       </Container>
-      <Title id="about-title" style={{ textAlign: "center" }}>
+      <Title id="about-title" style={{ textAlign: "center", borderTop: "2px black solid" }}>
         Learn More
       </Title>
       <Center>

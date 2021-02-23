@@ -36,7 +36,7 @@ function Contact() {
       </a>
       </Center>
       <Center>
-        <p style={{ textAlign: "center", paddingTop:"45px"}}>
+        <p style={{ textAlign: "center", paddingTop:"45px", color:"white" , fontFamily: "Alata, sans-serif", fontSize: "15px"}}>
           For emails please provide me with some of your information and a short message and I
           will get back to you at my earliest convenience.
         </p>

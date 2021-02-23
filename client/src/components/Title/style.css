@@ -1,8 +1,14 @@
 .connect-header {
     text-align: center;
     color: white;
-    font-family: 'Yellowtail', cursive;
     font-size: 65px;
+    font-family: 'Alata', sans-serif;
+}
+
+#about-title {
+    font-size: 50px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 #page-title {
@@ -80,13 +86,6 @@
     font-size: 16px;
     margin-left: 13px;
     }
-}
-
-#about-title {
-    font-size: 65px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-
 }
 
 @media(max-width: 690px) {

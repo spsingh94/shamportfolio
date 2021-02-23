@@ -23,12 +23,12 @@
 
 .hero .hero-intro {
   color: black;
-  font-family: "Yellowtail", cursive;
+  font-family: 'Alata', sans-serif;
   font-size: 110px;
   padding-top: 90px;
   padding-left: 15px;
   text-align: center;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
 
