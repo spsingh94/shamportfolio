@@ -46,6 +46,8 @@ nav {
 .locName {
   color: white;
   padding-top: 20px;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
 }
 
 .locName:hover {
