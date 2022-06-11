@@ -1,28 +1,21 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import { Center } from "../components/Center";
 import { Button } from "../components/Button";
 import { OtherButton } from "../components/Button";
 import Thumbnail from "../images/IMG_0257.JPG";
-import ColorRest from "../images/colorrest.jpg";
+import HeroBack from "../images/blacksand.jpg";
 import Sketching from "../images/about_gifs/sketching.gif";
 import Timeline from "../images/timeline/timeline1.png";
 import AvatarProgram from "../images/timeline/av3program.png";
 import Container from "../components/Container";
 
 function About() {
-  // const avProgramResized = {
-  //   height:"500px",
-  //   backgroundImage:`${AvatarProgram}`
-  // }
-
   return (
     <div>
-      <Hero backgroundImage={ColorRest} height="660px">
+      <Hero backgroundImage={HeroBack}>
         <div>
-          <Navbar />
           <Title id="page-title">About</Title>
         </div>
       </Hero>
@@ -35,8 +28,7 @@ function About() {
           fontSize: "20px",
         }}
       >
-        Shaminder Singh is a Junior Front-End Web Developer Based in the Greater
-        New York City area.
+        Shaminder Singh is Currently a Scrum Master & Web Developer
       </h5>
       <Center style={{ borderRadius: "50%" }}>
         <img
@@ -49,7 +41,7 @@ function About() {
       <br />
       <Center id="lefty">
         <OtherButton onClick={() => {
-          window.open("https://drive.google.com/file/d/13AT3jnkQeoEEA5mtWR6tihl7CyPxjmT7/view?usp=sharing")
+          window.open("https://drive.google.com/file/d/1hMnllqvLKnZhBQO4vNH-XW0KsnyfaYFb/view?usp=sharing")
         }}>
           View Resume
         </OtherButton>
@@ -95,9 +87,16 @@ function About() {
               style={{ height: "150px" }}
             />
             <p className="about-p">
-              Front-end web development allows Shaminder to create and design
+              Web development allows Shaminder to create and design
               like he always did as a child. Today, he has worked hard on
-              projects with small and large teams and is certified as a Full
+              project's with small and large team's and is certified as a Full
+              Stack Web Developer from Columbia University in the Columbia
+              Engineering Coding Boot Camp Program.
+            </p>
+            <p className="about-p">
+              Web development allows Shaminder to create and design
+              like he always did as a child. Today, he has worked hard on
+              project's with small and large team's and is certified as a Full
               Stack Web Developer from Columbia University in the Columbia
               Engineering Coding Boot Camp Program.
             </p>

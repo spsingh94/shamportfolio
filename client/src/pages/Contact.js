@@ -1,11 +1,10 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import { Center } from "../components/Center";
 import { Icons } from "../components/Icons";
 import { Maps } from "../components/Maps";
-import ColorRest from "../images/colorrest.jpg";
+import HeroBack from "../images/blacksand.jpg";
 
 function Contact() {
   const API_KEY = process.env.REACT_APP_GOOGLE_KEY;
@@ -21,8 +20,7 @@ function Contact() {
 
   return (
     <div>
-      <Hero backgroundImage={ColorRest} height="660px">
-      <Navbar />
+      <Hero backgroundImage={HeroBack}>
       <Center>
         <Title id="about-title">Lets Connect!</Title>
       </Center>

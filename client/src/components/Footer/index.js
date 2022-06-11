@@ -81,7 +81,7 @@ function Footer() {
         </Row>
       </Container>
       <div className="card-footer text-muted">
-        2020 Shaminder Singh. All Rights Reserved.
+        2022 Shaminder Singh. All Rights Reserved.
       </div>
     </div>
   );

@@ -1,14 +1,13 @@
 import React from "react";
 import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
 import { Title } from "../components/Title";
 import { Button } from "../components/Button";
 import { Center } from "../components/Center";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import BizDash from "../images/bizdash.png";
-import HeroBack from "../images/colormain.jpg";
-import MCLAReact from "../images/smallimages/spiderman.png";
+import HeroBack from "../images/blacksand.jpg";
+import MWDLogo from "../images/MWD-logo.png";
 import Backpack from "../images/backpacklogo.png";
 import Container from "../components/Container";
 import Card from "../components/Card/Card";
@@ -19,15 +18,15 @@ function Home() {
   return (
     // Upper portion of page
     <div>
-      <Hero height="660px" backgroundImage={HeroBack}>
-        <Navbar />
-        <h1 className="hero-intro">My Name is Shaminder Singh</h1>
-        <p className="hero-desc">
-          Front-End Web Developer • Creator • Problem Solver
-        </p>
-        {/* <Center>
-          <img src={logo} alt="center-logo" id="logo-id"/>
-        </Center> */}
+      <Hero backgroundImage={HeroBack}>
+        <div className="homepage-text-container">
+          <span id="h1-tag-display-top"></span>
+          <h1 className="hero-intro">My Name is Shaminder Singh</h1>
+          <div className="h1-tag-display-container">
+            <span id="h1-tag-display-bottom"></span>
+          </div>
+          <p className="hero-desc">Web Developer • Creator • Problem Solver</p>
+        </div>
       </Hero>
       {/* Upper portion of page */}
       <Container>
@@ -52,11 +51,6 @@ function Home() {
                     </p>
                     <p className="project-role">Front &amp; Back-End</p>
                   </CardBod>
-                  {/* <Center>
-                    <Button to="/biz" style={{ color: "white" }}>
-                      Read More
-                    </Button>
-                  </Center> */}
                   <Center>
                     <Button
                       onClick={() => {
@@ -80,11 +74,6 @@ function Home() {
                     <br />
                     <p className="project-role">Front-End | UX/UI Design</p>
                   </CardBod>
-                  {/* <Center>
-                    <Button to="/backpack" style={{ color: "white" }}>
-                      View
-                    </Button>
-                  </Center> */}
                   <Center>
                     <Button
                       onClick={() => {
@@ -99,28 +88,21 @@ function Home() {
                 </Card>
               </Col>
               <Col size="lg-4">
-                <Card src={MCLAReact} alt="mcla">
+                <Card src={MWDLogo} alt="mcla">
                   <CardBod>
-                    <p className="project-name">Morse Code Learning Academy</p>
+                    <p className="project-name">Mr. Wheel Deal</p>
                     <p className="project-descript">
-                      Dedicated to teaching students with learning disabilities.
-                      Morse Code Learning Academy finds a new way to help
-                      children in need.
+                      The Mr. Wheel Deal goal is to provide customers with a personalized wheel buying experience they’d
+                      find at a local shop – mixed with the selection and pricing offered by a national retailer.
                     </p>
-                    <br />
                     <p className="project-role">
-                      UX Design | Usability Testing
+                      Front-End & Back-End
                     </p>
                   </CardBod>
-                  {/* <Center>
-                    <Button to="/mcla" style={{ color: "white" }}>
-                      View
-                    </Button>
-                  </Center> */}
                   <Center>
                     <Button
                       onClick={() => {
-                        window.open("https://mclareact.herokuapp.com/");
+                        window.open("https://mrwheeldeal.com");
                       }}
                     >
                       View App

@@ -7,7 +7,6 @@
 
 .material-icons:hover {
     -webkit-text-stroke-width: 5px;
-    -webkit-text-stroke-color: black;
 }
 
 @media (max-width: 620px) {

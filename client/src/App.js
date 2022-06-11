@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from "./pages/About";
@@ -14,7 +15,7 @@ function App() {
   return (
     <>
       <Router>
-        {/* <Navbar /> */}
+        <Navbar />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route exact path="/photography" component={Photography} />
