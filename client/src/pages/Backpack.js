@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import Container from "../components/Container";
 import { Title } from "../components/Title";
 import Hero from "../components/Hero";
@@ -12,7 +12,7 @@ function Backpack() {
   return (
     <>
       <Hero backgroundImage={RunForever}>
-        <Navbar />
+        {/* <Navbar /> */}
         <Title id="page-title">Backpack</Title>
       </Hero>
       <Container

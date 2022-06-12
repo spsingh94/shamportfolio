@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import Container from "../components/Container";
 import BooksBanner from "../images/bluebook.jpg";
 import Hero from "../components/Hero";
@@ -12,7 +12,7 @@ function BizDashboard() {
   return (
     <>
       <Hero backgroundImage={BooksBanner}>
-        <Navbar />
+        {/* <Navbar /> */}
         <Title id="page-title">Work Books</Title>
       </Hero>
       <Container style={{fontSize:"20px"}}>

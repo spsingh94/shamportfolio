@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
+import Navbar from "../components/Navbar";
+import { navbarJS } from "./js/Scroll";
 import Hero from "../components/Hero";
 import { Title } from "../components/Title";
 import { Button } from "../components/Button";
@@ -7,9 +9,11 @@ import { mwdProjectSections as MWD, bizProjectSections as Biz, bpProjectSections
 import HeroBack from "../images/blacksand.jpg";
 
 function Home() {
+  const projectsSection = useRef(null);
+  const navbarBg = navbarJS(projectsSection);
   return (
-    // Upper portion of page
     <div>
+      <Navbar bgColor={navbarBg} />
       <Hero backgroundImage={HeroBack}>
         <div className="homepage-text-container">
           <span id="h1-tag-display-top"></span>
@@ -21,23 +25,14 @@ function Home() {
           <div className="desc-underline"></div>
         </div>
       </Hero>
-      {/* Upper portion of page */}
-      <div>
+      <section className="project-showcase" ref={projectsSection}>
         <Title id="about-title" style={{ textAlign: "center" }}>
           Projects
         </Title>
         <MWD />
-        <Biz/>
-        <BackPack/>
-      </div>
-      <br />
-      <Title id="about-title" style={{ textAlign: "center", borderTop: "2px black solid" }}>
-        Learn More
-      </Title>
-      <Center>
-        <Button to="/about">About</Button>
-      </Center>
-      <br />
+        <Biz />
+        <BackPack />
+      </section>
     </div>
   );
 }

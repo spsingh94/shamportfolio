@@ -4,6 +4,7 @@ nav {
   font-size: 30px;
   z-index: 999;
   width: 100%;
+  height: 90px;
   position: fixed !important;
 }
 
@@ -20,7 +21,7 @@ nav {
 }
 
 .logo-nav {
-  height: 100px;
+  height: 70px;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -45,10 +46,6 @@ nav {
   padding-top: 15px;
   position: absolute;
   right: 115px;
-}
-
-.navbar-toggler {
-  margin-top: 30px;
 }
 
 @media (max-width: 991px) {
