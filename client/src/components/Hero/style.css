@@ -19,8 +19,27 @@
 
 .hero .hero-intro {
   -webkit-text-stroke-width: 1px;
-  margin-bottom: 15px;
-  margin-right: 15px;
+  overflow: hidden;
+  border-right: .15em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding-bottom: 3px;
+  font-size: 7vw;
+  animation: 
+  typing 3.5s steps(30, end),
+  blink-caret .9s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
 }
 
 .hero .hero-desc {
@@ -29,6 +48,27 @@
   width: max-content;
   margin: auto;
   font-size: 4vw;
+}
+
+
+.hero .desc-underline {
+  background-color: white;
+  height: 1px;
+  width: 0%;
+  margin: 10px auto;
+  animation-name: spread;
+  animation-duration: 1s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spread {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 60%;
+  }
 }
 
 .hero-content-container .homepage-text-container .h1-tag-display-container {
@@ -79,6 +119,19 @@
   -webkit-text-stroke-width: 1px;
 }
 
+.animated-cursor {
+  position: fixed;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-60%, -90%);
+  border: 1px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(2px);
+}
+
 @media screen and (min-width: 600px) {
   .hero .hero-desc {
     font-size: 1.5rem;
@@ -93,6 +146,7 @@
   .hero .hero-intro {
     margin-bottom: 10px;
     margin-right: 0px;
+    font-size: 3.5rem;
   }
 }
 
