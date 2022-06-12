@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Navbar from "../components/Navbar";
-import { navbarJS } from "./js/Scroll";
+import { NavbarJS } from "./js/Scroll";
 import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import { Center } from "../components/Center";
@@ -15,7 +15,7 @@ import Container from "../components/Container";
 
 function About() {
   const aboutSection = useRef(null);
-  const navbarBg = navbarJS(aboutSection);
+  const navbarBg = NavbarJS(aboutSection);
   return (
     <div>
       <Navbar bgColor={navbarBg} />

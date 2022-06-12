@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
-import { navbarJS } from "./js/Scroll";
+import { NavbarJS } from "./js/Scroll";
 import Hero from "../components/Hero";
 import { Title } from "../components/Title";
 import { Button } from "../components/Button";
@@ -10,7 +10,7 @@ import HeroBack from "../images/blacksand.jpg";
 
 function Home() {
   const projectsSection = useRef(null);
-  const navbarBg = navbarJS(projectsSection);
+  const navbarBg = NavbarJS(projectsSection);
   return (
     <div>
       <Navbar bgColor={navbarBg} />
