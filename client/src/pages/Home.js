@@ -1,16 +1,21 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import Navbar from "../components/Navbar";
-import { useNavbarJS } from "./js/Scroll";
+import { useNavbarJS } from "./js/ScrollNavbarBg";
+import { useImageAnimationJS } from "./js/ScrollProjectImageAnimation";
 import Hero from "../components/Hero";
 import { Title } from "../components/Title";
-import { Button } from "../components/Button";
-import { Center } from "../components/Center";
 import { mwdProjectSections as MWD, bizProjectSections as Biz, bpProjectSections as BackPack } from "../components/projectSections";
 import HeroBack from "../images/blacksand.jpg";
 
 function Home() {
+  // Activates black background behind Navbar when needed.
   const projectsSection = useRef(null);
   const navbarBg = useNavbarJS(projectsSection);
+  
+  // Animates project showcase images into frame.
+  const projectShowcase = useRef(null);
+  const projectImageAnimation = useImageAnimationJS(projectShowcase);
+
   return (
     <div>
       <Navbar bgColor={navbarBg} />
@@ -29,7 +34,9 @@ function Home() {
         <Title id="about-title" style={{ textAlign: "center" }}>
           Projects
         </Title>
-        <MWD />
+        <div ref={projectShowcase} >
+          <MWD className={projectImageAnimation} />
+        </div>
         <Biz />
         <BackPack />
       </section>

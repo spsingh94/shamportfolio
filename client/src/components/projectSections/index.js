@@ -10,9 +10,9 @@ import BP1 from "../../images/backpack-tiles/homepage.png";
 import BP2 from "../../images/backpack-tiles/info.png";
 import BP3 from "../../images/backpack-tiles/action.png";
 
-export function mwdProjectSections() {
+export function mwdProjectSections({className = ''}) {
     return (
-        <section className="project-section" id="mwd-project-section">
+        <section className={`project-section${className}`} id="mwd-project-section">
             <div className="h2-container">
                 <h2>Mr. Wheel Deal</h2>
             </div>

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Navbar from "../components/Navbar";
-import { useNavbarJS } from "./js/Scroll";
+import { useNavbarJS } from "./js/ScrollNavbarBg";
 import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import { Center } from "../components/Center";
