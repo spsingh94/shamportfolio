@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Navbar from "../components/Navbar";
-import { NavbarJS } from "./js/Scroll";
+import { useNavbarJS } from "./js/Scroll";
 import { Title } from "../components/Title";
 import Hero from "../components/Hero";
 import { Center } from "../components/Center";
@@ -21,7 +21,7 @@ function Contact() {
   };
 
   const googleMapsSection = useRef();
-  const navbarBg = NavbarJS(googleMapsSection);
+  const navbarBg = useNavbarJS(googleMapsSection);
   
   return (
     <div>

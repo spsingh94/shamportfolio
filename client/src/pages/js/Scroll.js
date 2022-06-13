@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export function NavbarJS(section) {
+export function useNavbarJS(section) {
     const [navbarBg, setNavbarBg] = useState("initial");
     
     useEffect(() => {
