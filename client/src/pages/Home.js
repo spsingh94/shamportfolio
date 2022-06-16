@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
 import { useNavbarJS } from "./js/ScrollNavbarBg";
 import { useImageAnimationJS } from "./js/ScrollProjectImageAnimation";
@@ -12,9 +12,15 @@ function Home() {
   const projectsSection = useRef(null);
   const navbarBg = useNavbarJS(projectsSection);
   
-  // Animates project showcase images into frame.
-  const projectShowcase = useRef(null);
-  const projectImageAnimation = useImageAnimationJS(projectShowcase);
+  // Grab every project showcased element
+  const projectShowcaseMWD = useRef(null);
+  const projectShowcaseBiz = useRef(null);
+  const projectShowcaseBP  = useRef(null);
+
+  // Get class for project show case sections to animate accordingly
+  const projectAnimationMWD = useImageAnimationJS(projectShowcaseMWD);
+  const projectAnimationBiz = useImageAnimationJS(projectShowcaseBiz);
+  const projectAnimationBP  = useImageAnimationJS(projectShowcaseBP);
 
   return (
     <div>
@@ -34,11 +40,15 @@ function Home() {
         <Title id="about-title" style={{ textAlign: "center" }}>
           Projects
         </Title>
-        <div ref={projectShowcase} >
-          <MWD className={projectImageAnimation} />
+        <div ref={projectShowcaseMWD} >
+          <MWD className={projectAnimationMWD} />
         </div>
-        <Biz />
-        <BackPack />
+        <div ref={projectShowcaseBiz} >
+          <Biz className={projectAnimationBiz} />
+        </div>
+        <div ref={projectShowcaseBP} >
+          <BackPack className={projectAnimationBP} />
+        </div>
       </section>
     </div>
   );

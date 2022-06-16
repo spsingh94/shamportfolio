@@ -28,9 +28,9 @@ export function mwdProjectSections({className = ''}) {
     )
 };
 
-export function bizProjectSections() {
+export function bizProjectSections({className = ''}) {
     return (
-        <section className="project-section" id="biz-project-section">
+        <section className={`project-section${className}`} id="biz-project-section">
             <div className="h2-container">
                 <h2>Biz Dashboard</h2>
             </div>
@@ -46,9 +46,9 @@ export function bizProjectSections() {
     )
 };
 
-export function bpProjectSections() {
+export function bpProjectSections({className = ''}) {
     return (
-        <section className="project-section" id="bp-project-section">
+        <section className={`project-section${className}`} id="bp-project-section">
             <div className="h2-container">
                 <h2>Backpack Travel Plan</h2>
             </div>
