@@ -2,6 +2,11 @@
     padding: 10px;
 }
 
+.project-section .h2-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .project-container .text-and-button {
     text-align: center;
 }
@@ -11,16 +16,11 @@
 }
 
 #biz-project-section, #bp-project-section {
-    margin-top: 100px;
+    margin-top: 35px;
 }
 
 .activate {
     animation: fadeIn 2s;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
 }
 
 .revert {
@@ -28,9 +28,116 @@
     animation: fadeOut 1s;
 }
 
+.slider {
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+}
+
+.slider::before, .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 300px;
+    position: absolute;
+    width: 150px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    -webkit-animation: scroll 14s linear infinite;
+    animation: scroll 14s linear infinite;
+    display: flex;
+    width: calc(150px * 14);
+}
+
+#biz-image-container .slider .slide-track {
+    -webkit-animation: oppositescroll 14s linear infinite;
+    animation: oppositescroll 14s linear infinite;
+    display: flex;
+    position: absolute;
+    right: 0px;
+    width: calc(150px * 14);
+}
+
+.slider .slide {
+    height: 100px;
+    width: 150px;
+}
+
+.slider .slide img {
+    height: 300px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 @keyframes fadeOut {
     0% { opacity: 1; }
     100% { opacity: 0; }
+}
+
+@-webkit-keyframes scroll {
+    0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+
+    100% {
+    -webkit-transform: translateX(calc(-150px * 7));
+    transform: translateX(calc(-150px * 7));
+    }
+}
+
+@keyframes scroll {
+    0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+
+    100% {
+    -webkit-transform: translateX(calc(-150px * 7));
+    transform: translateX(calc(-150px * 7));
+    }
+}
+
+@-webkit-keyframes oppositescroll {
+    0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+
+    100% {
+    -webkit-transform: translateX(calc(150px * 7));
+    transform: translateX(calc(150px * 7));
+    }
+}
+
+@keyframes oppositescroll {
+    0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+
+    100% {
+    -webkit-transform: translateX(calc(150px * 7));
+    transform: translateX(calc(150px * 7));
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -42,6 +149,7 @@
     .project-section .h2-container {
         width: 60%;
         margin: auto;
+        text-align: unset;
     }
 
     #mwd-project-section h2, #bp-project-section h2 {
@@ -51,73 +159,8 @@
     #biz-image-container {
         order: 2;
     }
+
+    #biz-project-section, #bp-project-section {
+        margin-top: 100px;
+    }
 }
-
-    @-webkit-keyframes scroll {
-        0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        }
-
-        100% {
-        -webkit-transform: translateX(calc(-150px * 7));
-        transform: translateX(calc(-150px * 7));
-        }
-    }
-
-    @keyframes scroll {
-        0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        }
-
-        100% {
-        -webkit-transform: translateX(calc(-150px * 7));
-        transform: translateX(calc(-150px * 7));
-        }
-    }
-
-    .slider {
-        height: 300px;
-        margin: auto;
-        overflow: hidden;
-        position: relative;
-        width: 500px;
-    }
-
-    .slider::before, .slider::after {
-        background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-        content: "";
-        height: 300px;
-        position: absolute;
-        width: 150px;
-        z-index: 2;
-    }
-
-    .slider::after {
-        right: 0;
-        top: 0;
-        -webkit-transform: rotateZ(180deg);
-        transform: rotateZ(180deg);
-    }
-    
-    .slider::before {
-        left: 0;
-        top: 0;
-    }
-
-    .slider .slide-track {
-        -webkit-animation: scroll 14s linear infinite;
-        animation: scroll 14s linear infinite;
-        display: flex;
-        width: calc(150px * 14);
-    }
-
-    .slider .slide {
-        height: 100px;
-        width: 150px;
-    }
-
-    .slider .slide img {
-        height: 300px;
-    }
