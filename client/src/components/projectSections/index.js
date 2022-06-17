@@ -18,11 +18,57 @@ export function mwdProjectSections({className = ''}) {
             </div>
             <div className="project-container">
                 <div className="image-container">
-                    <img src={MWD1} className="project-img" alt="mwd-homepage" />
-                    <img src={MWD2} className="project-img" alt="mwd-wheels-for-sale" />
-                    <img src={MWD3} className="project-img" alt="mwd-modal-popup" />
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <img src={MWD1} className="project-img project-img1" alt="mwd-homepage" />
+                            </div>
+                            <div class="slide">
+                                <img src={MWD2} className="project-img project-img2" alt="mwd-wheels-for-sale" />
+                            </div>
+                            <div class="slide">
+                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                            </div>
+                            <div class="slide">
+                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                            </div>
+                            <div class="slide">
+                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                            </div>
+                            <div class="slide">
+                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                            </div>
+                            <div class="slide">
+                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                            </div>
+                            <div class="slide">
+                                <img src={MWD1} className="project-img project-img1" alt="mwd-homepage" />
+                            </div>
+                            <div class="slide">
+                                <img src={MWD2} className="project-img project-img2" alt="mwd-wheels-for-sale" />
+                            </div>
+                            <div class="slide">
+                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                            </div>
+                            <div class="slide">
+                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                            </div>
+                            <div class="slide">
+                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                            </div>
+                            <div class="slide">
+                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                            </div>
+                            <div class="slide">
+                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis magnam at debitis tempore accusantium, aliquid dolorum dolore cum. Vitae voluptas molestiae aperiam quaerat alias culpa deserunt saepe illum eum, dolorum assumenda dolore eaque voluptate aspernatur nostrum et laborum optio nobis commodi impedit officiis, fugiat repellendus repudiandae adipisci! Cupiditate voluptatibus quam fuga, itaque veritatis aspernatur corporis sed facere mollitia, provident porro iste nisi ipsam alias, optio aliquam nesciunt quas sapiente amet libero perspiciatis totam laborum et deserunt! Eveniet nihil maiores eos magni, iusto dolor esse harum velit cum laudantium, laborum sint, voluptates aspernatur? Aut, quae quaerat deleniti quas sequi enim. Consequuntur?</p>
+                <div className="text-and-button">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis magnam at debitis tempore accusantium, aliquid dolorum dolore cum. Vitae voluptas molestiae aperiam quaerat alias culpa deserunt saepe illum eum, dolorum assumenda dolore eaque voluptate aspernatur nostrum et laborum optio nobis commodi impedit officiis, fugiat repellendus repudiandae adipisci! Cupiditate voluptatibus quam fuga, itaque veritatis aspernatur corporis sed facere mollitia, provident porro iste nisi ipsam alias, optio aliquam nesciunt quas sapiente amet libero perspiciatis totam laborum et deserunt! Eveniet nihil maiores eos magni, iusto dolor esse harum velit cum laudantium, laborum sint, voluptates aspernatur? Aut, quae quaerat deleniti quas sequi enim. Consequuntur?</p>
+                    <input type='button' value='More Information' />
+                </div>
             </div>
         </section>
     )
@@ -36,11 +82,57 @@ export function bizProjectSections({className = ''}) {
             </div>
             <div className="project-container">
                 <div className="image-container" id="biz-image-container">
-                    <img src={Biz1} className="project-img" alt="biz-homepage" />
-                    <img src={Biz2} className="project-img" alt="biz-tools" />
-                    <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <img src={Biz1} className="project-img project-img1" alt="biz-homepage" />
+                            </div>
+                            <div class="slide">
+                                <img src={Biz2} className="project-img project-img2" alt="biz-tools" />
+                            </div>
+                            <div class="slide">
+                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={Biz1} className="project-img project-img1" alt="biz-homepage" />
+                            </div>
+                            <div class="slide">
+                                <img src={Biz2} className="project-img project-img2" alt="biz-tools" />
+                            </div>
+                            <div class="slide">
+                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis magnam at debitis tempore accusantium, aliquid dolorum dolore cum. Vitae voluptas molestiae aperiam quaerat alias culpa deserunt saepe illum eum, dolorum assumenda dolore eaque voluptate aspernatur nostrum et laborum optio nobis commodi impedit officiis, fugiat repellendus repudiandae adipisci! Cupiditate voluptatibus quam fuga, itaque veritatis aspernatur corporis sed facere mollitia, provident porro iste nisi ipsam alias, optio aliquam nesciunt quas sapiente amet libero perspiciatis totam laborum et deserunt! Eveniet nihil maiores eos magni, iusto dolor esse harum velit cum laudantium, laborum sint, voluptates aspernatur? Aut, quae quaerat deleniti quas sequi enim. Consequuntur?</p>
+                <div className="text-and-button">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis magnam at debitis tempore accusantium, aliquid dolorum dolore cum. Vitae voluptas molestiae aperiam quaerat alias culpa deserunt saepe illum eum, dolorum assumenda dolore eaque voluptate aspernatur nostrum et laborum optio nobis commodi impedit officiis, fugiat repellendus repudiandae adipisci! Cupiditate voluptatibus quam fuga, itaque veritatis aspernatur corporis sed facere mollitia, provident porro iste nisi ipsam alias, optio aliquam nesciunt quas sapiente amet libero perspiciatis totam laborum et deserunt! Eveniet nihil maiores eos magni, iusto dolor esse harum velit cum laudantium, laborum sint, voluptates aspernatur? Aut, quae quaerat deleniti quas sequi enim. Consequuntur?</p>
+                    <input type='button' value='More Information' />
+                </div>
             </div>
         </section>
     )
@@ -54,11 +146,57 @@ export function bpProjectSections({className = ''}) {
             </div>
             <div className="project-container">
                 <div className="image-container">
-                    <img src={BP1} className="project-img" alt="bp-homepage" />
-                    <img src={BP2} className="project-img" alt="bp-info" />
-                    <img src={BP3} className="project-img" alt="bp-tool" />
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <img src={BP1} className="project-img project-img1" alt="bp-homepage" />
+                            </div>
+                            <div class="slide">
+                                <img src={BP2} className="project-img project-img2" alt="bp-info" />
+                            </div>
+                            <div class="slide">
+                                <img src={BP3} className="project-img" alt="bp-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={BP3} className="project-img" alt="bp-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={BP3} className="project-img" alt="bp-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={BP3} className="project-img" alt="bp-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={BP3} className="project-img" alt="bp-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={BP1} className="project-img project-img1" alt="bp-homepage" />
+                            </div>
+                            <div class="slide">
+                                <img src={BP2} className="project-img project-img2" alt="bp-info" />
+                            </div>
+                            <div class="slide">
+                                <img src={BP3} className="project-img" alt="bp-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={BP3} className="project-img" alt="bp-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={BP3} className="project-img" alt="bp-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={BP3} className="project-img" alt="bp-tool" />
+                            </div>
+                            <div class="slide">
+                                <img src={BP3} className="project-img" alt="bp-tool" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis magnam at debitis tempore accusantium, aliquid dolorum dolore cum. Vitae voluptas molestiae aperiam quaerat alias culpa deserunt saepe illum eum, dolorum assumenda dolore eaque voluptate aspernatur nostrum et laborum optio nobis commodi impedit officiis, fugiat repellendus repudiandae adipisci! Cupiditate voluptatibus quam fuga, itaque veritatis aspernatur corporis sed facere mollitia, provident porro iste nisi ipsam alias, optio aliquam nesciunt quas sapiente amet libero perspiciatis totam laborum et deserunt! Eveniet nihil maiores eos magni, iusto dolor esse harum velit cum laudantium, laborum sint, voluptates aspernatur? Aut, quae quaerat deleniti quas sequi enim. Consequuntur?</p>
+                <div className="text-and-button">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis magnam at debitis tempore accusantium, aliquid dolorum dolore cum. Vitae voluptas molestiae aperiam quaerat alias culpa deserunt saepe illum eum, dolorum assumenda dolore eaque voluptate aspernatur nostrum et laborum optio nobis commodi impedit officiis, fugiat repellendus repudiandae adipisci! Cupiditate voluptatibus quam fuga, itaque veritatis aspernatur corporis sed facere mollitia, provident porro iste nisi ipsam alias, optio aliquam nesciunt quas sapiente amet libero perspiciatis totam laborum et deserunt! Eveniet nihil maiores eos magni, iusto dolor esse harum velit cum laudantium, laborum sint, voluptates aspernatur? Aut, quae quaerat deleniti quas sequi enim. Consequuntur?</p>
+                    <input type='button' value='More Information' />
+                </div>
             </div>
         </section>
     )
