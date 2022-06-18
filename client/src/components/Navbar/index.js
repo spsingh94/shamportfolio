@@ -22,11 +22,6 @@ function Navbar(props) {
               <p className="locName">About</p>
             </Link>
           </li>
-          {/* <li className="nav-item">
-            <Link to="/photography" className={window.location.pathname === "/photography" ? "nav-link active" : "nav-link"}>
-              <p className="locName">Photography</p>
-            </Link>
-          </li> */}
           <li className="nav-item">
             <Link to="/contact" className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}>
               <p className="locName">Contact</p>

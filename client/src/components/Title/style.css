@@ -1,6 +1,5 @@
 .connect-header {
     text-align: center;
-    color: white;
     font-size: 65px;
     font-family: 'Alata', sans-serif;
 }
@@ -9,18 +8,16 @@
     font-size: 50px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
+    margin-bottom: 40px;
 }
 
 #page-title {
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
     text-align: center;
     font-size: 120px;
-    padding-bottom: 150px;
-    padding-top: 90px;
+    color: white;
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1100px) {
     #page-title {
         font-size: 90px;
     }
@@ -29,14 +26,12 @@
 @media (max-width: 600px) {
     #page-title {
         font-size: 53px;
-        /* margin-top: 100px; */
     }
 }
 
 @media (max-width: 300px) {
     #page-title {
         font-size: 45px;
-        /* margin-top: 100px; */
     }
 }
 
@@ -62,34 +57,34 @@
     padding-top: 20px;
 }
 
-@media(max-width: 900px){
+@media(max-width: 900px) {
     #my-location {
         margin-left: 30px;
     }
 }
 
-@media(max-width: 750px){
+@media(max-width: 750px) {
     #my-location {
         font-size: 22px;
     }
 }
 
-@media(max-width: 650px){
+@media(max-width: 650px) {
     #my-location {
-    font-size: 18px;
-    margin-left: 20px;
+        font-size: 18px;
+        margin-left: 20px;
     }
 }
 
-@media(max-width: 450px){
+@media(max-width: 450px) {
     #my-location {
-    font-size: 16px;
-    margin-left: 13px;
+        font-size: 16px;
+        margin-left: 13px;
     }
 }
 
 @media(max-width: 690px) {
     #about-title {
         font-size: 45px;
-}
+    }
 }

@@ -9,13 +9,11 @@ import MWD3 from "../../images/mwd-tiles/action.png";
 import BP1 from "../../images/backpack-tiles/homepage.png";
 import BP2 from "../../images/backpack-tiles/info.png";
 import BP3 from "../../images/backpack-tiles/action.png";
+import { OtherButton } from "../Button";
 
-export function mwdProjectSections({className = ''}) {
+export function mwdProjectSections({ className = '' }) {
     return (
         <section className={`project-section${className}`} id="mwd-project-section">
-            <div className="h2-container">
-                <h2>Mr. Wheel Deal</h2>
-            </div>
             <div className="project-container">
                 <div className="image-container">
                     <div class="slider">
@@ -66,20 +64,20 @@ export function mwdProjectSections({className = ''}) {
                     </div>
                 </div>
                 <div className="text-and-button">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis magnam at debitis tempore accusantium, aliquid dolorum dolore cum. Vitae voluptas molestiae aperiam quaerat alias culpa deserunt saepe illum eum, dolorum assumenda dolore eaque voluptate aspernatur nostrum et laborum optio nobis commodi impedit officiis, fugiat repellendus repudiandae adipisci! Cupiditate voluptatibus quam fuga, itaque veritatis aspernatur corporis sed facere mollitia, provident porro iste nisi ipsam alias, optio aliquam nesciunt quas sapiente amet libero perspiciatis totam laborum et deserunt! Eveniet nihil maiores eos magni, iusto dolor esse harum velit cum laudantium, laborum sint, voluptates aspernatur? Aut, quae quaerat deleniti quas sequi enim. Consequuntur?</p>
-                    <input type='button' value='More Information' />
+                    <div className="h2-container">
+                        <h2>Mr. Wheel Deal</h2>
+                    </div>
+                    <p>A website designed to offer customers the best deal on wheels, tires, and suspension. Worked on creating the front-end, the quote modal that displays customer selected products, and cart page which includes the customer checkout process.</p>
+                    <OtherButton onClick={() => { window.open("https://mrwheeldeal.com") }}>View Website</OtherButton>
                 </div>
             </div>
         </section>
     )
 };
 
-export function bizProjectSections({className = ''}) {
+export function bizProjectSections({ className = '' }) {
     return (
         <section className={`project-section${className}`} id="biz-project-section">
-            <div className="h2-container">
-                <h2>Biz Dashboard</h2>
-            </div>
             <div className="project-container">
                 <div className="image-container" id="biz-image-container">
                     <div class="slider">
@@ -130,20 +128,20 @@ export function bizProjectSections({className = ''}) {
                     </div>
                 </div>
                 <div className="text-and-button">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis magnam at debitis tempore accusantium, aliquid dolorum dolore cum. Vitae voluptas molestiae aperiam quaerat alias culpa deserunt saepe illum eum, dolorum assumenda dolore eaque voluptate aspernatur nostrum et laborum optio nobis commodi impedit officiis, fugiat repellendus repudiandae adipisci! Cupiditate voluptatibus quam fuga, itaque veritatis aspernatur corporis sed facere mollitia, provident porro iste nisi ipsam alias, optio aliquam nesciunt quas sapiente amet libero perspiciatis totam laborum et deserunt! Eveniet nihil maiores eos magni, iusto dolor esse harum velit cum laudantium, laborum sint, voluptates aspernatur? Aut, quae quaerat deleniti quas sequi enim. Consequuntur?</p>
-                    <input type='button' value='More Information' />
+                    <div className="h2-container">
+                        <h2>Biz Dashboard</h2>
+                    </div>
+                    <p>Biz-Dashboard is the businessman and entrepreneur’s application. View top business-related news, check the weather, catch up on stock prices, cryptocurrency prices, and currency conversion rates.</p>
+                    <OtherButton onClick={() => { window.open("http://biz-dashboard.herokuapp.com") }}>View Website</OtherButton>
                 </div>
             </div>
         </section>
     )
 };
 
-export function bpProjectSections({className = ''}) {
+export function bpProjectSections({ className = '' }) {
     return (
         <section className={`project-section${className}`} id="bp-project-section">
-            <div className="h2-container">
-                <h2>Backpack Travel Plan</h2>
-            </div>
             <div className="project-container">
                 <div className="image-container">
                     <div class="slider">
@@ -194,8 +192,11 @@ export function bpProjectSections({className = ''}) {
                     </div>
                 </div>
                 <div className="text-and-button">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis magnam at debitis tempore accusantium, aliquid dolorum dolore cum. Vitae voluptas molestiae aperiam quaerat alias culpa deserunt saepe illum eum, dolorum assumenda dolore eaque voluptate aspernatur nostrum et laborum optio nobis commodi impedit officiis, fugiat repellendus repudiandae adipisci! Cupiditate voluptatibus quam fuga, itaque veritatis aspernatur corporis sed facere mollitia, provident porro iste nisi ipsam alias, optio aliquam nesciunt quas sapiente amet libero perspiciatis totam laborum et deserunt! Eveniet nihil maiores eos magni, iusto dolor esse harum velit cum laudantium, laborum sint, voluptates aspernatur? Aut, quae quaerat deleniti quas sequi enim. Consequuntur?</p>
-                    <input type='button' value='More Information' />
+                    <div className="h2-container">
+                        <h2>Backpack Travel Plan</h2>
+                    </div>
+                    <p>A traveling application which helps the user discover their next backpack trip with a few clicks. Algorithm designed to generate destination at random and locate available tickets for air travel.</p>
+                    <OtherButton onClick={() => { window.open("http://backpack-travelplan.herokuapp.com") }}>View Website</OtherButton>
                 </div>
             </div>
         </section>

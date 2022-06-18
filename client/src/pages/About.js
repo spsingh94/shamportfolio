@@ -34,7 +34,7 @@ function About() {
             fontSize: "20px",
           }}
         >
-          Shaminder Singh is Currently a Scrum Master & Web Developer
+          Shaminder Singh is Currently a Scrum Master & Web Developer At SD Wheel Corp.
         </h5>
         <Center style={{ borderRadius: "50%" }}>
           <img
@@ -92,13 +92,6 @@ function About() {
                 alt="avatar-program"
                 style={{ height: "150px" }}
               />
-              <p className="about-p">
-                Web development allows Shaminder to create and design
-                like he always did as a child. Today, he has worked hard on
-                project's with small and large team's and is certified as a Full
-                Stack Web Developer from Columbia University in the Columbia
-                Engineering Coding Boot Camp Program.
-              </p>
               <p className="about-p">
                 Web development allows Shaminder to create and design
                 like he always did as a child. Today, he has worked hard on

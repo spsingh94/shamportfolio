@@ -11,7 +11,7 @@ export function useImageAnimationJS(project) {
         return () => window.removeEventListener('scroll', onScroll);
     }, []);
 
-    const animateProjectImages = (offset) => setAnimateImages(offset >= (project.current.offsetTop - 500) ? " activate" : " revert");
+    const animateProjectImages = (offset) => setAnimateImages(offset >= (project.current.offsetTop - 700) ? " activate" : " revert");
 
     return animateImages;
 }

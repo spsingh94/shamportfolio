@@ -28,7 +28,7 @@ function Contact() {
       <Navbar bgColor={navbarBg} />
       <Hero backgroundImage={HeroBack}>
         <Center>
-          <Title id="about-title">Lets Connect!</Title>
+          <Title id="page-title">Lets Connect!</Title>
         </Center>
         <Center>
           <a href="tel:+14144002564">

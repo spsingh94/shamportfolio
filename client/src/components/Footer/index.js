@@ -48,26 +48,17 @@ function Footer() {
 
           <Col size="md-8">
             <Row>
-              <Col size="md-3">
+              <Col size="md-4">
                 <Link className="navbar-brand" to="/" onClick={scrollTop}>
                   <p className="foot-navcon">Projects</p>
                 </Link>
               </Col>
-              <Col size="md-3">
+              <Col size="md-4">
               <Link className="navbar-brand" to="/about" onClick={scrollTop}>
                   <p className="foot-navcon">About</p>
                 </Link>
               </Col>
-              <Col size="md-3">
-                <Link
-                  className="navbar-brand"
-                  to="/photography"
-                  onClick={scrollTop}
-                >
-                  <p className="foot-navcon">Photography</p>
-                </Link>
-              </Col>
-              <Col size="md-3">
+              <Col size="md-4">
                 <Link
                   className="navbar-brand"
                   to="/contact"
