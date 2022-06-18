@@ -31,6 +31,7 @@ function About() {
             fontFamily: "'Permanent Marker', cursive",
             textAlign: "center",
             paddingTop: "0",
+            paddingBottom: "20px",
             fontSize: "20px",
           }}
         >

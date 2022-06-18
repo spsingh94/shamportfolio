@@ -2,8 +2,13 @@
     padding: 10px;
 }
 
+.project-container {
+    overflow: hidden;
+}
+
 .project-container .text-and-button {
     text-align: center;
+    margin-top: 20px;
 }
     
 .mwd-project-section p {
@@ -49,6 +54,15 @@
 
 .slider::before {
     left: 0;
+    top: 0;
+}
+
+#biz-image-container .slider::before {
+    display: none;
+}
+
+#biz-image-container .slider::after {
+    right: 100px;
     top: 0;
 }
 
@@ -132,6 +146,17 @@
     100% {
     -webkit-transform: translateX(calc(150px * 7));
     transform: translateX(calc(150px * 7));
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #biz-image-container .slider::before {
+        display: inherit;
+    }
+    
+    #biz-image-container .slider::after {
+        right: 0;
+        top: 0;
     }
 }
 

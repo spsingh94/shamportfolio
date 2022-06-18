@@ -14,7 +14,7 @@ function Contact() {
   const mapsSource =
     "https://www.google.com/maps/embed/v1/place?key=" +
     API_KEY +
-    "&q=New+York,NewYork+NY";
+    "&q=LittleChute+WI";
 
   const scrollToMap = () => {
     window.scrollTo({ top: 505, behavior: "smooth" });
@@ -42,7 +42,7 @@ function Contact() {
         <Center>
           <p style={{ textAlign: "center", paddingTop: "45px", color: "white", fontFamily: "Alata, sans-serif", fontSize: "15px" }}>
             For emails please provide me with some of your information and a short message and I
-            will get back to you at my earliest convenience.
+            will get back to you as soon as possible!
           </p>
         </Center>
       </Hero>

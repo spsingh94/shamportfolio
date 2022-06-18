@@ -47,28 +47,10 @@
     }
 }
 
-.justification .about-p {
-    /* font-family: 'Pathway Gothic One', sans-serif; */
-    font-size: 20px;
-    text-align: center;
-}
-
-@media (max-width: 470px){
-.justification .about-p {
-    font-size: 10px;
-    font-family: 'Alata', sans-serif;
-}
-}
-
-
 .justification .photo-banner {
     height: 270px;
     width: 100%;
 }
-
-/* .justification .photo-banner:hover {
- background-color: black;
-} */
 
 @media (max-width: 1076px){
     .justification .photo-banner {

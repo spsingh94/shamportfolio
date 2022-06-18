@@ -8,19 +8,12 @@
     font-size: 50px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
-    margin-bottom: 40px;
 }
 
 #page-title {
     text-align: center;
-    font-size: 120px;
+    font-size: 90px;
     color: white;
-}
-
-@media (max-width: 1100px) {
-    #page-title {
-        font-size: 90px;
-    }
 }
 
 @media (max-width: 600px) {
@@ -80,11 +73,5 @@
     #my-location {
         font-size: 16px;
         margin-left: 13px;
-    }
-}
-
-@media(max-width: 690px) {
-    #about-title {
-        font-size: 45px;
     }
 }
