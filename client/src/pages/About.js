@@ -47,7 +47,7 @@ function About() {
         <br />
         <Center id="lefty">
           <OtherButton onClick={() => {
-            window.open("https://drive.google.com/file/d/1hMnllqvLKnZhBQO4vNH-XW0KsnyfaYFb/view?usp=sharing")
+            window.open("https://drive.google.com/file/d/1QIbhdOK72zeU3UK4fsC1ojOUSAQxx8--/view?usp=sharing")
           }}>
             View Resume
           </OtherButton>
