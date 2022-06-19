@@ -3,12 +3,24 @@ import "./style.css"
 import Biz1 from "../../images/biz-tiles/homepage.png";
 import Biz2 from "../../images/biz-tiles/info.png";
 import Biz3 from "../../images/biz-tiles/action.png";
+import Biz4 from "../../images/biz-tiles/action2.png";
+import Biz5 from "../../images/biz-tiles/action3.png";
+import Biz6 from "../../images/biz-tiles/action4.png";
+import Biz7 from "../../images/biz-tiles/action5.png";
 import MWD1 from "../../images/mwd-tiles/homepage.png";
 import MWD2 from "../../images/mwd-tiles/info.png";
 import MWD3 from "../../images/mwd-tiles/action.png";
+import MWD4 from "../../images/mwd-tiles/action2.png";
+import MWD5 from "../../images/mwd-tiles/action3.png";
+import MWD6 from "../../images/mwd-tiles/action4.png";
+import MWD7 from "../../images/mwd-tiles/action5.png";
 import BP1 from "../../images/backpack-tiles/homepage.png";
 import BP2 from "../../images/backpack-tiles/info.png";
 import BP3 from "../../images/backpack-tiles/action.png";
+import BP4 from "../../images/backpack-tiles/action2.png";
+import BP5 from "../../images/backpack-tiles/action3.png";
+import BP6 from "../../images/backpack-tiles/action4.png";
+import BP7 from "../../images/backpack-tiles/action5.png";
 import { OtherButton } from "../Button";
 
 export function mwdProjectSections({ className = '' }) {
@@ -28,16 +40,16 @@ export function mwdProjectSections({ className = '' }) {
                                 <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
                             </div>
                             <div class="slide">
-                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                                <img src={MWD4} className="project-img project-img3" alt="mwd-modal-popup" />
                             </div>
                             <div class="slide">
-                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                                <img src={MWD5} className="project-img project-img3" alt="mwd-modal-popup" />
                             </div>
                             <div class="slide">
-                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                                <img src={MWD6} className="project-img project-img3" alt="mwd-modal-popup" />
                             </div>
                             <div class="slide">
-                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                                <img src={MWD7} className="project-img project-img3" alt="mwd-modal-popup" />
                             </div>
                             <div class="slide">
                                 <img src={MWD1} className="project-img project-img1" alt="mwd-homepage" />
@@ -49,16 +61,16 @@ export function mwdProjectSections({ className = '' }) {
                                 <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
                             </div>
                             <div class="slide">
-                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                                <img src={MWD4} className="project-img project-img3" alt="mwd-modal-popup" />
                             </div>
                             <div class="slide">
-                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                                <img src={MWD5} className="project-img project-img3" alt="mwd-modal-popup" />
                             </div>
                             <div class="slide">
-                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                                <img src={MWD6} className="project-img project-img3" alt="mwd-modal-popup" />
                             </div>
                             <div class="slide">
-                                <img src={MWD3} className="project-img project-img3" alt="mwd-modal-popup" />
+                                <img src={MWD7} className="project-img project-img3" alt="mwd-modal-popup" />
                             </div>
                         </div>
                     </div>
@@ -92,16 +104,16 @@ export function bizProjectSections({ className = '' }) {
                                 <img src={Biz3} className="project-img" alt="biz-stock-tool" />
                             </div>
                             <div class="slide">
-                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                                <img src={Biz4} className="project-img" alt="biz-stock-tool" />
                             </div>
                             <div class="slide">
-                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                                <img src={Biz5} className="project-img" alt="biz-stock-tool" />
                             </div>
                             <div class="slide">
-                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                                <img src={Biz6} className="project-img" alt="biz-stock-tool" />
                             </div>
                             <div class="slide">
-                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                                <img src={Biz7} className="project-img" alt="biz-stock-tool" />
                             </div>
                             <div class="slide">
                                 <img src={Biz1} className="project-img project-img1" alt="biz-homepage" />
@@ -113,16 +125,16 @@ export function bizProjectSections({ className = '' }) {
                                 <img src={Biz3} className="project-img" alt="biz-stock-tool" />
                             </div>
                             <div class="slide">
-                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                                <img src={Biz4} className="project-img" alt="biz-stock-tool" />
                             </div>
                             <div class="slide">
-                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                                <img src={Biz5} className="project-img" alt="biz-stock-tool" />
                             </div>
                             <div class="slide">
-                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                                <img src={Biz6} className="project-img" alt="biz-stock-tool" />
                             </div>
                             <div class="slide">
-                                <img src={Biz3} className="project-img" alt="biz-stock-tool" />
+                                <img src={Biz7} className="project-img" alt="biz-stock-tool" />
                             </div>
                         </div>
                     </div>
@@ -156,16 +168,16 @@ export function bpProjectSections({ className = '' }) {
                                 <img src={BP3} className="project-img" alt="bp-tool" />
                             </div>
                             <div class="slide">
-                                <img src={BP3} className="project-img" alt="bp-tool" />
+                                <img src={BP4} className="project-img" alt="bp-tool" />
                             </div>
                             <div class="slide">
-                                <img src={BP3} className="project-img" alt="bp-tool" />
+                                <img src={BP5} className="project-img" alt="bp-tool" />
                             </div>
                             <div class="slide">
-                                <img src={BP3} className="project-img" alt="bp-tool" />
+                                <img src={BP6} className="project-img" alt="bp-tool" />
                             </div>
                             <div class="slide">
-                                <img src={BP3} className="project-img" alt="bp-tool" />
+                                <img src={BP7} className="project-img" alt="bp-tool" />
                             </div>
                             <div class="slide">
                                 <img src={BP1} className="project-img project-img1" alt="bp-homepage" />
@@ -177,16 +189,16 @@ export function bpProjectSections({ className = '' }) {
                                 <img src={BP3} className="project-img" alt="bp-tool" />
                             </div>
                             <div class="slide">
-                                <img src={BP3} className="project-img" alt="bp-tool" />
+                                <img src={BP4} className="project-img" alt="bp-tool" />
                             </div>
                             <div class="slide">
-                                <img src={BP3} className="project-img" alt="bp-tool" />
+                                <img src={BP5} className="project-img" alt="bp-tool" />
                             </div>
                             <div class="slide">
-                                <img src={BP3} className="project-img" alt="bp-tool" />
+                                <img src={BP6} className="project-img" alt="bp-tool" />
                             </div>
                             <div class="slide">
-                                <img src={BP3} className="project-img" alt="bp-tool" />
+                                <img src={BP7} className="project-img" alt="bp-tool" />
                             </div>
                         </div>
                     </div>

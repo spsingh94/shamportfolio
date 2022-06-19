@@ -42,7 +42,6 @@ function About() {
             src={Thumbnail}
             height="250px"
             alt="thumbnail"
-            style={{ borderRadius: "30%" }}
           />
         </Center>
         <br />
