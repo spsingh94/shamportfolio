@@ -15,6 +15,7 @@ import Container from "../components/Container";
 
 function About() {
   const aboutSection = useRef(null);
+  console.log(aboutSection)
   const navbarBg = useNavbarJS(aboutSection);
   return (
     <div>

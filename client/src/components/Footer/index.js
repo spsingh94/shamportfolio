@@ -13,11 +13,12 @@ function Footer() {
   return (
     <div className="foot">
       <Row>
-        <Col size="md-2">
+        <Col size="md-4">
           <Link className="navbar-brand" to="/" onClick={scrollTop}>
             <img src={logo} className="logo-footer" alt="logo" />
           </Link>
-          <h6 className="catch-phrase">I Create.</h6>
+          <h6 className="catch-phrase">SHAMINDER SINGH</h6>
+          <p className="catch-phrase-desc">Software Developer | Photographer</p>
         </Col>
 
         <Col size="md-2" style={{ paddingTop: "15px" }}>
@@ -44,19 +45,24 @@ function Footer() {
           </a>
         </Col>
 
-        <Col size="md-8">
+        <Col size="md-6">
           <Row>
-            <Col size="md-4">
+            <Col size="md-3">
               <Link className="navbar-brand" to="/" onClick={scrollTop}>
                 <p className="foot-navcon">Projects</p>
               </Link>
             </Col>
-            <Col size="md-4">
+            <Col size="md-3">
+              <Link className="navbar-brand" to="/photography" onClick={scrollTop}>
+                <p className="foot-navcon">Photography</p>
+              </Link>
+            </Col>
+            <Col size="md-3">
               <Link className="navbar-brand" to="/about" onClick={scrollTop}>
                 <p className="foot-navcon">About</p>
               </Link>
             </Col>
-            <Col size="md-4">
+            <Col size="md-3">
               <Link
                 className="navbar-brand"
                 to="/contact"

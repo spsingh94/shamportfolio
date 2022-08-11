@@ -3,13 +3,24 @@
   border-top: solid 1px;
   background-color: black;
   margin-top: 30px;
-  padding: 100px 0px;
+}
+
+.foot .row {
+  display: flex;
+  align-items: center;
+}
+
+.catch-phrase, .catch-phrase-desc {
+  /* font-family: 'Permanent Marker', cursive; */
+  color: white;
 }
 
 .catch-phrase {
-  padding-right: 10px;
-  font-family: 'Permanent Marker', cursive;
-  color: white;
+  font-size: 15px;
+}
+
+.catch-phrase-desc {
+  font-size: 13px;
 }
 
 .foot-navcon {
@@ -17,11 +28,6 @@
   padding-top: 20px;
   font-size: large;
   font-family: 'Alata', sans-serif;
-}
-
-.foot-navcon:hover {
-  text-decoration: line-through black;
-  color: white;
 }
 
 .logo-footer {

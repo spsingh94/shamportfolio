@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
-        {/* <Route exact path="/photography" component={Photography} /> */}
+        <Route exact path="/photography" component={Photography} />
         <Route path="/mcla" component={MCLA} />
         <Route path="/biz" component={BizDashboard} />
         <Route path="/backpack" component={Backpack} />

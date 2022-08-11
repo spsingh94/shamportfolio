@@ -5,12 +5,17 @@ nav {
   z-index: 999;
   width: 100%;
   height: 90px;
+  padding: 0px !important;
   position: fixed !important;
+}
+
+.navbar-brand {
+  margin-right: 0.5rem !important;
 }
 
 .locName {
   color: white;
-  padding-top: 5px;
+  margin: 0px;
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: black;
 }
@@ -22,44 +27,77 @@ nav {
 
 .logo-nav {
   height: 70px;
-  position: absolute;
   right: 10px;
   top: 10px;
   animation-direction: alternate-reverse;
 }
 
 .fa {
-  padding: 5px;
-  font-size: 25px;
   width: 35px;
-  margin: 6px 1px;
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+}
+
+.sm-desktop {
+  display: none;
+}
+
+.sm-desktop .fa {
+  font-size: 18px;
+}
+
+.sm-mobile .fa {
+  font-size: 21px;
 }
 
 .fa:hover {
   color: black;
 }
 
+.catchphrase-container {
+  padding-top: 5px;
+  font-size: 10px;
+  color: white;
+}
+
+.catchphrase-container h6, .catchphrase-container p {
+  margin: 3px !important;
+}
+
 .social-media {
-  padding-top: 15px;
-  position: absolute;
-  right: 115px;
+  margin: 0px;
+  color: white;
+  text-align: center;
+}
+
+.site-identity {
+  width: 263px;
+  justify-content: end;
+}
+
+.show + .site-identity {
+  background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .sm-mobile {
+    display: none;
+  }
+  
+  .sm-desktop {
+    display: initial;
+  }
 }
 
 @media (max-width: 991px) {
   .navbar-nav {
-    background-color: white;
-    width: 255px;
+    background-color: black;
+    width: 263px;
     margin-left: 0px;
     text-align: center;
-    border-radius: 10px;
   }
-  .nav-item {
-    /* border: solid black 1px; */
-    border-radius: 10px;
-  }
+
   .nav-item:hover {
     background-color: white;
   }
